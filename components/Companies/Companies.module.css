@@ -1,0 +1,114 @@
+.companies_outer_container {
+    width: 90%;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+    padding-left: 5%;
+    padding-right: 5%;
+    position: relative;
+}
+.companies_container {
+    width: calc(90% + 1.5rem);
+    min-height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: flex-start;
+    position: relative;
+}
+.companies_text {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.company_swiper {
+    width: 100%;
+}
+.companies_text_header {
+    font-family: 'Rockwell Nova', sans-serif;
+    font-size: 2.5em;
+    font-size: 40px;
+    font-variant: small-caps;
+    width: 100%;
+    height: 51px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    color: #1D1D1D;
+    color: white;
+    position: relative;
+}
+.swiper_button_left,
+.swiper_button_right {
+    position: absolute;
+    top: 51px;
+    border: 1.5px solid #FFFFFF;
+    background-color: transparent;
+    height: 48px;
+    width: 48px;
+    opacity: 1;
+    bottom: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.swiper_button_left:active,
+.swiper_button_right:active {
+    transform: scale(0.95);
+}
+.swiper_button_left {
+    right: calc(5% + 58px) !important;
+    left: unset;
+}
+.swiper_button_right:hover,
+.swiper_button_left:hover {
+    background-color: #212121;
+    filter: brightness(110%);
+}
+.swiper_button_left img {
+    transform: rotate(180deg);
+}
+.swiper_button_right {
+    right: 5% !important;
+}
+.companies_text_header p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.companies_text_header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    width: 5%;
+    min-width: 25px;
+    background-color: rgb(255, 139, 6);
+    max-width: 60px;
+}
+@media screen and (max-width: 500px) {
+    .swiper_button_left,
+    .swiper_button_right {
+        top: unset;
+        bottom: 51px;
+    }
+    .swiper_button_right {
+        left: calc(5% + 58px);
+    }
+    .swiper_button_left {
+        left: 5%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .companies_text_header {
+        font-size: 24px;
+    }
+}
