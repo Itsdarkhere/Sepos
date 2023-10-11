@@ -21,7 +21,7 @@
 .header {    
     width: 100%;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 .mobile_header {
@@ -204,7 +204,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: flex-start;
 }
 .project_wrapper {

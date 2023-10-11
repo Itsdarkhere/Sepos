@@ -1,0 +1,59 @@
+.about_section {
+    height: auto;
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    scroll-margin-top: 50px;
+    background-color: #212121;
+    padding-bottom: 150px;
+    overflow: hidden;
+}
+.about_header {    
+    width: 80%;
+    padding-left: 5%;
+    height: 150px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.about_header_inner {
+    width: 100%;
+    font-size: 40px;
+    height: 51px;
+    font-family: 'Rockwell Nova', sans-serif;
+    color: #1D1D1D;
+    color: white;
+    display: flex;  
+    justify-content: flex-start;
+    align-items: center;
+    font-variant: small-caps;
+    position: relative;
+}
+.about_header_inner p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.about_header_inner::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 4px;
+    width: 5%;
+    min-width: 25px;
+    max-width: 60px;
+    background-color: rgb(255, 139, 6);
+}
+.tweets_container {
+    padding-left: 5%;
+    width: max-content;
+    max-width: 90vw;
+}
+@media screen and (max-width: 1000px) {
+    .about_header_inner {
+        font-size: 24px;
+    }
+}
