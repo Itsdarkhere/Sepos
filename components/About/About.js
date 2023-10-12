@@ -21,7 +21,7 @@ export default function About({ english }) {
                     }}
                     options={{
                         height: '600',
-                        width: '1600',
+                        width: '600',
                         theme: 'dark'
                     }}
                 />

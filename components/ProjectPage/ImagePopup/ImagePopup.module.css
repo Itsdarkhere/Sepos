@@ -1,14 +1,22 @@
-.modal_container {
-    background-color: rgba(0, 0, 0, .75);
+.dialog {
     position: fixed;
+    z-index: 10;
     top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
-    z-index: 210;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+  
+.dialog_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .image_loader {
@@ -66,22 +74,22 @@
     pointer-events: none;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+.swiper_button_next,
+.swiper_button_prev {
     color: white !important;
     position: absolute !important;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
+.swiper_button_prev:hover,
+.swiper_button_next:hover {
     color: rgb(255, 139, 6) !important;
 }
 
-.close-button:hover {
+.close_button:hover {
     color: rgb(255, 139, 6) !important;
 }
 
-.modal-swiper {
+.modal_swiper {
     height: 100%;
     width: 100%;
     pointer-events: none;
@@ -90,23 +98,23 @@
     align-items: center;
 }
 
-.modal-slide {
+.modal_slide {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.popup-gallery-image {
+.popup_gallery_image {
     max-height: 100%;
     max-width: 100%;
     pointer-events: all;
 }
 
-.popup-gallery-image:hover {
+.popup_gallery_image:hover {
     cursor: pointer;
 }
 
-.popup-button {
+.popup_button {
     position: fixed;
     top: 48%;
     height: 4%;
@@ -125,15 +133,15 @@
     cursor: pointer;
 }
 
-.popup-button-left {
+.popup_button_left {
     left: 4%;
 }
 
-.popup-button-right {
+.popup_button_right {
     right: 4%;
 }
 
-.popup-button:hover {
+.popup_button:hover {
     color: rgb(255, 139, 6) !important;
 }
 

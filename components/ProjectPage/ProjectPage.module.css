@@ -54,18 +54,23 @@
 }
 .text_name_container {
     position: absolute;
+    left: 0;
+    right: 0;
+    padding-left: 5%;
+    padding-right: 5%;
     bottom: 2px; 
     padding-bottom: 20px;
-    width: 100%;
-    max-width: 1880px;
-    margin-left: 5%;
     display: flex;  
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     font-family: 'Rockwell Nova', sans-serif;
     font-size: 2.5em;
     color: rgb(255, 255, 255);
     background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+}
+.text_projectname {
+    max-width: 1880px;
+    width: 100%;
 }
 .pp_bottom_container {
     padding-top: 50px;
@@ -115,6 +120,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 20px;
+}
+.icon_container2 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
 }
 
 .flex_end {
@@ -155,5 +168,11 @@
     }
     .under_nav {
         height: 40px;
+    }
+    .icon_container {
+        margin-right: 5px;
+    }
+    .icon_container2 {
+        margin-left: 5px;
     }
 }
