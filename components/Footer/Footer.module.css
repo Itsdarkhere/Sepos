@@ -71,11 +71,11 @@
 }
 .footer_befound {   
     width: 50%;
-    height: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     color: rgb(226, 225, 225);
+    font-size: 14px;
 }
 .policy_component {
     min-width: 70%;

@@ -1,6 +1,5 @@
 .text_outer_container {
     width: 50%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,7 +8,6 @@
 }
 .text_inner_container {
     width: 100%;
-    /* height: 90%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -17,13 +15,11 @@
 }
 .text_desc_container {
     width: 90%;
-    /* height: 40%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     border-bottom: 1px solid rgb(255, 139, 6);
-    margin-top: -15px;
 }
 .text_description { 
     text-align: start;
@@ -79,7 +75,6 @@
 }   
 .text_button_facts_container {
     width: 100%;
-    /* height: 60%; */
     display: flex;  
     flex-direction: column-reverse;
     justify-content: center;
@@ -92,7 +87,6 @@
 .website_link_container {
     padding-top: 25px;
     width: 90%;
-    height: 100px;
     display: flex;
     justify-content: flex-start;
     align-items: center;

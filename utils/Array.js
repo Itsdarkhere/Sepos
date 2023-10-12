@@ -185,7 +185,7 @@ function ProjectArray() {
             fin_status: 'Hanketilanne: Suunnitteluvaraus ja kehitysvaihe yhdessä kaupungin kanssa käynnissä',
             projectPage: '/hameensaari',
             previousProject: ["/hippos", "Hippos Jyväskylä"],
-            nextProject: ["/Inkoonranta", "Inkoonranta"]
+            nextProject: ["/inkoonranta", "Inkoonranta"]
         },
         /*
         {
