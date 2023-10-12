@@ -33,8 +33,7 @@
 }
 .navbar_header {
     height: 80%;
-    font-size: 1.5vw;
-    font-size: max(1.2em, 1.5vw);
+    font-size: 22px;
     background-color: rgba(0,0,0,0);
     color: rgb(255, 139, 6);
     font-family: 'Rockwell Nova', sans-serif;   
@@ -90,7 +89,7 @@
 }
 @media (max-width: 700px) {
     .navbar_header {
-        font-size: 1.2em;
+        /* font-size: 1.2em; */
     }
     .navbar_right {
         width: 20%;
@@ -98,15 +97,4 @@
     .language_select {
         width: 20%;
     }   
-}
-@media (min-width: 700px) and (max-width: 1000px) {
-    .navbar_header {
-        font-size: 1.2em;
-    }
-}
-@media (min-width: 1000px) and (max-width: 1500px) {
-    .navbar_header {
-        font-size: 1.5em;
-        font-size: max(1.2em, 1.5vw);
-    }
 }

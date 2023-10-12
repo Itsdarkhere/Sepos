@@ -24,7 +24,7 @@
 .text_description { 
     text-align: start;
     line-height: 150%;
-    font-size: 1.3em;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     padding-bottom: 25px;
@@ -48,8 +48,7 @@
     margin-top: 0px;
 }
 .text_fact { 
-    font-size: 1.3em;
-    font-size: max(1.3em, 1.2vw);
+    font-size: 16px;
     list-style-type: none;
     white-space: wrap;  
     font-family: 'Raleway', sans-serif;
@@ -57,7 +56,7 @@
 }
 .text_header {
     color: black;
-    font-size: 1.5em;
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     font-weight: 200;
     padding-bottom: 10px;
@@ -67,8 +66,7 @@
     width: 90%;
     color: black;
     line-height: 150%;  
-    font-size: 1.3em;
-    font-size: max(1.3em, 1.2vw);
+    font-size: 16px;
     list-style-type: none;
     white-space: wrap;  
     font-family: 'Raleway', sans-serif;
@@ -98,8 +96,7 @@
     color: black;
     text-decoration: none;
     border-bottom: 1px solid rgb(255, 139, 6);
-    font-size: 2.5vw;
-    font-size: min(2.5vw, 2em);
+    font-size: 16px;
     font-family: 'Raleway', serif;
     font-weight: 200;
     -webkit-transition: color .5s;
@@ -107,51 +104,6 @@
     -ms-transition:     color .5s;
     -o-transition:      color .5s;
     transition: color .5;
-}
-@media (min-width: 1801px) {
-    .text_description { 
-        font-size: 1.2vw;
-        font-size: max(1.3em, 1.2vw);
-    }
-}
-@media (min-width: 1500px) and (max-width: 1800px) {
-    .text_fact {
-        font-size: 1.2vw;
-        font-size: max(1.2em, 1.2vw);
-    }
-    .text_status {
-        font-size: 1.2vw;
-        font-size: max(1.2em, 1.2vw);
-    }
-    .text_description { 
-        font-size: 1.2vw;
-        font-size: max(1.2em, 1.2vw);
-    }
-}
-@media (min-width: 1201px) and (max-width: 1499px) {
-    .text_fact {
-        font-size: 1.2vw;
-        font-size: max(1.2em, 1.2vw);
-    }
-    .text_description { 
-        font-size: 1.2vw;
-        font-size: max(1.2em, 1.2vw);
-    }
-    .text_status {
-        font-size: 1.2vw;
-        font-size: max(1.2em, 1.2vw);
-    }
-}
-@media (min-width: 1001px) and (max-width: 1200px) {
-    .text_fact {
-        font-size: 1em;
-    }
-    .text_description { 
-        font-size: 1em;
-    }
-    .text_status {
-        font-size: 1em;
-    }
 }
 
 @media (max-width: 1000px) {
@@ -167,26 +119,7 @@
     .text_status {
         width: 100%;
     }
-    .website_link_container {
-        padding-top: 0;
-    }
-    .website_link {
-        font-size: 1.5em;
-        font-size: min(4vw, 1.5em);
-    }
-}
-
-@media (max-width: 450px) {
     .text_description {
-        font-size: 0.9em;
-    }
-    .website_link {
-        font-size: 6vw;
-    }
-    .text_status {
-        font-size: 0.9em;
-    }
-    .text_header {
-        font-size: 1.2em;
+        font-size: 14px;
     }
 }
