@@ -15,6 +15,7 @@
 
 .persons_grid {
     width: 100%;
+    max-width: 1880px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -24,6 +25,7 @@
 
 .contact_header_container { 
     width: 100%;
+    max-width: 1880px;
     display: flex;
     justify-content: flex-start;    
     align-items: center;

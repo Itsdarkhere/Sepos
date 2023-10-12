@@ -11,8 +11,16 @@
     position: relative;
     background-color: #1d1d1d;
 }
+.companies_inner_container {
+    max-width: 1880px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .companies_container {
-    width: calc(90% + 1.5rem);
     min-height: max-content;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;

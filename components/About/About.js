@@ -15,15 +15,15 @@ export default function About({ english }) {
             </div>
             <div className={styles.tweets_container}>
                 <Timeline
-                dataSource={{
-                    sourceType: 'profile',
-                    screenName: 'SeposOy'
-                }}
-                options={{
-                    height: '600',
-                    width: '1600',
-                    theme: 'dark'
-                }}
+                    dataSource={{
+                        sourceType: 'profile',
+                        screenName: 'SeposOy'
+                    }}
+                    options={{
+                        height: '600',
+                        width: '1600',
+                        theme: 'dark'
+                    }}
                 />
             </div>
         </div>

@@ -11,9 +11,11 @@
     padding-top: 150px;
     padding-left: 5%;
     padding-right: 5%;
+    margin-top: -5px;
 }
 .project_slider_inner_container {
     width: 100%;
+    max-width: 1880px;
     display: grid;
     grid-template-columns: 30% 70%;
     grid-template-rows: 1fr;

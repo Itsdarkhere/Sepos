@@ -82,13 +82,15 @@ export default function EntryView({ english, loaded }) {
     return (
         <div className={styles.entry_view_outer_container}>
             {getImage()}
-            <div className={styles.entry_view_inner_container}>
-                <motion.div className={styles.line} animate={controls2}>
-                    { animateTextChange('', english, texts.line_english, texts.line_finnish)}
-                </motion.div>  
-                <motion.div className={styles.description} animate={controls2}>
-                    { animateTextChange('', english, texts.story_english, texts.story_finnish)}
-                </motion.div>  
+            <div className={styles.entry_plus_container}>
+                <div className={styles.entry_view_inner_container}>
+                    <motion.div className={styles.line} animate={controls2}>
+                        { animateTextChange('', english, texts.line_english, texts.line_finnish)}
+                    </motion.div>  
+                    <motion.div className={styles.description} animate={controls2}>
+                        { animateTextChange('', english, texts.story_english, texts.story_finnish)}
+                    </motion.div>  
+                </div>
             </div>
         </div>
     )   

@@ -9,11 +9,11 @@
     background-color: #1D1D1D;
     background-color: #212121;
     position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .bottom_inner_container {
     height: 100%;
-    padding-left: 5%;
-    padding-right: 5%;
     width: 100%;
     max-width: 1880px;
     display: flex;
