@@ -1,0 +1,209 @@
+.text_outer_container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+.text_inner_container {
+    width: 100%;
+    /* height: 90%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.text_desc_container {
+    width: 90%;
+    /* height: 40%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(255, 139, 6);
+    margin-top: -15px;
+}
+.text_description { 
+    text-align: start;
+    line-height: 150%;
+    font-size: 1.3em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.location {
+    line-height: 150%;
+    font-weight: 400;
+    width: 100%;
+}
+.text_facts {
+    width: 90%;
+    line-height: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-bottom: 1px solid rgb(255, 139, 6);
+    padding-bottom: 10px;
+}
+.status_container {
+    margin-top: 0px;
+}
+.text_fact { 
+    font-size: 1.3em;
+    font-size: max(1.3em, 1.2vw);
+    list-style-type: none;
+    white-space: wrap;  
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+.text_header {
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+}
+.text_status {
+    width: 90%;
+    color: black;
+    line-height: 150%;  
+    font-size: 1.3em;
+    font-size: max(1.3em, 1.2vw);
+    list-style-type: none;
+    white-space: wrap;  
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    border-bottom: 1px solid rgb(255, 139, 6);
+    padding-bottom: 20px;
+}   
+.text_button_facts_container {
+    width: 100%;
+    /* height: 60%; */
+    display: flex;  
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+}
+.website_link:focus,
+.website_link:hover {
+    color: rgb(240, 129, 2);
+}
+.website_link_container {
+    padding-top: 25px;
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.website_link {
+    color: black;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(255, 139, 6);
+    font-size: 2.5vw;
+    font-size: min(2.5vw, 2em);
+    font-family: 'Raleway', serif;
+    font-weight: 200;
+    -webkit-transition: color .5s;
+    -moz-transition:    color .5s;
+    -ms-transition:     color .5s;
+    -o-transition:      color .5s;
+    transition: color .5;
+}
+@media (min-width: 1801px) {
+    .text_description { 
+        font-size: 1.2vw;
+        font-size: max(1.3em, 1.2vw);
+    }
+    .text_facts {
+        line-height: 300%;
+    }
+}
+@media (min-width: 1500px) and (max-width: 1800px) {
+    .text_fact {
+        font-size: 1.2vw;
+        font-size: max(1.2em, 1.2vw);
+    }
+    .text_status {
+        font-size: 1.2vw;
+        font-size: max(1.2em, 1.2vw);
+    }
+    .text_description { 
+        font-size: 1.2vw;
+        font-size: max(1.2em, 1.2vw);
+    }
+    .text_facts {
+        line-height: 300%;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1499px) {
+    .text_fact {
+        font-size: 1.2vw;
+        font-size: max(1.2em, 1.2vw);
+    }
+    .text_description { 
+        font-size: 1.2vw;
+        font-size: max(1.2em, 1.2vw);
+    }
+    .text_status {
+        font-size: 1.2vw;
+        font-size: max(1.2em, 1.2vw);
+    }
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .text_fact {
+        font-size: 1em;
+    }
+    .text_description { 
+        font-size: 1em;
+    }
+    .text_status {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 1000px) {
+    .text_outer_container {
+        width: 100%;
+    }
+    .text_fact {
+        line-height: 200%;
+    }
+    .text_desc_container {
+        width: 100%;
+    }
+    .text_facts {
+        width: 100%;
+    }
+    .text_status {
+        width: 100%;
+    }
+    .website_link_container {
+        padding-top: 0;
+    }
+    .website_link {
+        font-size: 1.5em;
+        font-size: min(4vw, 1.5em);
+    }
+}
+
+@media (max-width: 450px) {
+    .text_description {
+        font-size: 0.9em;
+    }
+    .website_link {
+        font-size: 6vw;
+    }
+    .text_fact {
+        white-space: normal;
+        line-height: 200%;
+        font-size: 0.9em;
+    }
+    .text_status {
+        font-size: 0.9em;
+    }
+    .text_header {
+        font-size: 1.2em;
+    }
+}

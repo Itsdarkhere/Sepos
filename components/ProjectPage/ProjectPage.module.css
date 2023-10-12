@@ -1,0 +1,87 @@
+.project_page_container {
+    width: 100%;
+    min-height: 120vh;
+    height: min-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #E5E5E5;
+}
+.under_nav {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+.pp_status {
+    height: 300px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pp_spacer {
+    height: 100px;
+}
+.status_p {
+    font-size: max(1.5vw, 0.8em);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+.pp_top_container {
+    margin-top: 65px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+.text_name_container {
+    position: absolute;
+    bottom: 2px; 
+    height: 20%;    
+    width: 100%;
+    padding-left: 10%;
+    display: flex;  
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Rockwell Nova', sans-serif;
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+}
+.pp_bottom_container {
+    padding-top: 5%;
+    padding-bottom: 100px;
+    min-height: 50vh;
+    width: 90%;
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.marker {
+    transform: scale(3);
+}
+@media (max-width: 1000px) {
+    /* Column change here is important for layout shift */
+    .pp_bottom_container {
+        flex-direction: column;
+    }
+    .status_p {
+        font-size: max(2vw, 1em);
+    }
+}
+@media (max-width: 600px) {
+    .text_name_container {
+        font-size: 7vw;
+        font-size: min(2em, 7vw);
+    }
+    .under_nav {
+        height: 40px;
+    }
+}

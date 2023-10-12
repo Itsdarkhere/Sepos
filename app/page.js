@@ -4,7 +4,6 @@ import ProjectSlider from '@/components/ProjectSlider/ProjectSlider';
 import Companies from '@/components/Companies/Companies';
 import About from '@/components/About/About';
 import Contacts from '@/components/Contacts/Contacts';
-import Footer from '@/components/Footer/Footer';
 import { ProjectArray, CompanyArray } from '@/utils/Array';
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
       <Companies companyArray={companyArray} english={english}/>
       <About english={english}/>
       <Contacts english={english}/>
-      <Footer english={english}/>
     </main>
   )
 }
