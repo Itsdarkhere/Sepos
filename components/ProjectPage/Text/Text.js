@@ -8,8 +8,8 @@ export default function Text({ arrayObject, english }) {
     if (arrayObject.status !== '') {
       return (
         <div className={styles.status_container}>
-          {animateTextChange('text-header', english, 'Project status', 'Projektin tilanne')}
-          {animateTextChange('text-status', english, arrayObject.status, arrayObject.fin_status)}
+          {animateTextChange(styles.text_header, english, 'Project status', 'Projektin tilanne')}
+          {animateTextChange(styles.text_status, english, arrayObject.status, arrayObject.fin_status)}
         </div>
       );
     }
