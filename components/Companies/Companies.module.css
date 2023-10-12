@@ -1,5 +1,5 @@
 .companies_outer_container {
-    width: 90%;
+    width: 100%;
     min-height: max-content;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,7 @@
     padding-left: 5%;
     padding-right: 5%;
     position: relative;
+    background-color: #1d1d1d;
 }
 .companies_container {
     width: calc(90% + 1.5rem);

@@ -7,6 +7,8 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { animateTextChange } from '@/utils/animateTextChange';
 import { AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
+import arrowIcon from '../../public/arrow-icon.svg'
 
 export default function ProjectSlider({ projectArray, english }) {
   const [projectIndex, setProjectIndex] = useState(0);
@@ -20,7 +22,7 @@ export default function ProjectSlider({ projectArray, english }) {
             {animateTextChange(styles.project_mainpage_text_description, english, project.description, project.fin_description)}
             <p className={styles.project_mainpage_text_link}>
                 Learn More
-                <img className={styles.project_mainpage_text_link_img} src="./icons/arrow-icon.svg" alt="arrow icon" />
+                <Image height={20} className={styles.project_mainpage_text_link_img} src={arrowIcon} alt="arrow icon" />
             </p>
           </div>
           <picture loading="lazy" alt="company" className={styles.project_mainpage_picture}>

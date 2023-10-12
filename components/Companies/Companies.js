@@ -4,6 +4,8 @@ import Company from './Company/Company';
 import { motion } from 'framer-motion';
 import { animateTextChange } from '@/utils/animateTextChange';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import Image from 'next/image';
+import arrowRight from '../../public/white-arrow-right.svg'
 import 'swiper/css';
 
 export default function Companies({ companyArray, english }) {
@@ -15,10 +17,10 @@ export default function Companies({ companyArray, english }) {
                 </div>
             </motion.div>
             <div className={styles.swiper_button_left}>
-                <img alt="arrow left" src="./icons/white-arrow-right.svg" />
+                <Image height={19} alt="arrow left" src={arrowRight} />
             </div>
             <div className={styles.swiper_button_right}>
-                <img alt="arrow right" src="./icons/white-arrow-right.svg" />
+                <Image height={19} alt="arrow right" src={arrowRight} />
             </div>
             <Swiper
                 spaceBetween={10}
