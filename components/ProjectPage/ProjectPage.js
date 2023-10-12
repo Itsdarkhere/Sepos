@@ -1,12 +1,12 @@
 'use client'
 import styles from './ProjectPage.module.css'
 import BigImage from './BigImage/BigImage'
-import ProjectLink from './ProjectLink/ProjectLink'
 import Gallery from './Gallery/Gallery'
+import Link from 'next/link'
 import Text from './Text/Text'
-import Footer from '../Footer/Footer'
 // import Preloader from '../Preloader/Preloader'
 import ImagePopup from './ImagePopup/ImagePopup'
+import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import Map from './Map/Map'
 import React, { useEffect, useState } from 'react'
     
@@ -41,9 +41,22 @@ export default function ProjectPage({ arrayObject, projectIndex, english }) {
             <ImagePopup popupOpen={popupOpen} activatePopup={activatePopup} arrayObject={arrayObject} index={index} />
             <div className={styles.pp_top_container}>  
                 <BigImage arrayObject={arrayObject} setImgLoaded={setImgLoaded}/>
-                <div className={styles.under_nav}></div>
-                <ProjectLink left={true} link={arrayObject.previousProject}/>
-                <ProjectLink left={false} link={arrayObject.nextProject}/>
+                <div className={styles.under_nav}>
+                    <div className={styles.under_nav_inner}>
+                        <Link className={styles.project_link} href={arrayObject.previousProject[0]}>
+                            <div className={styles.icon_container} style={{ marginRight: 20}}>
+                                <MdKeyboardArrowLeft className={styles.next_icon} />
+                            </div>
+                            <span className={styles.next_name}>{arrayObject.previousProject[1]}</span>
+                        </Link>
+                        <Link className={styles.project_link} href={arrayObject.nextProject[0]}>
+                            <p className={styles.next_name}>{arrayObject.nextProject[1]}</p>
+                            <div className={styles.icon_container} style={{ marginLeft: 20}}>
+                                <MdKeyboardArrowRight className={styles.next_icon} />
+                            </div>
+                        </Link>
+                    </div>
+                </div>
                 <div className={styles.text_name_container}>
                     <p>{arrayObject.name}</p>
                 </div>

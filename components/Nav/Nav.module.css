@@ -88,9 +88,6 @@
     color: white !important;
 }
 @media (max-width: 700px) {
-    .navbar_header {
-        /* font-size: 1.2em; */
-    }
     .navbar_right {
         width: 20%;
     }

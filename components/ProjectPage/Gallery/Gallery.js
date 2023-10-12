@@ -16,7 +16,6 @@ export default function Gallery({ activatePopup, arrayObject, setIndex }) {
               transition={{ duration: 2 }}
               key={src}
             >
-              {/* <source srcSet={process.env.PUBLIC_URL + './pics' + src + '.webp'} type="image/webp"></source> */}
               <img className={styles.gallery_image} src={src} alt="project" />
             </picture>
           );

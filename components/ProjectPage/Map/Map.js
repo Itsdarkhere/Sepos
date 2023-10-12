@@ -4,21 +4,17 @@ import GoogleMapReact from 'google-map-react';
 import React from 'react';
 
 export default function Map({ arrayObject }) {
-//   const center = {
-//     lat: arrayObject.latLong[0],
-//     lng: arrayObject.latLong[1]
-//   };
+   const center = {
+     lat: arrayObject.latLong[0],
+     lng: arrayObject.latLong[1]
+   };
 
-    const center = {
-        lat: 0,
-        lng: 0
-    };
 
   if (center.lat !== '') {
     return (
       <div className={styles.map_container}>
         <GoogleMapReact
-          bootstrapURLKeys={{ key: '' }}
+          bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
           defaultCenter={center}
           defaultZoom={11}
         >

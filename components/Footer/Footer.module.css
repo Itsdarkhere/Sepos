@@ -12,15 +12,17 @@
 }
 .bottom_inner_container {
     height: 100%;
-    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    max-width: 1880px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .footer_logo_button {
     height: 100%;
-    font-size: 1.2em;
-    font-size: max(1.2em, 1.5vw);
+    font-size: 22px;
     background-color: rgba(0,0,0,0);
     color: rgb(255, 139, 6);
     font-family: 'Rockwell Nova', sans-serif;
@@ -133,9 +135,6 @@
     .policy_popup {
         font-size: 1em;
     }
-    .footer_logo_button {
-        width: 35%;
-    }
     .footer_tags_container {
         width: 80%;
     }
@@ -158,8 +157,6 @@
         font-size: 0.8em;
     }
     .footer_logo_button {
-        width: auto;
-        height: 50%;
         justify-content: flex-start;
     }
     .footer_tags_container {

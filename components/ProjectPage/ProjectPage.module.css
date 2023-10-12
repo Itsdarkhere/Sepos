@@ -12,7 +12,20 @@
     top: 0;
     height: 50px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, .4);
+}
+.under_nav_inner {
+    width: 100%;
+    max-width: 1880px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .pp_status {
     height: 300px;
@@ -42,8 +55,9 @@
 .text_name_container {
     position: absolute;
     bottom: 2px; 
-    height: 20%;    
+    padding-bottom: 20px;
     width: 100%;
+    max-width: 1880px;
     padding-left: 5%;
     display: flex;  
     justify-content: flex-start;
@@ -55,6 +69,7 @@
 }
 .pp_bottom_container {
     padding-top: 50px;
+    max-width: 1880px;
     padding-bottom: 100px;
     padding-left: 5%;
     padding-right: 5%;
@@ -66,6 +81,56 @@
 .marker {
     transform: scale(3);
 }
+
+.project_link {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    -webkit-transition: color .5s;
+    -moz-transition: color .5s;
+    -ms-transition: color .5s;
+    -o-transition: color .5s;
+    transition: color .5;
+}
+
+.project_link:hover {
+    color: rgb(255, 139, 6);
+}
+
+.project_link:hover {
+    transform: scale(1.05);
+    transition: transform 500ms ease;
+}
+
+.icon_container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_end {
+    justify-content: flex-end;
+}
+
+.row_reverse {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.next_icon {
+    transform: scale(1.5);
+}
+
+
 @media (max-width: 1000px) {
     /* Column change here is important for layout shift */
     .pp_bottom_container {
@@ -75,11 +140,18 @@
     .status_p {
         font-size: max(2vw, 1em);
     }
+    .text_name_container {
+        padding-bottom: 10px;
+    }
 }
 @media (max-width: 600px) {
     .text_name_container {
         font-size: 7vw;
         font-size: min(2em, 7vw);
+    }
+    .project_link {
+        font-size: 0.6em;
+        height: 40px;
     }
     .under_nav {
         height: 40px;
