@@ -21,7 +21,6 @@
     align-items: center;
 }
 .footer_logo_button {
-    height: 100%;
     font-size: 22px;
     background-color: rgba(0,0,0,0);
     color: rgb(255, 139, 6);
@@ -35,8 +34,6 @@
     padding: 0 !important;
 }
 .footer_tags_container {
-    width: 60%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -72,7 +69,6 @@
     color: rgb(255, 139, 6);
 }
 .footer_befound {   
-    width: 50%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -121,9 +117,6 @@
     font-size: 1.3em;
 }
 @media (min-width: 621px) and (max-width: 810px) {
-    .footer_tags_container {
-        width: 80%;
-    }
     .policy_component {
         width: 80%;
     }
@@ -134,9 +127,6 @@
 @media (min-width: 451px) and (max-width: 620px) {
     .policy_popup {
         font-size: 1em;
-    }
-    .footer_tags_container {
-        width: 80%;
     }
     .policy_component {
         width: 80%;
@@ -157,12 +147,13 @@
         font-size: 0.8em;
     }
     .footer_logo_button {
+        margin-top: 20px;
+        padding-bottom: 10px !important;
         justify-content: flex-start;
     }
     .footer_tags_container {
         flex-direction: column;
         justify-content: flex-start;
-        height: 60%;
         width: 100%;       
     }
     .policy_component {
@@ -170,12 +161,9 @@
         height: 60%;
         flex-direction: column;
     }
-    .bottom_outer_container {
-        height: 20vh;
-        min-height: 200px;
-    }
     .bottom_inner_container {
         flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
     }
     .footer_policies {

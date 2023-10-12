@@ -14,10 +14,16 @@
         transform: scale(2);
     }
 }
-.map_container {
-    width: 100%;
+.mapdaddy {
     padding-left: 5%;
     padding-right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.map_container {
+    width: 100%;
     max-width: 1880px;
     height: 400px;
     padding-bottom: 100px;

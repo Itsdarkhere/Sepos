@@ -12,15 +12,17 @@ export default function Map({ arrayObject }) {
 
   if (center.lat !== '') {
     return (
-      <div className={styles.map_container}>
-        <GoogleMapReact
-          bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
-          defaultCenter={center}
-          defaultZoom={11}
-        >
-          {/* <AiFillHome lat={center.lat} lng={center.lng} className={styles.marker} /> */}
-        </GoogleMapReact>
-      </div>
+        <div className={styles.mapdaddy}>
+            <div className={styles.map_container}>
+                <GoogleMapReact
+                bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
+                defaultCenter={center}
+                defaultZoom={11}
+                >
+                {/* <AiFillHome lat={center.lat} lng={center.lng} className={styles.marker} /> */}
+                </GoogleMapReact>
+            </div>
+        </div>
     );
   } else {
     return '';
