@@ -12,7 +12,7 @@ const Path = props => (
     />
   )
 
-export const MenuToggle = () => (
+export const NavIcon = () => (
     <div className={styles.burger}>
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
