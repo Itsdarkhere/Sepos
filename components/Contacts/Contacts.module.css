@@ -90,7 +90,7 @@
     }
     .persons_grid {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
     }
     .under_550_spacer {
         height: 20px;
