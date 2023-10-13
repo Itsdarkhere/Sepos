@@ -15,7 +15,7 @@ export default function Person({ image, name, finTitle, title, phone, email, eng
                     : null
                 }
             </div>
-            <div className='p'>
+            <div className={styles.p}>
                 { phone ?
                 <a href={'tel:' +  phone} className={styles.number_contact}>{phone}</a> : null }
                 <a href={'mailto:' + email} className={styles.email_contact}>{email}</a>
