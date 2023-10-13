@@ -7,6 +7,7 @@ import { animateTextChange } from '@/utils/animateTextChange';
 import { AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import arrowIcon from '../../public/arrow-icon.svg'
+import { Listbox } from '@headlessui/react';
 
 export default function ProjectSlider({ projectArray, english }) {
   const [projectIndex, setProjectIndex] = useState(0);
@@ -89,15 +90,22 @@ export default function ProjectSlider({ projectArray, english }) {
         <div className={styles.mainpage_project_link}>
           {content()}
         </div>
-        <select className={styles.mobile_project_select} value={projectIndex} onChange={(e) => changeProject(e.target.value)}>
-          {projectArray.map((project, index) => {
-            return (
-              <option value={index} key={index}>
-                {project.name}
-              </option>
-            );
-          })}
-        </select>
+        <Listbox as="div" className={styles.listbox} value={projectIndex} onChange={setProjectIndex}>
+            {({ open }) => (
+            <>
+                <Listbox.Button className={styles.listbox_button}> 
+                    {projectArray[projectIndex].name}
+                </Listbox.Button>
+                <Listbox.Options className={styles.listbox_options}>
+                {projectArray.map((project, index) => (
+                    <Listbox.Option key={index} value={index}>
+                    {project.name}
+                    </Listbox.Option>
+                ))}
+                </Listbox.Options>
+            </>
+            )}
+        </Listbox>
       </div>
     </div>
   );
