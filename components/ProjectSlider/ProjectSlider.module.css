@@ -68,11 +68,6 @@
     filter: brightness(0.4);
 }
 .project_mainpage_picture {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
     z-index: 1;
     -webkit-transition: -webkit-transform 500ms ease;
     transition-duration: transform 500ms ease;

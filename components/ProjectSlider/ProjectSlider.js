@@ -1,6 +1,4 @@
 'use client'
-// import 'swiper/swiper.scss';
-// import 'swiper/components/pagination/pagination.min.css';
 import styles from './ProjectSlider.module.css';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -9,6 +7,7 @@ import { animateTextChange } from '@/utils/animateTextChange';
 import { AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import arrowIcon from '../../public/arrow-icon.svg'
+import blur from '../../public/blur.png'
 
 export default function ProjectSlider({ projectArray, english }) {
   const [projectIndex, setProjectIndex] = useState(0);
@@ -25,9 +24,7 @@ export default function ProjectSlider({ projectArray, english }) {
                 <Image height={20} className={styles.project_mainpage_text_link_img} src={arrowIcon} alt="arrow icon" />
             </p>
           </div>
-          <picture loading="lazy" alt="company" className={styles.project_mainpage_picture}>
-            <img className={styles.project_mainpage_image} src={project.displayImage[0]} alt="wide-project-img" />
-          </picture>
+          <Image priority placeholder='blur' blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==' className={styles.project_mainpage_image} fill src={project.displayImage[0]} alt="wide-project-img" />
         </motion.div>
       );
     }
