@@ -12,7 +12,7 @@ export default function Company({ companyObject, english }) {
                     <p>{companyObject.name}</p>
                 </div>
                 <div className={styles.company_text_inner}>
-                    {animateTextChange('company_desc', english, companyObject.description, companyObject.fin_description)}
+                    {animateTextChange(styles.company_desc, english, companyObject.description, companyObject.fin_description)}
                 </div>
                 <div className={styles.company_button_container}>
                     <a className={styles.company_button} target="_blank" href={companyObject.website}>
