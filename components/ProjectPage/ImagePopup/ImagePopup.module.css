@@ -1,6 +1,6 @@
 .dialog {
     position: fixed;
-    z-index: 10;
+    z-index: 210;
     top: 0;
     left: 0;
     width: 100%;
@@ -105,9 +105,8 @@
 }
 
 .popup_gallery_image {
-    max-height: 100%;
-    max-width: 100%;
     pointer-events: all;
+    object-fit: contain;
 }
 
 .popup_gallery_image:hover {

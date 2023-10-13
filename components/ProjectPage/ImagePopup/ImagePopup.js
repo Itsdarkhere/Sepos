@@ -6,6 +6,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css';
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
+import Image from 'next/image';
 
 export default function ImagePopup({ popupOpen, setPopupOpen, arrayObject, index }) {
   return (
@@ -20,7 +21,7 @@ export default function ImagePopup({ popupOpen, setPopupOpen, arrayObject, index
           <div className={`${styles.popup_button_right} ${styles.popup_button}`}>
             <MdKeyboardArrowRight />
           </div>
-          <div id='image-modal' className={styles.modal}>
+          <div id='image-modal' className={styles.modal} onClick={() => setPopupOpen(false)}>
             <div className={styles.image_loader}></div>
             <Swiper
               modules={[Navigation]}
@@ -36,20 +37,10 @@ export default function ImagePopup({ popupOpen, setPopupOpen, arrayObject, index
             >
               {arrayObject.pictures2.map((src, index) => (
                 <SwiperSlide
-                  className={`${styles.modal_slide} ${styles.swiper_slide} ${styles.swiper_lazy}`}
+                  className={`${styles.modal_slide} swiper-slide swiper-lazy`}
                   key={index}
                 >
-                  <picture
-                    loading="eager"
-                    alt="project-big"
-                    className={`${styles.popup_gallery_image} ${styles.swiper_lazy}`}
-                  >
-                    <img
-                      className={`${styles.popup_gallery_image} ${styles.swiper_lazy}`}
-                      src={src}
-                      alt="project"
-                    />
-                  </picture>
+                  <Image fill className={`${styles.popup_gallery_image} swiper-lazy`} src={src} alt='project' />
                 </SwiperSlide>
               ))}
             </Swiper>
