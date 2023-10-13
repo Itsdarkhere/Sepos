@@ -6,22 +6,6 @@ import { animateTextChange } from '@/utils/animateTextChange';
 import React from 'react';
 
 export default function Contacts({ english }) {
-
-
-    /*const [triggered, setTriggered] = useState(true);
-    const controls = useAnimation();
-    const { ref, inView } = useInView({
-        threshold: 0,
-    })
-
-
-    if (inView && triggered) {
-        setTriggered(false)
-        controls.start({
-            opacity: [0, 1]
-        })
-    }
-    */
     
     return (
         <div className={styles.contacts_container}  id="contact">

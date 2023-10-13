@@ -1,24 +1,8 @@
 import styles from './Person.module.css'
 import { motion } from 'framer-motion';
-//import { useInView } from 'react-intersection-observer';
-import React from 'react';
 import { animateTextChange } from '@/utils/animateTextChange';
 
 export default function Person({ image, name, finTitle, title, phone, email, english }) {
-
-    /*
-    const { ref, inView } = useInView();
-    const [triggered, setTriggered] = useState(false);
-    const controls = useAnimation();
-
-    if (inView && !triggered) {
-        setTriggered(true);
-        controls.start({
-            opacity: [0, 1]
-        })
-    }
-    */
-
     return (
         <motion.div className={styles.person_container}>
             <div className={styles.d}>

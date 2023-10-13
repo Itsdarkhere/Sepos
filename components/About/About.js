@@ -4,7 +4,6 @@ import React from 'react'
 import { animateTextChange } from '@/utils/animateTextChange'
 import { Timeline } from 'react-twitter-widgets'
 
-
 export default function About({ english }) {
     return (
         <div className={styles.about_section} id="news">

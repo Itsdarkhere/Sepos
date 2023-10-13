@@ -1,6 +1,6 @@
 import styles from './BigImage.module.css';
 import { ResizeObserver } from '@juggle/resize-observer';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function BigImage({ arrayObject, setImgLoaded }) {
   const [screenWidth, setWidth] = useState(1500);
@@ -12,7 +12,9 @@ export default function BigImage({ arrayObject, setImgLoaded }) {
     });
   });
 
-//   ro.observe(document.body);
+  useEffect(() => {
+    ro.observe(document.body);
+  }, [])
 
   const getPicture = () => {
     if (screenWidth < 600) {
@@ -33,6 +35,7 @@ export default function BigImage({ arrayObject, setImgLoaded }) {
         </picture>
       );
     }
+
     return (
       <picture
         loading="eager"

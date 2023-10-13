@@ -16,9 +16,10 @@
 }   
 .entry_plus_container {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 5%;
     right: 5%;
+    transform: translate(0, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,12 +47,13 @@
 }
 .description {
     font-size: 20px;
-    line-height: 160%;
+    line-height: 130%;
     width: 80%;
-    color: white;
+    color: rgb(247, 247, 247);
     font-family: 'Raleway', sans-serif;
     font-weight: 600; 
     max-width: 1000px;
+    padding-top: 20px;
 }
 
 @media (min-width: 450px) and (max-width: 600px) {

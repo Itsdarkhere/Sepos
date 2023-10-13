@@ -15,9 +15,11 @@ export default function EntryView({ english, loaded }) {
             const { inlineSize: width } = entry.contentBoxSize[0];
             setWidth(width)
           });
-      });
-    
-    // ro.observe(document.body); // Watch dimension changes on body
+    });
+
+    useEffect(() => {
+        ro.observe(document.body);
+    }, [])
 
     const texts = {
         line_english: `Urban development projects in Helsinki, Turku, Jyväskylä and Hämeenlinna`,
