@@ -152,20 +152,9 @@
         border-radius: 10px;
     }
     .company_text {
-        /* transform: translateY(65%); */
         bottom: 0%;
     }
     .company_text_inner {
         font-size: 16px;
-    }
-    .company_button_container {
-
-    }
-    .company_link {
-
-    }
-    .company_name_container {
-
-        padding-bottom: 5px;
     }
 }
