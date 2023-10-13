@@ -98,7 +98,7 @@ export default function ProjectSlider({ projectArray, english }) {
                 </Listbox.Button>
                 <Listbox.Options className={styles.listbox_options}>
                 {projectArray.map((project, index) => (
-                    <Listbox.Option key={index} value={index}>
+                    <Listbox.Option key={index} value={index} className={styles.listbox_option}>
                     {project.name}
                     </Listbox.Option>
                 ))}

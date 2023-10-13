@@ -33,31 +33,49 @@
 .listbox {
     position: relative;
     display: none;
+    color: black;
 }
+
 .listbox_button {
+    position: relative;
     width: 100%;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 40px;
+    cursor: default;
     background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border: none;
     border-bottom: 2px solid rgb(255, 139, 6);
+    text-align: left;
 }
-.listbox_label {
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: bold;
-}
-  
+
 .listbox_options {
-    width: 100%;
+    /* position: absolute; */
     margin-top: 4px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    max-height: 150px;
-    overflow-y: auto;
+    max-height: 240px;
+    width: 100%;
+    overflow: auto;
+    border-radius: 8px;
+    background-color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+}
+
+.listbox_option {
+    position: relative;
+    cursor: default;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 16px;
+    font-size: 1rem;
 }
 .mainpage_project_link {
     width: 100%;
