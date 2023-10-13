@@ -39,7 +39,7 @@
 }
 .status_p {
     font-size: max(1.5vw, 0.8em);
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 200;
     text-align: center;
 }
@@ -63,13 +63,13 @@
     display: flex;  
     justify-content: center;
     align-items: center;
-    font-family: 'Rockwell Nova', sans-serif;
     font-size: 2.5em;
     color: rgb(255, 255, 255);
     background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
 }
 .text_projectname {
     max-width: 1880px;
+    font-family: var(--kameron), sans-serif;
     width: 100%;
 }
 .pp_bottom_container {
@@ -97,7 +97,7 @@
     font-size: 16px;
     color: white;
     font-weight: bold;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 400;
     -webkit-transition: color .5s;
     -moz-transition: color .5s;

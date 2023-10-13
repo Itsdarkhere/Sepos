@@ -62,7 +62,7 @@
     min-height: 75px;
     outline: none;
     border-bottom: 1px solid rgb(79, 79, 79);
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 600;
 }   
 .popup_link:focus,
@@ -80,7 +80,7 @@
     align-items: center;
     justify-content: flex-start;
     outline: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 500;
 }
 .popup_project_link:focus,

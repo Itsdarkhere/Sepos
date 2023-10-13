@@ -34,9 +34,9 @@
 .navbar_header {
     height: 80%;
     font-size: 22px;
+    font-family: var(--kameron), sans-serif;
     background-color: rgba(0,0,0,0);
     color: rgb(255, 139, 6);
-    font-family: 'Rockwell Nova', sans-serif;   
     text-decoration: none;
     text-align: center;
     display: flex;

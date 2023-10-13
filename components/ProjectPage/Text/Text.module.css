@@ -25,7 +25,7 @@
     text-align: start;
     line-height: 150%;
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 400;
     padding-bottom: 25px;
 }
@@ -53,13 +53,13 @@
     font-size: 16px;
     list-style-type: none;
     white-space: wrap;  
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 400;
 }
 .text_header {
     color: black;
     font-size: 20px;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 200;
     padding-bottom: 20px;
     margin-top: 25px;
@@ -71,7 +71,7 @@
     font-size: 16px;
     list-style-type: none;
     white-space: wrap;  
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 400;
     border-bottom: 1px solid rgb(255, 139, 6);
     padding-bottom: 20px;
@@ -98,7 +98,7 @@
     text-decoration: none;
     border-bottom: 1px solid rgb(255, 139, 6);
     font-size: 16px;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     -webkit-transition: color .5s;
     -moz-transition:    color .5s;
     -ms-transition:     color .5s;

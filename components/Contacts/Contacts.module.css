@@ -35,8 +35,8 @@
     width: 100%;
     font-size: 40px;
     height: 51px;
-    font-family: 'Rockwell Nova', sans-serif;
     color: #1D1D1D;
+    font-family: var(--kameron), sans-serif;
     color: white;
     display: flex;  
     justify-content: flex-start;
@@ -70,7 +70,7 @@
 
 .story {
     color: white;
-    font-family: 'Raleway', serif;
+    font-family: var(--raleway), serif;
     font-weight: 400;
     font-size: 1.2em;
     height: max-content;

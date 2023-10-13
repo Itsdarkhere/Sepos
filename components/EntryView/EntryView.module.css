@@ -37,7 +37,7 @@
     width: 100%;
     height: min-content;    
     color: #FFFFFF;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     line-height: 100%;
     font-weight: 800;
     text-shadow: 4px 4px 10px #000000;
@@ -50,7 +50,7 @@
     line-height: 130%;
     width: 80%;
     color: rgb(247, 247, 247);
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 600; 
     max-width: 1000px;
     padding-top: 20px;

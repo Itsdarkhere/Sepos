@@ -1,9 +1,16 @@
 import Nav from '@/components/Nav/Nav'
 import Footer from '@/components/Footer/Footer'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Kameron, Raleway } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const kameron = Kameron({ 
+  subsets: ['latin'],
+  variable: '--kameron'
+})
+const raleway = Raleway({ 
+  subsets: ['latin'],
+  variable: '--raleway'
+})
 
 export const metadata = {
   title: 'Create Next App',
@@ -13,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${kameron.variable} ${raleway.variable}`}>
         <Nav />
         {children}
         <Footer english={true}/>

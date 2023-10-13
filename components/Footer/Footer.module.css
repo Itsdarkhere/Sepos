@@ -24,7 +24,7 @@
     font-size: 22px;
     background-color: rgba(0,0,0,0);
     color: rgb(255, 139, 6);
-    font-family: 'Rockwell Nova', sans-serif;
+    font-family: var(--kameron), sans-serif;
     text-decoration: none;
     border: none;
     display: flex;
@@ -38,7 +38,7 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 400;
 }
 .footer_policies {
@@ -72,6 +72,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-family: var(--kameron), sans-serif;
     color: rgb(226, 225, 225);
     font-size: 14px;
 }
@@ -112,7 +113,7 @@
     align-items: center;
     color: #E5E5E5;
     border: 1px solid rgb(255, 139, 6);
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--raleway), sans-serif;
     font-weight: 400;
     font-size: 1.3em;
 }
