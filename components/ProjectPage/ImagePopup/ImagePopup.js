@@ -10,16 +10,16 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 export default function ImagePopup({ popupOpen, setPopupOpen, arrayObject, index }) {
   return (
     <div id={styles.modal_container}>
-      <div className={`${styles.popup_button_left} ${styles.popup_button}`}>
-        {popupOpen && <MdKeyboardArrowLeft />}
-      </div>
-      <div className={`${styles.popup_button_right} ${styles.popup_button}`}>
-        {popupOpen && <MdKeyboardArrowRight />}
-      </div>
 
       <Transition show={popupOpen} as={Fragment}>
         <Dialog open={popupOpen} onClose={() => setPopupOpen(false)} className={styles.dialog}>
           <Dialog.Overlay className={styles.dialog_overlay} />
+          <div className={`${styles.popup_button_left} ${styles.popup_button}`}>
+            <MdKeyboardArrowLeft />
+          </div>
+          <div className={`${styles.popup_button_right} ${styles.popup_button}`}>
+            <MdKeyboardArrowRight />
+          </div>
           <div id='image-modal' className={styles.modal}>
             <div className={styles.image_loader}></div>
             <Swiper

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from './Gallery.module.css';
 import React from 'react';
 
