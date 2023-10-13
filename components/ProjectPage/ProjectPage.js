@@ -4,7 +4,7 @@ import BigImage from './BigImage/BigImage'
 import Gallery from './Gallery/Gallery'
 import Link from 'next/link'
 import Text from './Text/Text'
-// import Preloader from '../Preloader/Preloader'
+import Preloader from '../Preloader/Preloader'
 import ImagePopup from './ImagePopup/ImagePopup'
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import Map from './Map/Map'
@@ -13,7 +13,7 @@ import React, { useEffect, useState } from 'react'
 export default function ProjectPage({ arrayObject, projectIndex, english }) {
 
     const [popupOpen, setPopupOpen] = useState(false);
-    const [imgLoaded, setImgLoaded] = useState(false);
+    const [imgLoaded, setImgLoaded] = useState(true);
     const [index, setIndex] = useState(0);
 
     //Scrolls to start on mount
@@ -39,7 +39,7 @@ export default function ProjectPage({ arrayObject, projectIndex, english }) {
 
     return (
         <div className={styles.project_page_container}>
-            {/* <Preloader loaded={imgLoaded}/> */}
+            <Preloader loaded={imgLoaded}/>
             <ImagePopup popupOpen={popupOpen} setPopupOpen={setPopupOpen} arrayObject={arrayObject} index={index} />
             <div className={styles.pp_top_container}>  
                 <BigImage arrayObject={arrayObject} setImgLoaded={setImgLoaded}/>

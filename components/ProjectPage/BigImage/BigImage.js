@@ -21,14 +21,19 @@ export default function BigImage({ arrayObject, setImgLoaded }) {
       return (
         <picture
           loading="eager"
-          onLoad={() => setImgLoaded(true)}
+          onLoad={() => {
+            console.log("Bigimg, load");
+            setImgLoaded(true)
+          }}
           alt="project"
-          className={styles.big_image} // Use Next.js CSS Modules here
+          className={styles.big_image}
         >
-          {/* <source srcSet={process.env.PUBLIC_URL + './pics-highres/' + projectIndex + '.webp'} type="image/webp"></source> */}
           <img
-            onLoad={() => setImgLoaded(true)}
-            className={styles.big_image} // Use Next.js CSS Modules here
+            onLoad={() => {
+                console.log("Bigimg, load");
+                setImgLoaded(true)
+              }}
+            className={styles.big_image}
             src={arrayObject.displayImage[1]}
             alt="wide-project-img"
           ></img>
@@ -39,15 +44,20 @@ export default function BigImage({ arrayObject, setImgLoaded }) {
     return (
       <picture
         loading="eager"
-        onLoad={() => setImgLoaded(true)}
+        onLoad={() => {
+            console.log("Bigimg, load");
+            setImgLoaded(true)
+          }}
         alt="project"
         key={arrayObject}
-        className={styles.big_image} // Use Next.js CSS Modules here
+        className={styles.big_image}
       >
-        {/* <source srcSet={process.env.PUBLIC_URL + './pics-highres/wide-dark-' + projectIndex + '.webp'} type="image/webp"></source> */}
         <img
-          onLoad={() => setImgLoaded(true)}
-          className={styles.big_image} // Use Next.js CSS Modules here
+          onLoad={() => {
+            console.log("Bigimg, load");
+            setImgLoaded(true)
+          }}
+          className={styles.big_image}
           src={arrayObject.displayImage[0]}
           alt="wide-project-img"
         ></img>
