@@ -24,7 +24,7 @@ export default function ProjectSlider({ projectArray, english }) {
                 <Image height={20} className={styles.project_mainpage_text_link_img} src={arrowIcon} alt="arrow icon" />
             </p>
           </div>
-          <Image priority placeholder='blur' blurDataURL='iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==' className={styles.project_mainpage_image} fill src={project.displayImage[0]} alt="wide-project-img" />
+          <Image priority placeholder='blur' blurDataURL='https://my-company-images-prd.imgix.net/public/bg-desktop.png?auto=format&blur=200&px=24' className={styles.project_mainpage_image} fill src={project.displayImage[0]} alt="wide-project-img" />
         </motion.div>
       );
     }
