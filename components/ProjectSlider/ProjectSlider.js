@@ -2,7 +2,7 @@
 import styles from './ProjectSlider.module.css';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { animateTextChange } from '@/utils/animateTextChange';
 import { AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
@@ -24,7 +24,15 @@ export default function ProjectSlider({ projectArray, english }) {
                 <Image height={20} className={styles.project_mainpage_text_link_img} src={arrowIcon} alt="arrow icon" />
             </p>
           </div>
-          <Image priority placeholder='blur' blurDataURL='https://my-company-images-prd.imgix.net/public/bg-desktop.png?auto=format&blur=200&px=24' className={styles.project_mainpage_image} fill src={project.displayImage[0]} alt="wide-project-img" />
+          <Image 
+            fill 
+            priority 
+            placeholder='blur' 
+            src={project.displayImage[0]} 
+            blurDataURL={'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mO8NUGpHgAF5QIN93np7gAAAABJRU5ErkJggg=='}
+            className={styles.project_mainpage_image} 
+            alt="wide-project-img" 
+          />
         </motion.div>
       );
     }
