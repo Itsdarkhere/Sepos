@@ -4,7 +4,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
     scroll-margin-top: 100px;
     background-color: #212121;
     padding-bottom: 150px;
@@ -34,6 +33,7 @@
     position: relative;
     display: none;
     color: black;
+    z-index: 100;
 }
 
 .listbox_button {
@@ -52,20 +52,29 @@
     border-bottom: 2px solid rgb(255, 139, 6);
     text-align: left;
 }
+.listboxButtonIcon {
+    height: 20px;
+    width: 28px;
+    position: absolute;
+    right: 0;
+    padding-right: 8px;
+    pointer-events: none;
+}
 
 .listbox_options {
-    /* position: absolute; */
+    position: absolute;
     margin-top: 4px;
     max-height: 240px;
     width: 100%;
     overflow: auto;
     border-radius: 8px;
-    background-color: white;
+    background-color: #212121;
     padding-top: 4px;
     padding-bottom: 4px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 1px solid rgb(71, 71, 71);
     font-size: 1rem;
+    list-style: none;
+    padding: 0;
 }
 
 .listbox_option {
@@ -75,7 +84,19 @@
     padding-bottom: 8px;
     padding-left: 40px;
     padding-right: 16px;
-    font-size: 1rem;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-family: var(--raleway), sans-serif;
+}
+.selectedIcon {
+    height: 20px;
+    width: 32px;
+    top: 50%;
+    transform: translate(0, -50%);
+    position: absolute;
+    right: 0;
+    padding-right: 12px;
 }
 .mainpage_project_link {
     width: 100%;

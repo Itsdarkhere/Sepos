@@ -1,13 +1,13 @@
 'use client'
 import styles from './ProjectSlider.module.css';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
 import React, { useState } from 'react';
 import { animateTextChange } from '@/utils/animateTextChange';
 import { AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import arrowIcon from '../../public/arrow-icon.svg'
 import { Listbox } from '@headlessui/react';
+import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 
 export default function ProjectSlider({ projectArray, english }) {
   const [projectIndex, setProjectIndex] = useState(0);
@@ -95,11 +95,19 @@ export default function ProjectSlider({ projectArray, english }) {
             <>
                 <Listbox.Button className={styles.listbox_button}> 
                     {projectArray[projectIndex].name}
+                    <ChevronUpDownIcon className={styles.listboxButtonIcon} />
                 </Listbox.Button>
                 <Listbox.Options className={styles.listbox_options}>
                 {projectArray.map((project, index) => (
                     <Listbox.Option key={index} value={index} className={styles.listbox_option}>
-                    {project.name}
+                    {({ selected }) => (
+                        <>
+                        {project.name}
+                        {selected ? (
+                            <CheckIcon className={styles.selectedIcon} aria-hidden="true" />
+                          ) : null}
+                        </>
+                    )}
                     </Listbox.Option>
                 ))}
                 </Listbox.Options>
