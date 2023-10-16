@@ -78,6 +78,7 @@
 .swiper_button_prev {
     color: white !important;
     position: absolute !important;
+    background-color: transparent;
 }
 
 .swiper_button_prev:hover,
@@ -115,13 +116,13 @@
 
 .popup_button {
     position: fixed;
-    top: 48%;
-    height: 4%;
-    width: 2%;
+    top: 50%;
+    height: 100px;
+    width: 50px;
+    transform: translate(0, -50%);
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(5);
     color: white !important;
     z-index: 1000;
     -webkit-transition: color .3s;
@@ -130,14 +131,20 @@
     -o-transition: color .3s;
     transition: color .3;
     cursor: pointer;
+    outline: none;
+    border: none;
+}
+.popup_button_icon {
+    height: 50px;
+    width: 50px;
 }
 
-.popup_button_left {
-    left: 4%;
+.swiper_button_prev {
+    left: 0;
 }
 
-.popup_button_right {
-    right: 4%;
+.swiper_button_next {
+    right: 0;
 }
 
 .popup_button:hover {

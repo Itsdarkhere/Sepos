@@ -18,12 +18,12 @@ export default function Companies({ companyArray, english }) {
                         <p>{false ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}</p>
                     </div>
                 </motion.div>
-                <div className={styles.swiper_button_left}>
+                <button className={styles.swiper_button_left}>
                     <Image height={19} alt="arrow left" src={arrowRight} />
-                </div>
-                <div className={styles.swiper_button_right}>
+                </button>
+                <button className={styles.swiper_button_right}>
                     <Image height={19} alt="arrow right" src={arrowRight} />
-                </div>
+                </button>
                 <Swiper
                     modules={[Navigation]}
                     direction={'horizontal'}
@@ -36,7 +36,7 @@ export default function Companies({ companyArray, english }) {
                     spaceBetween={25}
                     slidesPerGroup={4}
                     slidesPerView={4}
-                    speed={1000}
+                    speed={500}
                     pagination={false}
                     breakpoints={{
                         "1300": {
