@@ -39,7 +39,6 @@ export default function ProjectPage({ arrayObject, projectIndex, english }) {
 
     return (
         <div className={styles.project_page_container}>
-            <Preloader loaded={imgLoaded}/>
             <ImagePopup popupOpen={popupOpen} setPopupOpen={setPopupOpen} arrayObject={arrayObject} index={index} />
             <div className={styles.pp_top_container}>  
                 <BigImage arrayObject={arrayObject} setImgLoaded={setImgLoaded}/>

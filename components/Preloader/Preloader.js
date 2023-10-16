@@ -7,6 +7,7 @@ export default function Preloader({ loaded }) {
     useEffect(() => {
         console.log(loaded);
     }, [loaded])
+    
   return (
     <Dialog as="div" open={!loaded} onClose={() => console.log('close')} className="fixed inset-0 flex items-center justify-center">
       <Dialog.Overlay className={styles.loader_container} />
