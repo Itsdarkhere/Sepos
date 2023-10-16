@@ -22,10 +22,8 @@ export default function ProjectPage({ arrayObject, projectIndex, english }) {
     //opening pop up both opens it and gives the index of the array that contains the info for the popup
     const activatePopup = () => {
         if (popupOpen) {
-            console.log("Close popup");
             setPopupOpen(false);
         } else {
-            console.log("Open popup");
             setPopupOpen(true);
         }
     }

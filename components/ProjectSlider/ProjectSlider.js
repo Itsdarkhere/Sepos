@@ -14,8 +14,6 @@ export default function ProjectSlider({ projectArray, english }) {
   const content = () => {
     const project = projectArray[projectIndex];
   
-    console.log('Rendering content for project:', project.name);  // Debug line
-  
     return (
       <motion.div 
         className={styles.mainpage_project_img_container}
@@ -46,7 +44,6 @@ export default function ProjectSlider({ projectArray, english }) {
   };
 
   const changeProject = (index) => {
-    console.log(index);
     setProjectIndex(index);
   };
 

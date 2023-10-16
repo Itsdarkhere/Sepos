@@ -11,7 +11,6 @@ export default function Nav() {
 
     /* //opening pop up both opens it and gives the index of the array that contains the info for the popup */
     const activatePopup = () => {
-        console.log("Activatepopup")
         if (popupOpen) {
             setPopupOpen(false);
         } else {
