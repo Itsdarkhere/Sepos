@@ -3,9 +3,11 @@ import styles from './Companies.module.css';
 import Company from './Company/Company';
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import arrowRight from '../../public/white-arrow-right.svg'
 import 'swiper/css';
+import 'swiper/css/navigation';
 
 export default function Companies({ companyArray, english }) {
     return (
@@ -23,8 +25,7 @@ export default function Companies({ companyArray, english }) {
                     <Image height={19} alt="arrow right" src={arrowRight} />
                 </div>
                 <Swiper
-                    spaceBetween={10}
-                    slidesPerView={4}
+                    modules={[Navigation]}
                     direction={'horizontal'}
                     loop={true}
                     navigation={{
@@ -32,14 +33,16 @@ export default function Companies({ companyArray, english }) {
                         prevEl: `.${styles.swiper_button_left}`,
                     }}
                     className={styles.company_swiper}
-                    slidesPerGroup="4"
-                    speed="1000ms"
+                    spaceBetween={25}
+                    slidesPerGroup={4}
+                    slidesPerView={4}
+                    speed={1000}
                     pagination={false}
                     breakpoints={{
                         "1300": {
                             "slidesPerView": 4,
                             "slidesPerGroup": 4,
-                            "spaceBetween": 10
+                            "spaceBetween": 25
                         },
                         "900": {
                             "slidesPerView": 3,
