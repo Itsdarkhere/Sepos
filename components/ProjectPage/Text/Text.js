@@ -1,6 +1,6 @@
 import styles from './Text.module.css';
 import React from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 export default function Text({ arrayObject, english }) {
   const getStatus = () => {
@@ -42,8 +42,7 @@ export default function Text({ arrayObject, english }) {
         <div className={styles.text_button_facts_container}>
           {getStatus()}
           <div className={styles.text_facts}>
-            <AnimatePresence mode='wait'>
-              {english
+            {english
                 ? arrayObject.facts.map((fact, index) => {
                     return (
                       <motion.li
@@ -70,7 +69,6 @@ export default function Text({ arrayObject, english }) {
                       </motion.li>
                     );
                   })}
-            </AnimatePresence>
           </div>
           <p className={styles.text_header}>{false ? 'Facts' : 'Faktoja'}</p>
         </div>

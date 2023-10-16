@@ -2,7 +2,6 @@
 import styles from './ProjectSlider.module.css';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import arrowIcon from '../../public/arrow-icon.svg'
 import { Listbox } from '@headlessui/react';
@@ -58,17 +57,13 @@ export default function ProjectSlider({ projectArray, english }) {
           <div className={styles.header}>
             <h3 className={styles.header_inner}>
               {english ? (
-                <AnimatePresence mode="wait">
-                  <motion.p key="red" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                <motion.p key="red" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                     Real Estate <br /> Development
-                  </motion.p>
-                </AnimatePresence>
+                </motion.p>
               ) : (
-                <AnimatePresence mode="wait">
-                  <motion.p key="blue" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                <motion.p key="blue" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                     Kiinteistökehitys
-                  </motion.p>
-                </AnimatePresence>
+                </motion.p>
               )}
             </h3>
           </div>
