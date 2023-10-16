@@ -2,7 +2,6 @@
 import styles from './Contacts.module.css';
 import Person from './Person/Person';
 import { motion } from 'framer-motion';
-import { animateTextChange } from '@/utils/animateTextChange';
 import React from 'react';
 
 export default function Contacts({ english }) {
@@ -11,7 +10,7 @@ export default function Contacts({ english }) {
         <div className={styles.contacts_container}  id="contact">
             <div className={styles.contact_header_container}>
                 <motion.div transition={{duration: 1}} className={styles.contact_header}>
-                    {animateTextChange('', english, 'Contact Us', 'Yhteystiedot')}
+                    <p>{false ? 'Contact Us' : 'Yhteystiedot'}</p>
                 </motion.div>
             </div>
             <div className={styles.persons_grid}>

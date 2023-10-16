@@ -2,7 +2,6 @@
 import styles from './ProjectSlider.module.css';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
-import { animateTextChange } from '@/utils/animateTextChange';
 import { AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 import arrowIcon from '../../public/arrow-icon.svg'
@@ -27,7 +26,7 @@ export default function ProjectSlider({ projectArray, english }) {
       >
         <div className={styles.project_mainpage_text_container}>
           <h4 className={styles.project_mainpage_text_header}>{project.name}</h4>
-          {animateTextChange(styles.project_mainpage_text_description, english, project.description, project.fin_description)}
+          <p className={styles.project_mainpage_text_description}>{false ? project.description : project.fin_description}</p>
           <p className={styles.project_mainpage_text_link}>
             Learn More
             <Image height={20} className={styles.project_mainpage_text_link_img} src={arrowIcon} alt="arrow icon" />
@@ -85,7 +84,7 @@ export default function ProjectSlider({ projectArray, english }) {
           })}
         </div>
         <div className={styles.mobile_header}>
-          <h3 className={styles.header_inner}>{animateTextChange('', english, 'Real Estate Development', 'Kiinteistökehitys')}</h3>
+          <h3 className={styles.header_inner}>{false ? 'Real Estate Development' : 'Kiinteistökehitys'}</h3>
         </div>
         <div className={styles.mainpage_project_link}>
           {content()}

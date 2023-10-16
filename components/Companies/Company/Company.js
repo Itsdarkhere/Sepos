@@ -1,5 +1,4 @@
 import styles from './Company.module.css';
-import { animateTextChange } from '@/utils/animateTextChange';
 
 export default function Company({ companyObject, english }) {
     return (
@@ -12,7 +11,7 @@ export default function Company({ companyObject, english }) {
                     <p>{companyObject.name}</p>
                 </div>
                 <div className={styles.company_text_inner}>
-                    {animateTextChange(styles.company_desc, english, companyObject.description, companyObject.fin_description)}
+                    <p className={styles.company_desc}>{false ? companyObject.description : companyObject.fin_description}</p>
                 </div>
                 <div className={styles.company_button_container}>
                     <a className={styles.company_button} target="_blank" href={companyObject.website}>

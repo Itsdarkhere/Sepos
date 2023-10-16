@@ -1,8 +1,7 @@
 import styles from './Person.module.css'
 import { motion } from 'framer-motion';
-import { animateTextChange } from '@/utils/animateTextChange';
 
-export default function Person({ image, name, finTitle, title, phone, email, english }) {
+export default function Person({ name, finTitle, title, phone, email, english }) {
     return (
         <motion.div className={styles.person_container}>
             <div className={styles.d}>
@@ -10,7 +9,7 @@ export default function Person({ image, name, finTitle, title, phone, email, eng
                 { 
                     finTitle ? 
                     <div className={styles.person_title_container}>
-                        { animateTextChange(styles.person_title, english, title, finTitle)}
+                        <p className={styles.person_title}>{false ? title : finTitle}</p>
                     </div>
                     : null
                 }

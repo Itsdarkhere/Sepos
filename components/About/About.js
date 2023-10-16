@@ -1,7 +1,6 @@
 'use client'
 import styles from './About.module.css'
 import React from 'react'
-import { animateTextChange } from '@/utils/animateTextChange'
 import { Timeline } from 'react-twitter-widgets'
 
 export default function About({ english }) {
@@ -9,7 +8,7 @@ export default function About({ english }) {
         <div className={styles.about_section} id="news">
             <div className={styles.about_header}>
                 <div className={styles.about_header_inner}>
-                    { animateTextChange('', english, 'News', 'Ajankohtaista')}
+                   <p>{false ? 'News' : 'Ajankohtaista'}</p>
                 </div>
             </div>
             <div className={styles.tweets_container}>

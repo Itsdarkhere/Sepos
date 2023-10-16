@@ -1,7 +1,6 @@
 'use client'
 import styles from './EntryView.module.css'
 import { motion, useAnimation } from 'framer-motion'
-import { animateTextChange } from '@/utils/animateTextChange';
 import { ResizeObserver } from '@juggle/resize-observer';
 import { useEffect, useState } from 'react'
 
@@ -87,10 +86,10 @@ export default function EntryView({ english }) {
             <div className={styles.entry_plus_container}>
                 <div className={styles.entry_view_inner_container}>
                     <motion.div className={styles.line} animate={controls2}>
-                        { animateTextChange('', english, texts.line_english, texts.line_finnish)}
+                        <p>{false ? texts.line_english : texts.line_finnish}</p>
                     </motion.div>  
                     <motion.div className={styles.description} animate={controls2}>
-                        { animateTextChange('', english, texts.story_english, texts.story_finnish)}
+                        {false ? texts.story_english : texts.story_finnish}
                     </motion.div>  
                 </div>
             </div>

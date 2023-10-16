@@ -2,7 +2,6 @@
 import styles from './Companies.module.css';
 import Company from './Company/Company';
 import { motion } from 'framer-motion';
-import { animateTextChange } from '@/utils/animateTextChange';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import Image from 'next/image';
 import arrowRight from '../../public/white-arrow-right.svg'
@@ -14,7 +13,7 @@ export default function Companies({ companyArray, english }) {
             <div className={styles.companies_inner_container}>
                 <motion.div className={styles.companies_text} transition={{ duration: 1 }}>
                     <div className={styles.companies_text_header}>
-                        {animateTextChange('', english, 'Affiliated Companies', 'Osakkuusyhtiöt')}
+                        <p>{false ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}</p>
                     </div>
                 </motion.div>
                 <div className={styles.swiper_button_left}>

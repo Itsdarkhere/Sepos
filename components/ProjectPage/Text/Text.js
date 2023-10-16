@@ -1,6 +1,5 @@
 import styles from './Text.module.css';
 import React from 'react';
-import { animateTextChange } from '@/utils/animateTextChange';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Text({ arrayObject, english }) {
@@ -8,8 +7,8 @@ export default function Text({ arrayObject, english }) {
     if (arrayObject.status !== '') {
       return (
         <div className={styles.status_container}>
-          {animateTextChange(styles.text_header, english, 'Project status', 'Projektin tilanne')}
-          {animateTextChange(styles.text_status, english, arrayObject.status, arrayObject.fin_status)}
+          <p className={styles.text_header}>{false ? 'Project status' : 'Projektin tilanne'}</p>
+          <p className={styles.text_status}>{false ? arrayObject.status : arrayObject.fin_status}</p>
         </div>
       );
     }
@@ -38,7 +37,7 @@ export default function Text({ arrayObject, english }) {
       <div className={styles.text_inner_container}>
         <div className={styles.text_desc_container}>
           {getLocation()}
-          {animateTextChange(styles.text_description, english, arrayObject.description, arrayObject.fin_description)}
+          <p className={styles.text_description}>{false ? arrayObject.description : arrayObject.fin_description}</p>
         </div>
         <div className={styles.text_button_facts_container}>
           {getStatus()}
@@ -73,7 +72,7 @@ export default function Text({ arrayObject, english }) {
                   })}
             </AnimatePresence>
           </div>
-          {animateTextChange(styles.text_header, english, 'Facts', 'Faktoja')}
+          <p className={styles.text_header}>{false ? 'Facts' : 'Faktoja'}</p>
         </div>
         {getWebsiteLink()}
       </div>
