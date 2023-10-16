@@ -6,8 +6,9 @@ import Image from 'next/image';
 import arrowIcon from '../../public/arrow-icon.svg'
 import { Listbox } from '@headlessui/react';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link';
 
-export default function ProjectSlider({ projectArray, english }) {
+export default function ProjectSlider({ projectArray, lang }) {
   const [projectIndex, setProjectIndex] = useState(0);
 
   const content = () => {
@@ -23,11 +24,11 @@ export default function ProjectSlider({ projectArray, english }) {
       >
         <div className={styles.project_mainpage_text_container}>
           <h4 className={styles.project_mainpage_text_header}>{project.name}</h4>
-          <p className={styles.project_mainpage_text_description}>{false ? project.description : project.fin_description}</p>
-          <p className={styles.project_mainpage_text_link}>
-            Learn More
+          <p className={styles.project_mainpage_text_description}>{lang === 'en' ? project.english.description : project.finnish.description}</p>
+          <Link href={project.projectPage} className={styles.project_mainpage_text_link}>
+            {lang === 'en' ? 'Learn More' : 'Lue lisää'}
             <Image height={20} className={styles.project_mainpage_text_link_img} src={arrowIcon} alt="arrow icon" />
-          </p>
+          </Link>
         </div>
         <Image 
           fill 
@@ -56,7 +57,7 @@ export default function ProjectSlider({ projectArray, english }) {
         <div className={styles.project_slider_container}>
           <div className={styles.header}>
             <h3 className={styles.header_inner}>
-              {english ? (
+              {lang === 'en' ? (
                 <motion.p key="red" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
                     Real Estate <br /> Development
                 </motion.p>
@@ -76,7 +77,7 @@ export default function ProjectSlider({ projectArray, english }) {
           })}
         </div>
         <div className={styles.mobile_header}>
-          <h3 className={styles.header_inner}>{false ? 'Real Estate Development' : 'Kiinteistökehitys'}</h3>
+          <h3 className={styles.header_inner}>{lang === 'en' ? 'Real Estate Development' : 'Kiinteistökehitys'}</h3>
         </div>
         <div className={styles.mainpage_project_link}>
           {content()}

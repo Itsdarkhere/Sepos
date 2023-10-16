@@ -1,6 +1,6 @@
 import styles from './Company.module.css';
 
-export default function Company({ companyObject, english }) {
+export default function Company({ companyObject, lang }) {
     return (
         <div className={styles.company_container}>
             <picture loading="lazy" alt="company" className={styles.company_bg_image}>
@@ -11,7 +11,7 @@ export default function Company({ companyObject, english }) {
                     <p>{companyObject.name}</p>
                 </div>
                 <div className={styles.company_text_inner}>
-                    <p className={styles.company_desc}>{false ? companyObject.description : companyObject.fin_description}</p>
+                    <p className={styles.company_desc}>{lang === 'en' ? companyObject.description : companyObject.fin_description}</p>
                 </div>
                 <div className={styles.company_button_container}>
                     <a className={styles.company_button} target="_blank" href={companyObject.website}>

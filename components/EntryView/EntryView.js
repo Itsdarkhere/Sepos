@@ -5,7 +5,7 @@ import { ResizeObserver } from '@juggle/resize-observer';
 import { useEffect, useState } from 'react'
 
 
-export default function EntryView({ english }) {
+export default function EntryView({ lang }) {
 
     const [screenWidth, setWidth] = useState(1500)
 
@@ -20,19 +20,21 @@ export default function EntryView({ english }) {
         ro.observe(document.body);
     }, [])
 
-    const texts = {
-        line_english: `Urban development projects in Helsinki, Turku, Jyväskylä and Hämeenlinna`,
-
-        line_finnish: `Kaupunkikehityskohteita Helsingissä, Turussa, Jyväskylässä ja Hämeenlinnassa.`,
-        story_english: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-        and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-         and investing in companies operating in the active lifestyle value chain.`,
-        
-        story_finnish: `Sepos Oy on vuonna 2014 perustettu Timo Everin, Ilkka Kilpimaan 
+    const textsFin = {
+        line: `Kaupunkikehityskohteita Helsingissä, Turussa, Jyväskylässä ja Hämeenlinnassa.`,
+        story: `Sepos Oy on vuonna 2014 perustettu Timo Everin, Ilkka Kilpimaan 
         ja NasdaqOMX listatun Taaleri Oyj:n omistama yritys, jonka toimialana on kiinteistökehitys 
         ja sijoittaminen aktiivisen elämäntavan arvoketjussa toimiviin yrityksiin.`
-
     }
+
+    const textsEng = {
+        line: `Urban development projects in Helsinki, Turku, Jyväskylä and Hämeenlinna`,
+        story: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
+        and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
+         and investing in companies operating in the active lifestyle value chain.`,
+    }
+
+    const texts = lang === 'en' ? textsEng : textsFin;
 
 
     // Resizing does not update the image src with the srcSet, so this solves that problem
@@ -86,10 +88,10 @@ export default function EntryView({ english }) {
             <div className={styles.entry_plus_container}>
                 <div className={styles.entry_view_inner_container}>
                     <motion.div className={styles.line} animate={controls2}>
-                        <p>{false ? texts.line_english : texts.line_finnish}</p>
+                        <p>{texts.line}</p>
                     </motion.div>  
                     <motion.div className={styles.description} animate={controls2}>
-                        {false ? texts.story_english : texts.story_finnish}
+                        {texts.story}
                     </motion.div>  
                 </div>
             </div>

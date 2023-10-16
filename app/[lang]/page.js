@@ -14,17 +14,16 @@ export const metadata = {
 }
 
 export default function Home({ params: { lang } }) {
-  const english = true;
   const projectArray = ProjectArray();
   const companyArray = CompanyArray();
 
   return (
     <main className={styles.main}>
-      <EntryView english={english} />
-      <ProjectSlider projectArray={projectArray} english={english}/>
-      <Companies companyArray={companyArray} english={english}/>
+      <EntryView lang={lang} />
+      <ProjectSlider projectArray={projectArray} lang={lang}/>
+      <Companies companyArray={companyArray} lang={lang}/>
       {/* <About english={english}/> */}
-      <Contacts english={english}/>
+      <Contacts lang={lang}/>
     </main>
   )
 }

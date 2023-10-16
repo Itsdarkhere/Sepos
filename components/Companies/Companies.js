@@ -9,13 +9,13 @@ import arrowRight from '../../public/white-arrow-right.svg'
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-export default function Companies({ companyArray, english }) {
+export default function Companies({ companyArray, lang }) {
     return (
         <div className={styles.companies_outer_container} id="companies">
             <div className={styles.companies_inner_container}>
                 <motion.div className={styles.companies_text} transition={{ duration: 1 }}>
                     <div className={styles.companies_text_header}>
-                        <p>{false ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}</p>
+                        <p>{lang === 'en' ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}</p>
                     </div>
                 </motion.div>
                 <button className={styles.swiper_button_left}>
@@ -63,7 +63,7 @@ export default function Companies({ companyArray, english }) {
                     {companyArray.map((company, index) => {
                         return (
                             <SwiperSlide className={styles.swiper_slide} key={index}>
-                                <Company companyObject={company} english={english} />
+                                <Company companyObject={company} lang={lang} />
                             </SwiperSlide>
                         )
                     })}
