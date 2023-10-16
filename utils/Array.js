@@ -156,7 +156,7 @@ function ProjectArray() {
             "https://ik.imagekit.io/s93qwyistj0/pics-highres/3_FZsPHumSV.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664944050"
             ],
             finishedIn: '2028',
-            website: 'https://www.hameenlinna.fi/suunnittelu',
+            website: 'https://www.hameenlinna.fi/asuminen-ja-ymparisto/kaavoitus/suunnitteluvaraukset/',
             description: `The city center development project of Hämeenlinna is a versatile and attractive travel and free-time services area. 
                 The project area close to the Vanajavesi lake includes a multi-use arena, facilities for exercise and free time use, center living 
                 and high quality architecture.`,
