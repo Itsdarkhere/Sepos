@@ -4,7 +4,6 @@ import BigImage from './BigImage/BigImage'
 import Gallery from './Gallery/Gallery'
 import Link from 'next/link'
 import Text from './Text/Text'
-import Preloader from '../Preloader/Preloader'
 import ImagePopup from './ImagePopup/ImagePopup'
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import Map from './Map/Map'
