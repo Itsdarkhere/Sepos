@@ -18,7 +18,7 @@ export default function Home() {
       <EntryView english={english} loaded={loaded} />
       <ProjectSlider projectArray={projectArray} english={english}/>
       <Companies companyArray={companyArray} english={english}/>
-      <About english={english}/>
+      {/* <About english={english}/> */}
       <Contacts english={english}/>
     </main>
   )
