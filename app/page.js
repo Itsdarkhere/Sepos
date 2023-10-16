@@ -21,9 +21,6 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
-      <Head>
-        <link rel='icon' href='./favicon.ico' sizes='any' />
-      </Head>
       <EntryView english={english} />
       <ProjectSlider projectArray={projectArray} english={english}/>
       <Companies companyArray={companyArray} english={english}/>
