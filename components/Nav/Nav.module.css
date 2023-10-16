@@ -10,15 +10,17 @@
     align-items: center;
     background-color: #212121;
     z-index: 200;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .nav_inner {
-    width: 90vw;
+    width: 100%;
+    max-width: 1880px;
     height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-right: 1%;
 }       
 .navbar_right {
     width: 15%;
