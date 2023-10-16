@@ -117,8 +117,6 @@
 .popup_button {
     position: fixed;
     top: 50%;
-    height: 100px;
-    width: 50px;
     transform: translate(0, -50%);
     display: flex;
     justify-content: center;
@@ -135,8 +133,8 @@
     border: none;
 }
 .popup_button_icon {
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
 }
 
 .swiper_button_prev {
@@ -154,5 +152,11 @@
 @keyframes spin {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .popup_button {
+        display: none;
     }
 }
