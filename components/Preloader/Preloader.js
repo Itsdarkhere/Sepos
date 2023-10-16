@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 
 export default function Preloader({ loaded }) {
     useEffect(() => {
-        console.log(loaded);
+        console.log("PRELOADER LOADED: ", loaded);
     }, [loaded])
     
   return (

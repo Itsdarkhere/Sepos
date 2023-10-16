@@ -16,7 +16,7 @@ export default function Contacts({ english }) {
             </div>
             <div className={styles.persons_grid}>
                 <Person image="Bean.jpeg" name="Jouni Alho" phone={'+358 50 3054104'} 
-                email="Jouni.alho@sepos.fi" english={english}/>
+                email="jouni.alho@sepos.fi" english={english}/>
                 <Person image="Bean.jpeg" name="Juha Pajunen"  phone={'+358 40 7441272'} 
                 email="juha.pajunen@axecon.fi" english={english}/>    
                 <Person image="Bean.jpeg" name="Ilkka Kilpimaa"  phone={'+358 40 7435223'} 

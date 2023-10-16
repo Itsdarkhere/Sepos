@@ -13,7 +13,6 @@ import React, { useEffect, useState } from 'react'
 export default function ProjectPage({ arrayObject, projectIndex, english }) {
 
     const [popupOpen, setPopupOpen] = useState(false);
-    const [imgLoaded, setImgLoaded] = useState(true);
     const [index, setIndex] = useState(0);
 
     //Scrolls to start on mount
@@ -41,7 +40,7 @@ export default function ProjectPage({ arrayObject, projectIndex, english }) {
         <div className={styles.project_page_container}>
             <ImagePopup popupOpen={popupOpen} setPopupOpen={setPopupOpen} arrayObject={arrayObject} index={index} />
             <div className={styles.pp_top_container}>  
-                <BigImage arrayObject={arrayObject} setImgLoaded={setImgLoaded}/>
+                <BigImage arrayObject={arrayObject} />
                 <div className={styles.under_nav}>
                     <div className={styles.under_nav_inner}>
                         <Link className={styles.project_link} href={arrayObject.previousProject[0]}>

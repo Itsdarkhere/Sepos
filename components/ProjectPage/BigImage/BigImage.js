@@ -2,7 +2,7 @@ import styles from './BigImage.module.css';
 import { ResizeObserver } from '@juggle/resize-observer';
 import React, { useEffect, useState } from 'react';
 
-export default function BigImage({ arrayObject, setImgLoaded }) {
+export default function BigImage({ arrayObject }) {
   const [screenWidth, setWidth] = useState(1500);
 
   const ro = new ResizeObserver((entries, observer) => {
@@ -21,18 +21,10 @@ export default function BigImage({ arrayObject, setImgLoaded }) {
       return (
         <picture
           loading="eager"
-          onLoad={() => {
-            console.log("Bigimg, load");
-            setImgLoaded(true)
-          }}
           alt="project"
           className={styles.big_image}
         >
           <img
-            onLoad={() => {
-                console.log("Bigimg, load");
-                setImgLoaded(true)
-              }}
             className={styles.big_image}
             src={arrayObject.displayImage[1]}
             alt="wide-project-img"
@@ -44,19 +36,11 @@ export default function BigImage({ arrayObject, setImgLoaded }) {
     return (
       <picture
         loading="eager"
-        onLoad={() => {
-            console.log("Bigimg, load");
-            setImgLoaded(true)
-          }}
         alt="project"
         key={arrayObject}
         className={styles.big_image}
       >
         <img
-          onLoad={() => {
-            console.log("Bigimg, load");
-            setImgLoaded(true)
-          }}
           className={styles.big_image}
           src={arrayObject.displayImage[0]}
           alt="wide-project-img"
