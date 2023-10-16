@@ -30,9 +30,9 @@ export default function NavPopup({ popupOpen }) {
                     <Link href="/#companies" className={styles.popup_link}>
                         {false ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}
                     </Link>
-                    <Link href="/#news" className={styles.popup_link}>
+                    {/* <Link href="/#news" className={styles.popup_link}>
                         {false ? 'News' : 'Ajankohtaista'}
-                    </Link>
+                    </Link> */}
                     <Link href="/#contact" className={styles.popup_link}>
                         {false ? 'Contact' : 'Yhteystiedot'}
                     </Link>

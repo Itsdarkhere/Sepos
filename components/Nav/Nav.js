@@ -34,14 +34,7 @@ export default function Nav() {
             )
     
     }
-    /* //close nav if open and scroll to top, on header click */
-    // const HeaderAction = () => {
-    //     if (popupOpen) {
-    //         activatePopup()   
-    //     }
-    //     scrollToTop()
-    // }
-
+    
     return (
         <div className={styles.navbar_container} id="navbar">
             <div className={styles.nav_inner}>
