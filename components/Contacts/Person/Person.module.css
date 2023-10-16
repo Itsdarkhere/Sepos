@@ -30,7 +30,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 5px;
 }
 .email_contact {
     font-size: 16px;

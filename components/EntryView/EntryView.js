@@ -6,7 +6,7 @@ import { ResizeObserver } from '@juggle/resize-observer';
 import { useEffect, useState } from 'react'
 
 
-export default function EntryView({ english, loaded }) {
+export default function EntryView({ english }) {
 
     const [screenWidth, setWidth] = useState(1500)
 
@@ -79,7 +79,7 @@ export default function EntryView({ english, loaded }) {
             opacity: [0, 1],
             transition: { duration: 3.5}
         })
-    }, [loaded])
+    }, [])
 
     return (
         <div className={styles.entry_view_outer_container}>
