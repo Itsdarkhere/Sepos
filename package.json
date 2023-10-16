@@ -9,11 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.4.2",
     "@headlessui/react": "^1.7.17",
     "@heroicons/react": "^2.0.18",
     "@juggle/resize-observer": "^3.4.0",
     "framer-motion": "^10.16.4",
     "google-map-react": "^2.2.1",
+    "negotiator": "^0.6.3",
     "next": "13.5.4",
     "plaiceholder": "^3.0.0",
     "react": "^18",

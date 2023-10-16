@@ -5,10 +5,9 @@ import Companies from '@/components/Companies/Companies';
 // import About from '@/components/About/About';
 import Contacts from '@/components/Contacts/Contacts';
 import { ProjectArray, CompanyArray } from '@/utils/Array';
-import Head from 'next/head';
 
 export const metadata = {
-  title: 'SEPOS OY | Kiinteistökehitys | Real Estate Development',
+  title: 'Sepos Oy | Kiinteistökehitys',
   description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
   and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
   and investing in companies operating in the active lifestyle value chain.`,
