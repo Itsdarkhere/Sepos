@@ -1,17 +1,13 @@
 import ProjectPage from "@/components/ProjectPage/ProjectPage";
 import { ProjectArray } from "@/utils/Array";
-import Head from "next/head";
 
 export const metadata = {
     title: 'Hämeensaari | Asuntoja, majoitusta, kaupallisia tiloja, pysäköintiä.',
     description: `Hämeenlinnan keskustakehityshanke on vetovoimainen keskustan laadukkain asuinalue ja palveluijen keskittymä. Kokonaisuus muodostuu asunnoista, majoituksesta, kaupallisista palveluista, pysäköintilaitoksesta ja Vanajaveden rannan kaupunkipuistosta.`,
 }
 
-export default function Turku() {
+export default function Turku({ params: { lang } }) {
     const projectArray = ProjectArray();
-    return (
-        <div>
-            <ProjectPage arrayObject={projectArray[3]} projectIndex={3} />
-        </div>
-    )
+    const languagePack = lang === 'en' ? projectArray[3].english : projectArray[3].finnish
+    return  <ProjectPage arrayObject={projectArray[3]} languagePack={languagePack} />
 }

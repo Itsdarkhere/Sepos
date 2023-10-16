@@ -6,11 +6,8 @@ export const metadata = {
     description: `Turun Ratapiha -hanke monipuolistaa osaltaan Turun kaupunkikeskustan tapahtuma-, kulttuuri- ja elämystarjontaa ja lisää sen vetovoimaisuutta ja yhdistää ratapiha-alueen erottamia kaupunginosia toisiinsa.`,
 }
 
-export default function Turku() {
+export default function Turku({ params: { lang } }) {
     const projectArray = ProjectArray();
-    return (
-        <div>
-            <ProjectPage arrayObject={projectArray[1]} projectIndex={1} />
-        </div>
-    )
+    const languagePack = lang === 'en' ? projectArray[1].english : projectArray[1].finnish
+    return <ProjectPage arrayObject={projectArray[1]} languagePack={languagePack} />
 }

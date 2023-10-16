@@ -1,14 +1,12 @@
 import styles from './Text.module.css';
-import React from 'react';
-import { motion } from 'framer-motion';
 
-export default function Text({ arrayObject, english }) {
+export default function Text({ arrayObject, languagePack }) {
   const getStatus = () => {
-    if (arrayObject.status !== '') {
+    if (languagePack.status !== '') {
       return (
         <div className={styles.status_container}>
-          <p className={styles.text_header}>{false ? 'Project status' : 'Projektin tilanne'}</p>
-          <p className={styles.text_status}>{false ? arrayObject.status : arrayObject.fin_status}</p>
+          <p className={styles.text_header}>{languagePack.finnish ? 'Projektin tilanne' : 'Project status'}</p>
+          <p className={styles.text_status}>{languagePack.status}</p>
         </div>
       );
     }
@@ -27,8 +25,8 @@ export default function Text({ arrayObject, english }) {
   };
 
   const getLocation = () => {
-    if (english && arrayObject.location !== '') {
-      return <p className={`${styles.text_description} ${styles.location}`}>{arrayObject.location}</p>;
+    if (languagePack?.location) {
+      return <p className={`${styles.text_description} ${styles.location}`}>{languagePack.location}</p>;
     }
   };
 
@@ -37,40 +35,26 @@ export default function Text({ arrayObject, english }) {
       <div className={styles.text_inner_container}>
         <div className={styles.text_desc_container}>
           {getLocation()}
-          <p className={styles.text_description}>{false ? arrayObject.description : arrayObject.fin_description}</p>
+          <p className={styles.text_description}>{languagePack.description}</p>
         </div>
         <div className={styles.text_button_facts_container}>
           {getStatus()}
           <div className={styles.text_facts}>
-            {english
-                ? arrayObject.facts.map((fact, index) => {
-                    return (
-                      <motion.li
-                        key={'red' + index}
-                        className={styles.text_fact}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                      >
-                        {fact}
-                      </motion.li>
-                    );
-                  })
-                : arrayObject.fin_facts.map((fact, index) => {
-                    return (
-                      <motion.li
-                        key={'blue' + index}
-                        className={styles.text_fact}
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        exit={{ opacity: 0 }}
-                      >
-                        {fact}
-                      </motion.li>
-                    );
-                  })}
+            {languagePack.facts.map((fact, index) => {
+                return (
+                  <li
+                    key={index}
+                    className={styles.text_fact}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                  >
+                    {fact}
+                  </li>
+                );
+            })}
           </div>
-          <p className={styles.text_header}>{false ? 'Facts' : 'Faktoja'}</p>
+          <p className={styles.text_header}>{languagePack.finnish ? 'Faktoja' : 'Facts'}</p>
         </div>
         {getWebsiteLink()}
       </div>

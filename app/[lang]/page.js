@@ -13,7 +13,7 @@ export const metadata = {
   and investing in companies operating in the active lifestyle value chain.`,
 }
 
-export default function Home() {
+export default function Home({ params: { lang } }) {
   const english = true;
   const projectArray = ProjectArray();
   const companyArray = CompanyArray();

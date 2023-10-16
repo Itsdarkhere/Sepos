@@ -9,7 +9,7 @@ import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import Map from './Map/Map'
 import React, { useEffect, useState } from 'react'
     
-export default function ProjectPage({ arrayObject, projectIndex, english }) {
+export default function ProjectPage({ arrayObject, languagePack }) {
 
     const [popupOpen, setPopupOpen] = useState(false);
     const [index, setIndex] = useState(0);
@@ -59,7 +59,7 @@ export default function ProjectPage({ arrayObject, projectIndex, english }) {
                 </div>
             </div>
             <div className={styles.pp_bottom_container}>
-                <Text arrayObject={arrayObject} english={english}/>
+                <Text languagePack={languagePack} arrayObject={arrayObject} />
                 <Gallery activatePopup={activatePopup} arrayObject={arrayObject} setIndex={setPictureIndex}/>
             </div>
             <Map arrayObject={arrayObject}/>
