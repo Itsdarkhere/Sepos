@@ -48,7 +48,7 @@ function ProjectArray() {
                 also includes comprehensive everyday services for the use of urban dwellers. Garden Helsinki is a real 
                 estate concept of the 2020s that provides a framework for world-class events and offers it’s users 
                 experiences that enliven everyday life through top quality technology and service design.`,
-                status: 'In the design phase, construction is planned to begin in 2022 and be finished in 2025',
+                status: '“Project status: Zoning complete, awaiting the City of Helsinki’s decision on the sale of the property. Planning underway, hotel lease agreement ready, aim to start construction in H1/2025.',
                 facts: ['About. 160.000m2', 'Two arena\'s, multipurpose arena 16 000 + mid arena 5 000 seats', 'Two hotels, office and retail spaces, areas for exercise and parking', 'About. 200 apartments'],
             }
         },
@@ -92,7 +92,7 @@ function ProjectArray() {
             english: {
                 finnish: false,
                 facts: ['About. 120.000m2', 'Multipurpose arena with 10 000 seats', 'A hotel, office and retail spaces, digital experience center, areas dedicated for exercise and parking', 'About. 1 000 apartments'],
-                status: 'In the Design phase, construction is set to begin in 2023 and to be completed in 2026',
+                status: 'Project status: Appeal made on zoning is under consideration, target for completion of the process is Q1/2024. The City of Turku bought the land areas in 9/2023, planning is underway, target to start construction is Q1/2025.',
                 location: 'Location: City of Turku (6.th largest city in Finland), ca. 200km west from Helsinki.',
                 description: `The Turku Ratapiha development unites the areas separated by the railway yard area and 
                 contributes to expanding the city’s cultural-, events- and experience offerings. 
@@ -141,7 +141,7 @@ function ProjectArray() {
             },
             english: {
                 finnish: false,
-                status: 'In the design phase, construction is set to begin in 2022 and be completed in 2024',
+                status: 'Project status: Zoning complete, planning underway, aim to start construction of phase 1 in Q1/2024 and target to start phases 2 and 3 during 2024.',
                 location: 'Location: City of Jyväskylä (7.th largest city in Finland), ca. 250km north from Helsinki) n. 100.000m2',
                 description: `On completion Hippos is not only a meeting place for citizens of Jyväskylä, but also the most 
             significant exercise, professional-sports, health, wellbeing and events center in the Nordic countries. At 
@@ -189,12 +189,10 @@ function ProjectArray() {
             },
             english: {
                 finnish: false,
-                description: `The city center development project of Hämeenlinna is a versatile and attractive travel and free-time services area. 
-                The project area close to the Vanajavesi lake includes a multi-use arena, facilities for exercise and free time use, center living 
-                and high quality architecture.`,
+                description: `The Hämeenlinna downtown development project is an attractive, high-quality residential area in the city center and a concentration of services. The whole consists of apartments, accommodation, commercial services, a parking facility, and an urban park on the shore of Lake Vanajavesi.`,
                 location: 'Location: City of Hämeenlinna (14.th largest city in Finland), ca. 100km north from Helsinki',
-                facts: ['About. 65.000m2', 'Multipurpose arena with 6 000 seats', 'Office-, retail spaces and parking', 'About. 200 apartments'],
-                status: 'In the development stage. Current goals is to get a decision regarding the city’s role in the project within 2021, after which the design phase is set to start.',
+                facts: ['Approximately 35.000m2', 'Apartments, accommodation, commercial spaces, parking.', 'Approximately 450 apartments'],
+                status: 'Project status: Planning reservation and development phase in progress with the city.',
             }
         },
         /*
@@ -331,7 +329,7 @@ function CompanyArray() {
             'image': 'https://ik.imagekit.io/s93qwyistj0/pics-highres/Untitled%20design%20-%202023-10-17T094442.392_e2ZMJ4si3.png?updatedAt=1697525137341',
             'website': 'https://www.nordicpictures.fi/',
             'displayWebsite': 'nordicpictures.fi',
-            'description': 'Cinematic is a production company founded in 2018 by Antti J. Jokinen it`s sole purpose is to create movies, TV-series, digital content, music & consumer products.',
+            'description': 'Nordic Pictures Company Oy is a production company established in 2018, which produces TV series, movies, digital content, music, and consumer products',
             'fin_description': 'Nordic Pictures Company Oy on 2018 perustettu tuotantoyhtiö, joka tuottaa tv-sarjoja, elokuvia, digitaalista sisältöä, musiikkia ja kuluttajatuotteita.'
         },
 
@@ -359,7 +357,7 @@ function CompanyArray() {
             'image': 'https://ik.imagekit.io/s93qwyistj0/pics-highres/company-3_yLMsxDHi5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1662619170103',
             'website': 'https://hoglive.fi',
             'displayWebsite': 'hoglive.fi',
-            'description': 'Creative solutions for touring and events',
+            'description': 'Creative audiovisual solutions for tours and events.',
             'fin_description': 'Luovia audiovisuaalisia ratkaisuja kiertueille ja tapahtumiin.'
         },
     
