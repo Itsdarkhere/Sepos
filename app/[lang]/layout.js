@@ -2,6 +2,7 @@ import './globals.css'
 import Nav from '@/components/Nav/Nav'
 import Footer from '@/components/Footer/Footer'
 import { Kameron, Raleway } from 'next/font/google'
+import ProgressProviders from '@/components/ProgressProvider'
 
 const kameron = Kameron({ 
   subsets: ['latin'],
@@ -28,7 +29,9 @@ export default function RootLayout({ children, params: { lang } }) {
     <html lang="fi">
       <body className={`${kameron.variable} ${raleway.variable}`}>
         <Nav lang={lang} />
-        {children}
+        <ProgressProviders>
+          {children}
+        </ProgressProviders>
         <Footer english={true}/>
       </body>
     </html>
