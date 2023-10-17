@@ -10,7 +10,7 @@ import 'swiper/css';
 
 export default function ImagePopup({ popupOpen, setPopupOpen, arrayObject, index }) {
   return (
-    <div id={styles.modal_container}>
+    <div id='modal_container'>
 
       <Transition show={popupOpen} as={Fragment}>
         <Dialog open={popupOpen} onClose={() => setPopupOpen(false)} className={styles.dialog}>
