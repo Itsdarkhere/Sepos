@@ -12,6 +12,17 @@ const raleway = Raleway({
   variable: '--raleway'
 })
 
+export const metadata = {
+  metadataBase: new URL('https://sepos.fi'),
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en': '/en',
+      'fi': '/fi',
+    },
+  },
+}
+
 export default function RootLayout({ children, params: { lang } }) {
   return (
     <html lang="fi">
