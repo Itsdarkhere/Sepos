@@ -45,16 +45,17 @@ export async function generateMetadata({params}) {
         url: 'https://www.sepos.fi/fi/hameensaari',
         siteName: 'Sepos Oy',
         images: [
-          {
-            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
-            width: 400,
-            height: 250,
-          },
-          {
-            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
-            width: 2000,
-            height: 1333,
-          },
+            {
+              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
+              width: 400,
+              height: 250,
+              alt: 'My custom alt',
+            },
+            {
+              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/3_mPMP68khO.png?updatedAt=1653664961057',
+              width: 2000,
+              height: 1333,
+            },
         ],
         locale: 'fi',
         type: 'website',
@@ -63,7 +64,7 @@ export async function generateMetadata({params}) {
         card: 'summary_large_image',
         title: 'Hämeensaari | Sepos Oy',
         description: `Hämeenlinnan keskustakehityshanke on vetovoimainen keskustan laadukkain asuinalue ja palveluijen keskittymä. Kokonaisuus muodostuu asunnoista, majoituksesta, kaupallisista palveluista, pysäköintilaitoksesta ja Vanajaveden rannan kaupunkipuistosta.`,
-        images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
+        images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/3_mPMP68khO.png?updatedAt=1653664961057'],
       },
     }
 }

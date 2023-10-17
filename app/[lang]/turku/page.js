@@ -40,7 +40,7 @@ export async function generateMetadata({params}) {
           contributes to expanding the city’s cultural-, events- and experience offerings. 
           A vibrant city center needs jobs, city center living and modern facilities to produce cultural, entertainment and 
           exercise services that enrichen people’s life’s.`,
-          images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
+          images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/turku-1_oyf-qKp8vR.jpg?updatedAt=1653664944232'],
         },
       }
     }
@@ -54,16 +54,17 @@ export async function generateMetadata({params}) {
         url: 'https://www.sepos.fi/fi/turku',
         siteName: 'Sepos Oy',
         images: [
-          {
-            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
-            width: 400,
-            height: 250,
-          },
-          {
-            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
-            width: 2000,
-            height: 1333,
-          },
+            {
+              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/1_piPj1mCE5r.webp?updatedAt=1653664951654',
+              width: 600,
+              height: 450,
+              alt: 'My custom alt',
+            },
+            {
+              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/turku-1_oyf-qKp8vR.jpg?updatedAt=1653664944232',
+              width: 2000,
+              height: 1125,
+            },
         ],
         locale: 'fi',
         type: 'website',

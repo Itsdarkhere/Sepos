@@ -15,14 +15,14 @@ export async function generateMetadata({params}) {
           siteName: 'Sepos Oy',
           images: [
             {
-              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
-              width: 400,
-              height: 250,
+              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/4_2_UAksGxlg.png?updatedAt=1653664958435',
+              width: 600,
+              height: 450,
             },
             {
-              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
+              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/inkoo-1_g_FySAwI-.webp?updatedAt=1653664959274',
               width: 2000,
-              height: 1333,
+              height: 1139,
             },
           ],
           locale: 'en',
@@ -33,7 +33,7 @@ export async function generateMetadata({params}) {
           title: 'Inkoonranta | Sepos Oy',
           description: `Inkoonranta development is real quality of life by the ocean. It is tranquality, happiness and community
           spirit. In essence Inkoonranta is a choice without waiver.`,
-          images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
+          images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/inkoo-1_g_FySAwI-.webp?updatedAt=1653664959274'],
         },
       }
     }
@@ -65,7 +65,7 @@ export async function generateMetadata({params}) {
         card: 'summary_large_image',
         title: 'Inkoonranta | Sepos Oy',
         description: `Inkoonranta on elämänlaatua meren äärellä. Se on omaa rauhaa ja naapurihenkeä, sulassa sovussa. Iloinen Inkoonranta on valinta, ilman luopumista.`,
-        images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
+        images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/inkoo-1_g_FySAwI-.webp?updatedAt=1653664959274'],
       },
     }
 }
