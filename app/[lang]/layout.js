@@ -13,7 +13,7 @@ const raleway = Raleway({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://sepos.fi'),
+  metadataBase: new URL('https://www.sepos.fi'),
   alternates: {
     canonical: '/',
     languages: {

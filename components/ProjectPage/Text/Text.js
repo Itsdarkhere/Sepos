@@ -5,7 +5,7 @@ export default function Text({ arrayObject, languagePack }) {
     if (languagePack.status !== '') {
       return (
         <div className={styles.status_container}>
-          <p className={styles.text_header}>{languagePack.finnish ? 'Projektin tilanne' : 'Project status'}</p>
+          <p className={styles.text_header}>{languagePack.finnish ? 'Hanketilanne' : 'Project status'}</p>
           <p className={styles.text_status}>{languagePack.status}</p>
         </div>
       );
