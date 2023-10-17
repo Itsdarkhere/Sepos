@@ -4,16 +4,12 @@ import { ProjectArray } from "@/utils/Array";
 export async function generateMetadata({params}) {
     if (params?.lang === 'en') {
       return {
-        title: 'Sepos Oy | Real Estate Development',
-        description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-        and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-        and investing in companies operating in the active lifestyle value chain.`,
+        title: 'Garden Helsinki | Sepos Oy',
+        description: `Garden Helsinki, a world class event arena embraced by an extensive selection of complimenting amenities, facilities and services is under development in the heart of Helsinki. The arena, utilizing the most advanced technical solutions in the world, will provide elite sports and culture events and attractions for Helsinki residents and visitors on a daily basis all year round.`,
         openGraph: {
-          title: 'Sepos Oy | Real Estate Development',
-          description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-          and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-          and investing in companies operating in the active lifestyle value chain.`,
-          url: 'https://www.sepos.fi',
+          title: 'Garden Helsinki | Sepos Oy',
+          description: `Garden Helsinki, a world class event arena embraced by an extensive selection of complimenting amenities, facilities and services is under development in the heart of Helsinki. The arena, utilizing the most advanced technical solutions in the world, will provide elite sports and culture events and attractions for Helsinki residents and visitors on a daily basis all year round.`,
+          url: 'https://www.sepos.fi/en/garden',
           siteName: 'Sepos Oy',
           images: [
             {
@@ -28,27 +24,25 @@ export async function generateMetadata({params}) {
               height: 1333,
             },
           ],
-          locale: 'fi-FI',
+          locale: 'en',
           type: 'website',
         },
         twitter: {
           card: 'summary_large_image',
-          title: 'Sepos Oy | Real Estate Development',
-          description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-          and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-          and investing in companies operating in the active lifestyle value chain.`,
+          title: 'Garden Helsinki | Sepos Oy',
+          description: `Garden Helsinki, a world class event arena embraced by an extensive selection of complimenting amenities, facilities and services is under development in the heart of Helsinki. The arena, utilizing the most advanced technical solutions in the world, will provide elite sports and culture events and attractions for Helsinki residents and visitors on a daily basis all year round.`,
           images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
         },
       }
     }
   
     return {
-      title: 'Garden Helsinki',
+      title: 'Garden Helsinki | Sepos Oy',
       description: `Garden Helsinki on Töölöön, Nordenskiöldinkadun varrelle suunnitteilla oleva kiinteistökehityshanke. Gardeniin suunnitellaan modernia kansainvälisen tason tapahtuma-areenaa ja sen ympärille kehitettäviä kattavia oheispalveluja sekä jokapäiväisiä palveluita kaupunkilaisten käyttöön.`,
       openGraph: {
-        title: 'Garden Helsinki',
+        title: 'Garden Helsinki | Sepos Oy',
         description: `Garden Helsinki on Töölöön, Nordenskiöldinkadun varrelle suunnitteilla oleva kiinteistökehityshanke. Gardeniin suunnitellaan modernia kansainvälisen tason tapahtuma-areenaa ja sen ympärille kehitettäviä kattavia oheispalveluja sekä jokapäiväisiä palveluita kaupunkilaisten käyttöön.`,
-        url: 'https://www.sepos.fi',
+        url: 'https://www.sepos.fi/fi/garden',
         siteName: 'Sepos Oy',
         images: [
           {
@@ -62,12 +56,12 @@ export async function generateMetadata({params}) {
             height: 1333,
           },
         ],
-        locale: 'fi-FI',
+        locale: 'fi',
         type: 'website',
       },
       twitter: {
         card: 'summary_large_image',
-        title: 'Garden Helsinki',
+        title: 'Garden Helsinki | Sepos Oy',
         description: `Garden Helsinki on Töölöön, Nordenskiöldinkadun varrelle suunnitteilla oleva kiinteistökehityshanke. Gardeniin suunnitellaan modernia kansainvälisen tason tapahtuma-areenaa ja sen ympärille kehitettäviä kattavia oheispalveluja sekä jokapäiväisiä palveluita kaupunkilaisten käyttöön.`,
         images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
       },

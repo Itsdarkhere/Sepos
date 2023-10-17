@@ -4,16 +4,12 @@ import { ProjectArray } from "@/utils/Array";
 export async function generateMetadata({params}) {
     if (params?.lang === 'en') {
       return {
-        title: 'Sepos Oy | Real Estate Development',
-        description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-        and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-        and investing in companies operating in the active lifestyle value chain.`,
+        title: 'Hämeensaari | Sepos Oy',
+        description: `The Hämeenlinna downtown development project is an attractive, high-quality residential area in the city center and a concentration of services. The whole consists of apartments, accommodation, commercial services, a parking facility, and an urban park on the shore of Lake Vanajavesi.`,
         openGraph: {
-          title: 'Sepos Oy | Real Estate Development',
-          description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-          and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-          and investing in companies operating in the active lifestyle value chain.`,
-          url: 'https://www.sepos.fi',
+          title: 'Hämeensaari | Sepos Oy',
+          description: `The Hämeenlinna downtown development project is an attractive, high-quality residential area in the city center and a concentration of services. The whole consists of apartments, accommodation, commercial services, a parking facility, and an urban park on the shore of Lake Vanajavesi.`,
+          url: 'https://www.sepos.fi/en/hameensaari',
           siteName: 'Sepos Oy',
           images: [
             {
@@ -23,32 +19,30 @@ export async function generateMetadata({params}) {
               alt: 'My custom alt',
             },
             {
-              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
+              url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/3_mPMP68khO.png?updatedAt=1653664961057',
               width: 2000,
               height: 1333,
             },
           ],
-          locale: 'fi-FI',
+          locale: 'en',
           type: 'website',
         },
         twitter: {
           card: 'summary_large_image',
-          title: 'Sepos Oy | Real Estate Development',
-          description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-          and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-          and investing in companies operating in the active lifestyle value chain.`,
+          title: 'Hämeensaari | Sepos Oy',
+          description: `The Hämeenlinna downtown development project is an attractive, high-quality residential area in the city center and a concentration of services. The whole consists of apartments, accommodation, commercial services, a parking facility, and an urban park on the shore of Lake Vanajavesi.`,
           images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
         },
       }
     }
   
     return {
-      title: 'Hämeensaari | Asuntoja, majoitusta, kaupallisia tiloja, pysäköintiä.',
+      title: 'Hämeensaari | Sepos Oy',
       description: `Hämeenlinnan keskustakehityshanke on vetovoimainen keskustan laadukkain asuinalue ja palveluijen keskittymä. Kokonaisuus muodostuu asunnoista, majoituksesta, kaupallisista palveluista, pysäköintilaitoksesta ja Vanajaveden rannan kaupunkipuistosta.`,
       openGraph: {
-        title: 'Hämeensaari | Asuntoja, majoitusta, kaupallisia tiloja, pysäköintiä.',
+        title: 'Hämeensaari | Sepos Oy',
         description: `Hämeenlinnan keskustakehityshanke on vetovoimainen keskustan laadukkain asuinalue ja palveluijen keskittymä. Kokonaisuus muodostuu asunnoista, majoituksesta, kaupallisista palveluista, pysäköintilaitoksesta ja Vanajaveden rannan kaupunkipuistosta.`,
-        url: 'https://www.sepos.fi',
+        url: 'https://www.sepos.fi/fi/hameensaari',
         siteName: 'Sepos Oy',
         images: [
           {
@@ -62,12 +56,12 @@ export async function generateMetadata({params}) {
             height: 1333,
           },
         ],
-        locale: 'fi-FI',
+        locale: 'fi',
         type: 'website',
       },
       twitter: {
         card: 'summary_large_image',
-        title: 'Hämeensaari | Asuntoja, majoitusta, kaupallisia tiloja, pysäköintiä.',
+        title: 'Hämeensaari | Sepos Oy',
         description: `Hämeenlinnan keskustakehityshanke on vetovoimainen keskustan laadukkain asuinalue ja palveluijen keskittymä. Kokonaisuus muodostuu asunnoista, majoituksesta, kaupallisista palveluista, pysäköintilaitoksesta ja Vanajaveden rannan kaupunkipuistosta.`,
         images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
       },

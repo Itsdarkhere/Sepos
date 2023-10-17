@@ -4,16 +4,16 @@ import { ProjectArray } from "@/utils/Array";
 export async function generateMetadata({params}) {
     if (params?.lang === 'en') {
       return {
-        title: 'Sepos Oy | Real Estate Development',
-        description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-        and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-        and investing in companies operating in the active lifestyle value chain.`,
+        title: 'Hippos Jyväskylä | Sepos Oy',
+        description: `On completion Hippos is not only a meeting place for citizens of Jyväskylä, but also the most 
+        significant exercise, professional-sports, health, wellbeing and events center in the Nordic countries. At 
+        Hippos sports research and technological product development is combined into a world-class entity.`,
         openGraph: {
-          title: 'Sepos Oy | Real Estate Development',
-          description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-          and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-          and investing in companies operating in the active lifestyle value chain.`,
-          url: 'https://www.sepos.fi',
+          title: 'Hippos Jyväskylä | Sepos Oy',
+          description: `On completion Hippos is not only a meeting place for citizens of Jyväskylä, but also the most 
+          significant exercise, professional-sports, health, wellbeing and events center in the Nordic countries. At 
+          Hippos sports research and technological product development is combined into a world-class entity.`,
+          url: 'https://www.sepos.fi/en/hippos',
           siteName: 'Sepos Oy',
           images: [
             {
@@ -28,46 +28,46 @@ export async function generateMetadata({params}) {
               height: 1333,
             },
           ],
-          locale: 'fi-FI',
+          locale: 'en',
           type: 'website',
         },
         twitter: {
           card: 'summary_large_image',
-          title: 'Sepos Oy | Real Estate Development',
-          description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-          and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-          and investing in companies operating in the active lifestyle value chain.`,
+          title: 'Hippos Jyväskylä | Sepos Oy',
+          description: `On completion Hippos is not only a meeting place for citizens of Jyväskylä, but also the most 
+          significant exercise, professional-sports, health, wellbeing and events center in the Nordic countries. At 
+          Hippos sports research and technological product development is combined into a world-class entity.`,
           images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
         },
       }
     }
   
     return {
-      title: 'Hippos Jyväskylä | Meidän yhteinen liikunnan ja hyvinvoinnin keskus',
+      title: 'Hippos Jyväskylä | Sepos Oy',
       description: `Hippos on valmistuessaan paitsi kaupunkilaisten kohtaamispaikka, myös Pohjoismaiden merkittävin liikunnan, urheilun ja huippu-urheilun, terveyden edistämisen sekä hyvinvoinnin ja tapahtumien keskus. Lisäksi se yhdistää liikunnan tutkimuksen ja teknologisen tuotekehityksen kansainvälisesti merkittäväksi kokonaisuudeksi.`,
       openGraph: {
-        title: 'Hippos Jyväskylä | Meidän yhteinen liikunnan ja hyvinvoinnin keskus',
+        title: 'Hippos Jyväskylä | Sepos Oy',
         description: `Hippos on valmistuessaan paitsi kaupunkilaisten kohtaamispaikka, myös Pohjoismaiden merkittävin liikunnan, urheilun ja huippu-urheilun, terveyden edistämisen sekä hyvinvoinnin ja tapahtumien keskus. Lisäksi se yhdistää liikunnan tutkimuksen ja teknologisen tuotekehityksen kansainvälisesti merkittäväksi kokonaisuudeksi.`,
-        url: 'https://www.sepos.fi',
+        url: 'https://www.sepos.fi/fi/hippos',
         siteName: 'Sepos Oy',
         images: [
           {
-            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
-            width: 400,
-            height: 250,
+            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/2_-ebonMhRi.png?updatedAt=1653664960613',
+            width: 600,
+            height: 450,
           },
           {
-            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
+            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/hippos-3_Ms8zCjZOqP.jpg?updatedAt=1653664958297',
             width: 2000,
-            height: 1333,
+            height: 1382,
           },
         ],
-        locale: 'fi-FI',
+        locale: 'fi',
         type: 'website',
       },
       twitter: {
         card: 'summary_large_image',
-        title: 'Hippos Jyväskylä | Meidän yhteinen liikunnan ja hyvinvoinnin keskus',
+        title: 'Hippos Jyväskylä | Sepos Oy',
         description: `Hippos on valmistuessaan paitsi kaupunkilaisten kohtaamispaikka, myös Pohjoismaiden merkittävin liikunnan, urheilun ja huippu-urheilun, terveyden edistämisen sekä hyvinvoinnin ja tapahtumien keskus. Lisäksi se yhdistää liikunnan tutkimuksen ja teknologisen tuotekehityksen kansainvälisesti merkittäväksi kokonaisuudeksi.`,
         images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
       },

@@ -33,7 +33,7 @@ export async function generateMetadata({params}) {
             height: 1333,
           },
         ],
-        locale: 'fi-FI',
+        locale: 'en',
         type: 'website',
       },
       twitter: {
@@ -71,7 +71,7 @@ export async function generateMetadata({params}) {
           height: 1333,
         },
       ],
-      locale: 'fi-FI',
+      locale: 'fi',
       type: 'website',
     },
     twitter: {

@@ -4,23 +4,20 @@ import { ProjectArray } from "@/utils/Array";
 export async function generateMetadata({params}) {
     if (params?.lang === 'en') {
       return {
-        title: 'Sepos Oy | Real Estate Development',
-        description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-        and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-        and investing in companies operating in the active lifestyle value chain.`,
+        title: 'Inkoonranta | Sepos Oy',
+        description: `Inkoonranta development is real quality of life by the ocean. It is tranquality, happiness and community
+        spirit. In essence Inkoonranta is a choice without waiver.`,
         openGraph: {
-          title: 'Sepos Oy | Real Estate Development',
-          description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-          and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-          and investing in companies operating in the active lifestyle value chain.`,
-          url: 'https://www.sepos.fi',
+          title: 'Inkoonranta | Sepos Oy',
+          description: `Inkoonranta development is real quality of life by the ocean. It is tranquality, happiness and community
+          spirit. In essence Inkoonranta is a choice without waiver.`,
+          url: 'https://www.sepos.fi/en/inkoonranta',
           siteName: 'Sepos Oy',
           images: [
             {
               url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
               width: 400,
               height: 250,
-              alt: 'My custom alt',
             },
             {
               url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
@@ -28,46 +25,45 @@ export async function generateMetadata({params}) {
               height: 1333,
             },
           ],
-          locale: 'fi-FI',
+          locale: 'en',
           type: 'website',
         },
         twitter: {
           card: 'summary_large_image',
-          title: 'Sepos Oy | Real Estate Development',
-          description: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
-          and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
-          and investing in companies operating in the active lifestyle value chain.`,
+          title: 'Inkoonranta | Sepos Oy',
+          description: `Inkoonranta development is real quality of life by the ocean. It is tranquality, happiness and community
+          spirit. In essence Inkoonranta is a choice without waiver.`,
           images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
         },
       }
     }
   
     return {
-      title: 'Inkoonranta | Elämänlaatua meren äärellä.',
+      title: 'Inkoonranta | Sepos Oy',
       description: `Inkoonranta on elämänlaatua meren äärellä. Se on omaa rauhaa ja naapurihenkeä, sulassa sovussa. Iloinen Inkoonranta on valinta, ilman luopumista.`,
       openGraph: {
-        title: 'Inkoonranta | Elämänlaatua meren äärellä.',
+        title: 'Inkoonranta | Sepos Oy',
         description: `Inkoonranta on elämänlaatua meren äärellä. Se on omaa rauhaa ja naapurihenkeä, sulassa sovussa. Iloinen Inkoonranta on valinta, ilman luopumista.`,
         url: 'https://www.sepos.fi/fi/inkoonranta',
         siteName: 'Sepos Oy',
         images: [
           {
-            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
-            width: 400,
-            height: 250,
+            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/4_2_UAksGxlg.png?updatedAt=1653664958435',
+            width: 600,
+            height: 450,
           },
           {
-            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374',
+            url: 'https://ik.imagekit.io/s93qwyistj0/pics-highres/inkoo-1_g_FySAwI-.webp?updatedAt=1653664959274',
             width: 2000,
-            height: 1333,
+            height: 1139,
           },
         ],
-        locale: 'fi-FI',
+        locale: 'fi',
         type: 'website',
       },
       twitter: {
         card: 'summary_large_image',
-        title: 'Inkoonranta | Elämänlaatua meren äärellä.',
+        title: 'Inkoonranta | Sepos Oy',
         description: `Inkoonranta on elämänlaatua meren äärellä. Se on omaa rauhaa ja naapurihenkeä, sulassa sovussa. Iloinen Inkoonranta on valinta, ilman luopumista.`,
         images: ['https://ik.imagekit.io/s93qwyistj0/pics-highres/garden-4_QcB330_WN.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664961374'],
       },
