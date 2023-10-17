@@ -114,7 +114,8 @@
     cursor: pointer;
 }
 
-.popup_button {
+.swiper_button_prev,
+.swiper_button_next {
     position: fixed;
     top: 50%;
     transform: translate(0, -50%);
