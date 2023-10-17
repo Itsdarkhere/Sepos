@@ -5,7 +5,7 @@ import { ProjectArray } from '@/utils/Array';
 import styles from './NavPopup.module.css';
 import { Fragment } from 'react';
 
-export default function NavPopup({ popupOpen }) {
+export default function NavPopup({ popupOpen, lang }) {
     const projectArray = ProjectArray()
 
     return (    
@@ -18,7 +18,7 @@ export default function NavPopup({ popupOpen }) {
                 animate={{ opacity: 1 }}
                 >
                     <Link href="/#projects" className={styles.popup_link}>
-                        {false ? 'Real Estate Developments' : 'Kiinteistökehitys'}
+                        {lang === 'en' ? 'Real Estate Developments' : 'Kiinteistökehitys'}
                     </Link>
                     <div className={styles.individual_project_link_container}>
                         {projectArray.map((project, index) => (
@@ -28,13 +28,13 @@ export default function NavPopup({ popupOpen }) {
                         ))}
                     </div>
                     <Link href="/#companies" className={styles.popup_link}>
-                        {false ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}
+                        {lang === 'en' ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}
                     </Link>
                     {/* <Link href="/#news" className={styles.popup_link}>
                         {false ? 'News' : 'Ajankohtaista'}
                     </Link> */}
                     <Link href="/#contact" className={styles.popup_link}>
-                        {false ? 'Contact' : 'Yhteystiedot'}
+                        {lang === 'en' ? 'Contact' : 'Yhteystiedot'}
                     </Link>
                 </motion.div>
             </Dialog>

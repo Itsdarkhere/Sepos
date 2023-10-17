@@ -6,7 +6,7 @@ import { NavIcon } from './NavIcon/NavIcon'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-export default function Nav() {
+export default function Nav({ lang }) {
     const [popupOpen, setPopupOpen] = useState(false);
 
     /* //opening pop up both opens it and gives the index of the array that contains the info for the popup */
@@ -29,12 +29,12 @@ export default function Nav() {
             <motion.button className={styles.hamburger_holder} aria-label="Open Navigation"
             initial={false} onClick={activatePopup} animate={popupOpen ? "open" : "closed"} >  
                 <NavIcon />
-                <NavPopup popupOpen={popupOpen} />
+                <NavPopup popupOpen={popupOpen} lang={lang} />
             </motion.button>
             )
     
     }
-    
+
     return (
         <div className={styles.navbar_container} id="navbar">
             <div className={styles.nav_inner}>

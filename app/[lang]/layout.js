@@ -12,11 +12,11 @@ const raleway = Raleway({
   variable: '--raleway'
 })
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, params: { lang } }) {
   return (
     <html lang="fi">
       <body className={`${kameron.variable} ${raleway.variable}`}>
-        <Nav />
+        <Nav lang={lang} />
         {children}
         <Footer english={true}/>
       </body>
