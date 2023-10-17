@@ -327,8 +327,8 @@ function CompanyArray() {
     const companies = [
 
         {
-            'name': 'Nordic Pictures Company',
-            'image': 'https://ik.imagekit.io/s93qwyistj0/pics-highres/company-2_mo_lvvDo9.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664945134',
+            'name': 'NPC',
+            'image': 'https://ik.imagekit.io/s93qwyistj0/pics-highres/Untitled%20design%20-%202023-10-17T094442.392_e2ZMJ4si3.png?updatedAt=1697525137341',
             'website': 'https://www.nordicpictures.fi/',
             'displayWebsite': 'nordicpictures.fi',
             'description': 'Cinematic is a production company founded in 2018 by Antti J. Jokinen it`s sole purpose is to create movies, TV-series, digital content, music & consumer products.',
