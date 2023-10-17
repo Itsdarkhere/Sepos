@@ -1,3 +1,4 @@
+'use client'
 import styles from './Map.module.css';
 import { AiFillHome } from 'react-icons/ai';
 import GoogleMapReact from 'google-map-react';
@@ -19,7 +20,7 @@ export default function Map({ arrayObject }) {
                 defaultCenter={center}
                 defaultZoom={11}
                 >
-                {/* <AiFillHome lat={center.lat} lng={center.lng} className={styles.marker} /> */}
+                    <IconWrapper lat={center.lat} lng={center.lng} />
                 </GoogleMapReact>
             </div>
         </div>
@@ -27,4 +28,12 @@ export default function Map({ arrayObject }) {
   } else {
     return '';
   }
+}
+
+function IconWrapper() {
+    return (
+        <div>
+            <AiFillHome className={styles.marker} />
+        </div>
+    )
 }
