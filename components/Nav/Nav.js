@@ -27,7 +27,7 @@ export default function Nav({ lang }) {
         </label>
         <div className="drawer-side">
           <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-          <ul className="menu px-4 py-8 w-80 min-h-full bg-zinc-900 text-base-content">
+          <ul className="menu px-6 py-8 w-80 min-h-full bg-neutral-900 text-base-content">
             <li>
               <Link href="/#projects" className="text-gray-200 font-semibold text-lg rounded-none border-b border-yellow-600 hover:bg-yellow-600 hover:text-zinc-800 transition duration-300">
                 {lang === 'en' ? 'Real Estate Developments' : 'Kiinteistökehitys'}
