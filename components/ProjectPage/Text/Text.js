@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './Text.module.css';
 
 export default function Text({ arrayObject, languagePack }) {
@@ -15,11 +16,9 @@ export default function Text({ arrayObject, languagePack }) {
   const getWebsiteLink = () => {
     if (arrayObject.website !== '') {
       return (
-        <div className={styles.website_link_container}>
-          <a className={styles.website_link} target="_blank" href={arrayObject.website}>
-            {arrayObject.websiteLinkName}
-          </a>
-        </div>
+        <Link className="text-gray-800 mt-6 border-b-2 border-b-primary transition duration-300 ease-in-out hover:text-gray-700 hover:border-b-yellow-400" target="_blank" href={arrayObject.website}>
+          {arrayObject.websiteLinkName}
+        </Link>
       );
     }
   };
