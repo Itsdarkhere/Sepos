@@ -57,6 +57,7 @@
     width: 28px;
     position: absolute;
     right: 0;
+    top: 13px;
     padding-right: 8px;
     pointer-events: none;
 }
@@ -74,7 +75,7 @@
     border: 1px solid rgb(71, 71, 71);
     font-size: 1rem;
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
 }
 
 .listbox_option {
