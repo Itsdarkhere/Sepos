@@ -26,7 +26,7 @@ export const metadata = {
 
 export default function RootLayout({ children, params: { lang } }) {
   return (
-    <html lang="fi">
+    <html lang="fi" data-theme="light">
       <body className={`${kameron.variable} ${raleway.variable}`}>
         <Nav lang={lang} />
         <ProgressProviders>

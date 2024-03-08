@@ -33,7 +33,7 @@ export default function Map({ arrayObject }) {
 function IconWrapper() {
     return (
         <div>
-            <AiFillHome className={styles.marker} />
+          <AiFillHome className={styles.marker} />
         </div>
     )
 }
