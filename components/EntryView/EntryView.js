@@ -74,7 +74,7 @@ export default function EntryView({ lang }) {
     useEffect(() => {
         controls.start({
             opacity: [0, 1],
-            transition: { duration: 2}
+            transition: { duration: 1.5}
         })
         controls2.start({
             opacity: [0, 1],
@@ -87,7 +87,7 @@ export default function EntryView({ lang }) {
             {getImage()}
             <div className={styles.entry_plus_container}>
                 <div className={styles.entry_view_inner_container}>
-                    <motion.div className={styles.line} animate={controls2}>
+                    <motion.div className={styles.line} animate={controls}>
                         <p>{texts.line}</p>
                     </motion.div>  
                     <motion.div className={styles.description} animate={controls2}>
