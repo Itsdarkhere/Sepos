@@ -14,10 +14,12 @@ function getLocale(request) {
 export function middleware(request) {
     const { pathname } = request.nextUrl;
     const pathnameHasLocale = locales.some(
-        (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
+      (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`
     )
+    const sitemap = pathname.includes('sitemap.xml');
 
-    if (pathnameHasLocale) return
+    if (pathnameHasLocale) return;
+    if (sitemap) return;
 
     const locale = getLocale(request)
     request.nextUrl.pathname = `/${locale}${pathname}`
