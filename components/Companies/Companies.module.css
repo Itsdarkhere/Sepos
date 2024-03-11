@@ -74,7 +74,7 @@
     transform: scale(0.95);
 }
 .swiper_button_left {
-    right: calc(5% + 58px) !important;
+    right: calc(0px + 58px) !important;
     left: unset;
 }
 .swiper_button_right:hover,
@@ -86,7 +86,7 @@
     transform: rotate(180deg);
 }
 .swiper_button_right {
-    right: 5% !important;
+    right: 0 !important;
 }
 .companies_text_header p {
     margin-block-start: 0;
@@ -103,7 +103,7 @@
     background-color: rgb(255, 139, 6);
     max-width: 60px;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 499px) {
     .swiper_button_left,
     .swiper_button_right {
         top: unset;
@@ -120,5 +120,10 @@
     .companies_text_header {
         font-size: 30px;
         min-height: 51px;
+    }
+}
+@media screen and (min-width: 500px) {
+    .companies_inner_container {
+        position: relative;
     }
 }

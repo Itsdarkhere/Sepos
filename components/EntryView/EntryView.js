@@ -81,7 +81,7 @@ export default function EntryView({ lang }) {
     }, [])
 
     return (
-        <div className="w-full px-5 sm:px-20 mt-16 py-40 sm:py-60 md:py-80 relative flex flex-col justify-center items-center text-center">
+        <div className="w-full px-5 sm:px-20 mt-16 py-40 sm:py-60 relative flex flex-col justify-center items-center text-center">
             {getImage()}
             <div className={styles.entry_view_inner_container}>
                 <motion.div className={styles.line} animate={controls}>
