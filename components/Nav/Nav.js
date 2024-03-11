@@ -16,7 +16,7 @@ export default function Nav({ lang }) {
     return (
       <div className="drawer flex justify-end">
         <input id="my-drawer" type="checkbox" className="drawer-toggle" onChange={toggleDrawer} />
-        <label htmlFor="my-drawer" className="btn btn-ghost">
+        <label htmlFor="my-drawer" className="btn btn-ghost text-white">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className={`inline-block w-6 h-6 stroke-current transition-transform duration-300 ${isOpen ? 'transform rotate-90' : ''}`}>
             {isOpen ? (
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>

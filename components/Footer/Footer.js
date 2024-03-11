@@ -26,7 +26,6 @@ export default function Footer({ english }) {
                     </button>
                 }
             </div>
-            <div className="white-space"></div>
         </footer>
     )
 }
