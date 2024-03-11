@@ -78,7 +78,7 @@ export default function EntryView({ lang }) {
         })
         controls2.start({
             opacity: [0, 1],
-            transition: { duration: 3.5}
+            transition: { duration: 2.5}
         })
     }, [])
 
