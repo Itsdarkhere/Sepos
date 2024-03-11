@@ -74,11 +74,6 @@
     pointer-events: none;
 }
 
-.swiper_button_prev:hover,
-.swiper_button_next:hover {
-    color: rgb(255, 139, 6) !important;
-}
-
 .close_button:hover {
     color: rgb(255, 139, 6) !important;
 }
@@ -112,20 +107,7 @@
     position: fixed;
     top: 50%;
     transform: translate(0, -50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white !important;
-    background-color: transparent;
     z-index: 1000;
-    -webkit-transition: color .3s;
-    -moz-transition: color .3s;
-    -ms-transition: color .3s;
-    -o-transition: color .3s;
-    transition: color .3;
-    cursor: pointer;
-    outline: none;
-    border: none;
 }
 .popup_button_icon {
     height: 75px;

@@ -15,10 +15,10 @@ export default function ImagePopup({ popupOpen, setPopupOpen, arrayObject, index
       <Transition show={popupOpen} as={Fragment}>
         <Dialog open={popupOpen} onClose={() => setPopupOpen(false)} className={styles.dialog}>
           <Dialog.Overlay className={styles.dialog_overlay} />
-          <button className={`${styles.swiper_button_prev}`} id="swiper-button-prev">
+          <button className={`${styles.swiper_button_prev} h-auto btn btn-ghost`} id="swiper-button-prev">
             <MdKeyboardArrowLeft className={styles.popup_button_icon} />
           </button>
-          <button className={`${styles.swiper_button_next}`} id="swiper-button-next">
+          <button className={`${styles.swiper_button_next} h-auto btn btn-ghost`} id="swiper-button-next">
             <MdKeyboardArrowRight className={styles.popup_button_icon} />
           </button>
           <div id='image-modal' className={styles.modal} onClick={() => setPopupOpen(false)}>
