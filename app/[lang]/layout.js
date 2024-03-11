@@ -2,6 +2,7 @@ import './globals.css'
 import Nav from '@/components/Nav/Nav'
 import Footer from '@/components/Footer/Footer'
 import { Kameron, Raleway } from 'next/font/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import ProgressProviders from '@/components/ProgressProvider'
 
 const kameron = Kameron({ 
@@ -32,7 +33,8 @@ export default function RootLayout({ children, params: { lang } }) {
         <ProgressProviders>
           {children}
         </ProgressProviders>
-        <Footer english={true}/>
+        <Footer english={true} />
+        <SpeedInsights/>
       </body>
     </html>
   )
