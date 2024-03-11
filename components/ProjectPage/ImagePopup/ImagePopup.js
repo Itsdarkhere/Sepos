@@ -1,3 +1,4 @@
+'use client'
 import styles from './ImagePopup.module.css';
 import React, { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
