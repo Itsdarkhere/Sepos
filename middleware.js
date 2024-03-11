@@ -21,8 +21,6 @@ export function middleware(request) {
 
     const locale = getLocale(request)
     request.nextUrl.pathname = `/${locale}${pathname}`
-    // Req is /products
-    // The new URL is now /en-US/products
     return Response.redirect(request.nextUrl);
 }
 

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from 'nextjs13-progress'
 
 export default function Company({ companyObject, lang }) {
     return (

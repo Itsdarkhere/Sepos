@@ -18,7 +18,7 @@
     "google-map-react": "^2.2.1",
     "negotiator": "^0.6.3",
     "next": "13.5.4",
-    "next-nprogress-bar": "^2.1.2",
+    "nextjs13-progress": "^1.2.5",
     "plaiceholder": "^3.0.0",
     "react": "^18",
     "react-dom": "^18",

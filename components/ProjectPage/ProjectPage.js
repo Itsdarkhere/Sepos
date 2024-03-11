@@ -2,7 +2,7 @@
 import styles from './ProjectPage.module.css'
 import BigImage from './BigImage/BigImage'
 import Gallery from './Gallery/Gallery'
-import Link from 'next/link'
+import { Link } from 'nextjs13-progress'
 import Text from './Text/Text'
 import ImagePopup from './ImagePopup/ImagePopup'
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
