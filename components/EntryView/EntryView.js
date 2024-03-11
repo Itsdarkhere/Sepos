@@ -44,24 +44,22 @@ export default function EntryView({ lang }) {
         if (screenWidth < 799) {
             return (
                 <picture 
-                // onLoad={() => showMainPage(true)}
                 id="entry-image"
                 alt="wide-project-img"
-                className={styles.entry_image}>
+                className="absolute inset-0 z-0">
                     {/* <source srcSet={mobile} type="image/webp"></source> */}
-                    <img className={styles.entry_image} src={"https://ik.imagekit.io/s93qwyistj0/pics-highres/mobile_NEZxhQrnTd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653668422915"} 
+                    <img className={" w-full h-full object-cover"} src={"https://ik.imagekit.io/s93qwyistj0/pics-highres/mobile_NEZxhQrnTd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653668422915"} 
                     alt="wide-project-img"></img>
                 </picture>
             )
         } 
         return (
             <picture 
-            // onLoad={() => showMainPage(true)}
             id="entry-image"
             alt="wide-project-img"
-            className={styles.entry_image}>
+            className="absolute inset-0 z-0">
                 {/* <source srcSet={desktop} type="image/webp"></source> */}
-                <img className={styles.entry_image} src={"https://ik.imagekit.io/s93qwyistj0/pics-highres/desktop_-um8M8xUPd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653668423308"} 
+                <img className={" w-full h-full object-cover"} src={"https://ik.imagekit.io/s93qwyistj0/pics-highres/desktop_-um8M8xUPd.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653668423308"} 
                 alt="wide-project-img"></img>
             </picture>
         )
@@ -83,17 +81,15 @@ export default function EntryView({ lang }) {
     }, [])
 
     return (
-        <div className={styles.entry_view_outer_container}>
+        <div className="w-full px-5 sm:px-20 mt-16 py-40 sm:py-60 md:py-80 relative flex flex-col justify-center items-center text-center">
             {getImage()}
-            <div className={styles.entry_plus_container}>
-                <div className={styles.entry_view_inner_container}>
-                    <motion.div className={styles.line} animate={controls}>
-                        <p>{texts.line}</p>
-                    </motion.div>  
-                    <motion.div className={styles.description} animate={controls2}>
-                        {texts.story}
-                    </motion.div>  
-                </div>
+            <div className={styles.entry_view_inner_container}>
+                <motion.div className={styles.line} animate={controls}>
+                    <h1>{texts.line}</h1>
+                </motion.div>  
+                <motion.div className={styles.description} animate={controls2}>
+                    <h4>{texts.story}</h4>
+                </motion.div>  
             </div>
         </div>
     )   

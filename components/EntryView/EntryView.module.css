@@ -31,6 +31,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start; 
+    z-index: 10;
+    text-align: start;
 }
 .line {
     font-size: 4vw;
