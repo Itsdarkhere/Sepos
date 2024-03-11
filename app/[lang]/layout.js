@@ -32,7 +32,6 @@ export default function RootLayout({ children, params: { lang } }) {
         <Nav lang={lang} />
         {children}
         <Footer english={true} />
-        <div className=' h-3 w-full bg-red-500'></div>
         <SpeedInsights/>
         <Next13NProgress color='#ff8b06' height={2} options={{ showSpinner: false }} />
       </body>
