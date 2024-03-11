@@ -3,7 +3,7 @@ import Nav from '@/components/Nav/Nav'
 import Footer from '@/components/Footer/Footer'
 import { Kameron, Raleway } from 'next/font/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import ProgressProviders from '@/components/ProgressProvider'
+// import ProgressProviders from '@/components/ProgressProvider'
 
 const kameron = Kameron({ 
   subsets: ['latin'],
@@ -30,9 +30,9 @@ export default function RootLayout({ children, params: { lang } }) {
     <html lang="fi" data-theme="light">
       <body className={`${kameron.variable} ${raleway.variable}`}>
         <Nav lang={lang} />
-        <ProgressProviders>
+        {/* <ProgressProviders> */}
           {children}
-        </ProgressProviders>
+        {/* </ProgressProviders> */}
         <Footer english={true} />
         <SpeedInsights/>
       </body>
