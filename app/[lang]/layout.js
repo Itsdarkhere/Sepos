@@ -33,7 +33,7 @@ export default function RootLayout({ children, params: { lang } }) {
         {children}
         <Footer english={true} />
         <SpeedInsights/>
-        <Next13NProgress color='#ff8b06' height={2} />
+        <Next13NProgress color='#ff8b06' height={2} options={{ showSpinner: false }} />
       </body>
     </html>
   )
