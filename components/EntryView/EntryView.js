@@ -72,11 +72,11 @@ export default function EntryView({ lang }) {
     useEffect(() => {
         controls.start({
             opacity: [0, 1],
-            transition: { duration: 1.5}
+            transition: { duration: 1}
         })
         controls2.start({
             opacity: [0, 1],
-            transition: { duration: 2.5}
+            transition: { duration: 1, delay: 0.5}
         })
     }, [])
 
