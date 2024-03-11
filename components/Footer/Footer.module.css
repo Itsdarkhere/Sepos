@@ -31,7 +31,7 @@
     justify-content: flex-start;
     align-items: center;
     scroll-behavior: smooth;
-    padding: 0 !important;
+    padding: 0 !important;;
 }
 .footer_tags_container {
     display: flex;
