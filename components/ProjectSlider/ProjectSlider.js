@@ -6,7 +6,7 @@ import Image from 'next/image';
 import arrowIcon from '../../public/arrow-icon.svg'
 import { Listbox } from '@headlessui/react';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
-import { Link } from 'nextjs13-progress'
+import Link from "next/link";
 
 export default function ProjectSlider({ projectArray, lang }) {
   const [projectIndex, setProjectIndex] = useState(0);

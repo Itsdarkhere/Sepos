@@ -1,6 +1,6 @@
 'use client'
 import styles from './Nav.module.css'
-import { Link } from 'nextjs13-progress'
+import Link from "next/link";
 import { ProjectArray } from '@/utils/Array'
 import { useState } from 'react'
 

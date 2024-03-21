@@ -1,4 +1,4 @@
-import { Link } from 'nextjs13-progress'
+import Link from "next/link";
 import styles from './Text.module.css';
 
 export default function Text({ arrayObject, languagePack }) {
