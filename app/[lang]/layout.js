@@ -3,7 +3,7 @@ import Nav from '@/components/Nav/Nav'
 import Footer from '@/components/Footer/Footer'
 import { Kameron, Raleway } from 'next/font/google'
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import { Next13NProgress } from 'nextjs13-progress';
+import NextTopLoader from 'nextjs-toploader';
 
 const kameron = Kameron({ 
   subsets: ['latin'],
@@ -33,7 +33,7 @@ export default function RootLayout({ children, params: { lang } }) {
         {children}
         <Footer english={true} />
         <SpeedInsights/>
-        <Next13NProgress color='#ff8b06' height={2} options={{ showSpinner: false }} />
+        <NextTopLoader color='#ff8b06' height={2} showSpinner={false} />
       </body>
     </html>
   )

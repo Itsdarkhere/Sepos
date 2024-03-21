@@ -12,7 +12,6 @@ import 'swiper/css';
 export default function ImagePopup({ popupOpen, setPopupOpen, arrayObject, index }) {
   return (
     <div id='modal_container'>
-
       <Transition show={popupOpen} as={Fragment}>
         <Dialog open={popupOpen} onClose={() => setPopupOpen(false)} className={styles.dialog}>
           <Dialog.Overlay className={styles.dialog_overlay} />
