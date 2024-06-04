@@ -13,7 +13,7 @@ import CompanyTwo from "./CompanyTwo/CompanyTwo";
 export default function Companies({ companyArray, lang }) {
   return (
     <div
-      className={`${styles.companies_outer_container} pl-4 md:px-16`}
+      className={`${styles.companies_outer_container} pl-4 md:px-24`}
       id='companies'
     >
       <CompaniesDesktop lang={lang} companyArray={companyArray} />
@@ -76,7 +76,7 @@ function CompaniesMobile({ lang, companyArray }) {
       >
         {companyArray.map((company, index) => {
           return (
-            <SwiperSlide className={"py-2 pl-2"} key={index}>
+            <SwiperSlide className={""} key={index}>
               <CompanyTwo key={index} companyObject={company} lang={lang} />
             </SwiperSlide>
           );

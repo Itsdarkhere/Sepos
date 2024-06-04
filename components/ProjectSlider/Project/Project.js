@@ -12,7 +12,7 @@ export default function Project({project, lang}) {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <div className={`${styles.project_mainpage_text_container} pt-10 pb-6 md:py-8`}>
+      <div className={`${styles.project_mainpage_text_container} pt-20 pb-6 md:py-8`}>
         <h4 className={`${styles.project_mainpage_text_header} pb-2 text-lg md:text-3xl pl-4 md:pl-6`}>
           {project.name}
         </h4>
