@@ -73,7 +73,7 @@ export default function ProjectSlider({ projectArray, lang }) {
   };
 
   return (
-    <div className={" w-full flex justify-center py-24 px-4 md:px-16 bg-neutral-800"} id='projects'>
+    <div className={" w-full flex justify-center py-24 px-4 md:px-24 bg-neutral-800"} id='projects'>
       <div className={"w-full max-w-[1880px] grid grid-cols-1 md:grid-cols-3"}>
         <ProjectDesktopNav projectArray={projectArray} lang={lang} changeProject={changeProject} checkButtonSelected={checkButtonSelected} />
         <div className={'block md:hidden pb-8'}>

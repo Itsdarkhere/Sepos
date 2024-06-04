@@ -7,12 +7,12 @@ import arrowIcon from '../../../public/arrow-icon.svg'
 export default function Project({project, lang}) {
   return (
     <motion.div
-      className={`${styles.mainpage_project_img_container} outline rounded-md outline-neutral-700 outline-offset-2 md:outline-offset-4 `}
+      className={`${styles.mainpage_project_img_container} md:h-full outline rounded-md outline-neutral-700 outline-offset-2 md:outline-offset-4 `}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
     >
-      <div className={`${styles.project_mainpage_text_container} pt-8 pb-4 md:py-8`}>
+      <div className={`${styles.project_mainpage_text_container} pt-10 pb-6 md:py-8`}>
         <h4 className={`${styles.project_mainpage_text_header} pb-2 text-lg md:text-3xl pl-4 md:pl-6`}>
           {project.name}
         </h4>

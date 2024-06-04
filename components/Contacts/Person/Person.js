@@ -5,11 +5,11 @@ import contact from "../../../public/cont.svg";
 import mail from "../../../public/email.svg";
 import { motion } from "framer-motion";
 
-export default function Person({ name, phone, email }) {
+export default function Person({ firstname, surname, phone, email }) {
   return (
     <motion.div className=' rounded-md border border-neutral-700 px-4 py-6 shadow-lg'>
       <div className='flex flex-row justify-between mb-4 text-2xl'>
-        <p className=' text-white'>{name}</p>
+        <p className=' text-white'>{firstname} <span className=" text-orange-400">{surname}</span></p>
         <Image src={klemmari} alt='logo' />
       </div>
       <div className=' flex flex-col gap-2 text-xs text-neutral-400'>
