@@ -9,6 +9,7 @@ import arrowRight from "../../public/white-arrow-right.svg";
 import "swiper/css";
 import "swiper/css/navigation";
 import CompanyTwo from "./CompanyTwo/CompanyTwo";
+import Title from "../Title";
 
 export default function Companies({ companyArray, lang }) {
   return (
@@ -29,9 +30,7 @@ function CompaniesDesktop({ lang, companyArray }) {
         className={styles.companies_text}
         transition={{ duration: 1 }}
       >
-        <div className={styles.companies_text_header}>
-          <p>{lang === "en" ? "Affiliated Companies" : "Osakkuusyhtiöt"}</p>
-        </div>
+         <Title partOne={'AFFILIATED'} partTwo={'COMPANIES'} />
       </motion.div>
       <div className=' w-full gap-6 hidden md:grid grid-cols-1 md:grid-cols-2'>
         {companyArray.map((company, index) => {
@@ -49,9 +48,10 @@ function CompaniesMobile({ lang, companyArray }) {
         className={styles.companies_text}
         transition={{ duration: 1 }}
       >
-        <div className={styles.companies_text_header}>
+        {/* <div className={styles.companies_text_header}>
           <p>{lang === "en" ? "Affiliated Companies" : "Osakkuusyhtiöt"}</p>
-        </div>
+        </div> */}
+        <Title partOne={'AFFILIATED'} partTwo={'COMPANIES'} />
       </motion.div>
       <button className={styles.swiper_button_left}>
         <Image height={19} alt='arrow left' src={arrowRight} />
