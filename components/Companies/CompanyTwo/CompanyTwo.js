@@ -8,7 +8,7 @@ export default function CompanyTwo({ companyObject, lang }) {
             </figure>
             <div className="absolute inset-0 flex rounded-md flex-col justify-end items-start px-4 py-6 bg-gradient-to-t from-zinc-900 via-zinc-900/90 to-zinc-900/60">
                 <h2 className="card-title text-white mb-2">{companyObject.name}</h2>
-                <p className=" text-neutral-200 font-light max-w-96 mb-8">{lang === 'en' ? companyObject.description : companyObject.fin_description}</p>
+                <p className=" text-neutral-200 text-base font-light max-w-96 mb-8">{lang === 'en' ? companyObject.description : companyObject.fin_description}</p>
                 <Link
                     target="_blank"
                     href={companyObject.website}

@@ -17,7 +17,7 @@ export default function Project({project, lang}) {
           {project.name}
         </h4>
         <p
-          className={`${styles.project_mainpage_text_description} max-w-[550px] mb-6 md:mb-8 pl-4 md:pl-6 pr-4 pt-2 font-light text-neutral-200 text-sm md:text-lg`}
+          className={`${styles.project_mainpage_text_description} max-w-[550px] mb-6 md:mb-8 pl-4 md:pl-6 pr-4 pt-2 font-light text-neutral-200 text-base md:text-lg`}
         >
           {lang === "en"
             ? project.english.description
