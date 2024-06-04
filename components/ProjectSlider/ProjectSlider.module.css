@@ -25,10 +25,7 @@
     justify-content: flex-start;
     align-items: center;
 }
-.mobile_header {
-    width: 100%;
-    display: none;
-}
+
 .listbox {
     position: relative;
     display: none;
@@ -121,8 +118,8 @@
     height: 100%;
     object-fit: cover;
     border-radius: 5px;
-    -webkit-filter: brightness(0.4);
-    filter: brightness(0.4);
+    -webkit-filter: brightness(0.3);
+    filter: brightness(0.3);
 }
 .project_mainpage_picture {
     z-index: 1;
@@ -131,19 +128,20 @@
 }
 .project_mainpage_text_container {
     z-index: 2;
-    padding-bottom: 3%;
+    /* padding-bottom: 32px;
+    padding-top: 32px; */
 }
 .project_mainpage_text_header {
     font-family: var(--raleway), sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 32px;
+    /* font-size: 32px; */
     line-height: 160%;
     color: #FFFFFF;
     position: relative;
-    padding-left: 5%;
-    height: 60px;
-    margin: 0;
+    /* padding-left: 5%; */
+    /* height: 60px; */
+    /* margin: 0; */
     overflow: hidden;
 }
 .project_mainpage_text_header::after {
@@ -167,15 +165,12 @@
 .project_mainpage_text_description {
     font-family: var(--raleway), sans-serif;
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    /* font-weight: 400; */
+    /* font-size: 16px; */
     line-height: 140%;
     /* or 22px */
-    color: #FFFFFF;
-    max-width: 70%;
-    padding-left: 5%;
-    padding-top: 10px;
-    margin-bottom: 20px;
+    /* color: #FFFFFF; */
+    /* max-width: 70%; */
     display: -webkit-box;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
@@ -185,11 +180,11 @@
     font-family: var(--raleway), sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 140%;
     /* or 22px */
     color: #F19036;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -201,9 +196,7 @@
 .project_mainpage_text_link:hover {
     color: #fc8515;
 }
-.project_mainpage_text_link_img {
-    margin-left: 10px;
-}
+
 .project_button {
     background-color: transparent;
     border: none;
@@ -351,9 +344,6 @@
         display: none;
     }
     .listbox {
-        display: block;
-    }
-    .mobile_header {
         display: block;
     }
     .header_inner {

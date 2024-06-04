@@ -19,7 +19,7 @@ export default function Companies({ companyArray, lang }) {
                         <p>{lang === 'en' ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}</p>
                     </div>
                 </motion.div>
-                <div className=' w-full gap-6 grid grid-cols-2'>
+                <div className=' w-full gap-6 grid grid-cols-1 md:grid-cols-2'>
                     {companyArray.map((company, index) => {
                         return (
                             <CompanyTwo key={index} companyObject={company} lang={lang} />
