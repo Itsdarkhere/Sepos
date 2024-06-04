@@ -7,7 +7,7 @@ import arrowIcon from '../../../public/arrow-icon.svg'
 export default function Project({project, lang}) {
   return (
     <motion.div
-      className={styles.mainpage_project_img_container}
+      className={`${styles.mainpage_project_img_container} outline rounded-md outline-neutral-700 outline-offset-2 md:outline-offset-4 `}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}

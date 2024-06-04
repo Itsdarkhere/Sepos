@@ -26,6 +26,7 @@ export default function ProjectDesktopNav({projectArray, lang, changeProject, ch
           )}
         </h3>
       </div>
+      <div className=' pt-4 flex flex-col text-start justify-start items-start'>
       {projectArray.map((project, index) => {
         return (
           <button
@@ -37,6 +38,7 @@ export default function ProjectDesktopNav({projectArray, lang, changeProject, ch
           </button>
         );
       })}
+      </div>
     </div>
   );
 }

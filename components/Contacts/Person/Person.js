@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 export default function Person({ name, phone, email }) {
   return (
-    <motion.div className=' rounded-md border border-neutral-900 px-4 py-6 shadow-lg'>
+    <motion.div className=' rounded-md border border-neutral-700 px-4 py-6 shadow-lg'>
       <div className='flex flex-row justify-between mb-4 text-2xl'>
         <p className=''>{name}</p>
         <Image src={klemmari} alt='logo' />

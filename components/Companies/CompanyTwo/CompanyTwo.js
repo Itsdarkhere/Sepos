@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function CompanyTwo({ companyObject, lang }) {
     return (
-        <div className="card max-h-80 relative">
+        <div className="card rounded-md max-h-80 outline outline-neutral-700 relative">
             <figure className='rounded-md'>
                 <img src={companyObject.image} alt="wide-project-img" className="w-full h-full object-cover" />
             </figure>
