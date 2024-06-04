@@ -89,9 +89,9 @@ export default function EntryView({ lang }) {
                 <motion.div className={styles.line} animate={controls}>
                     <h1>{texts.line}</h1>
                 </motion.div>  
-                <motion.div className={styles.description} animate={controls2}>
+                {/* <motion.div className={styles.description} animate={controls2}>
                     <h4>{texts.story}</h4>
-                </motion.div>  
+                </motion.div>   */}
             </div>
         </div>
     )   
