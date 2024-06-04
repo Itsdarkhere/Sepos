@@ -8,6 +8,7 @@ import Image from 'next/image';
 import arrowRight from '../../public/white-arrow-right.svg'
 import 'swiper/css';
 import 'swiper/css/navigation';
+import CompanyTwo from './CompanyTwo/CompanyTwo';
 
 export default function Companies({ companyArray, lang }) {
     return (
@@ -18,13 +19,20 @@ export default function Companies({ companyArray, lang }) {
                         <p>{lang === 'en' ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}</p>
                     </div>
                 </motion.div>
-                <button className={styles.swiper_button_left}>
+                <div className=' w-full gap-6 grid grid-cols-2'>
+                    {companyArray.map((company, index) => {
+                        return (
+                            <CompanyTwo key={index} companyObject={company} lang={lang} />
+                        )
+                    })}
+                </div>
+                {/* <button className={styles.swiper_button_left}>
                     <Image height={19} alt="arrow left" src={arrowRight} />
                 </button>
                 <button className={styles.swiper_button_right}>
                     <Image height={19} alt="arrow right" src={arrowRight} />
-                </button>
-                <Swiper
+                </button> */}
+                {/* <Swiper
                     modules={[Navigation]}
                     direction={'horizontal'}
                     loop={true}
@@ -67,7 +75,7 @@ export default function Companies({ companyArray, lang }) {
                             </SwiperSlide>
                         )
                     })}
-                </Swiper>
+                </Swiper> */}
             </div>
         </div>
     )
