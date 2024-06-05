@@ -3,14 +3,13 @@ import { motion } from 'framer-motion';
 
 export default function Person({ name, phone, email }) {
     return (
-        <motion.div className={styles.person_container}>
-            <div className={styles.d}>
-                <p className={styles.person_name}>{name}</p>
+        <motion.div className={"flex w-full flex-col gap-4 bg-neutral-900 rounded-md py-6 px-4"}>
+            <div className={" text-base font-bold"}>
+                <p className={""}>{name}</p>
             </div>
-            <div className={styles.p}>
-                { phone ?
-                <a href={'tel:' +  phone} className={styles.number_contact}>{phone}</a> : null }
-                <a href={'mailto:' + email} className={styles.email_contact}>{email}</a>
+            <div className={"flex flex-col justify-start gap-1 text-xs text-neutral-400 font-normal"}>
+                { phone && <a href={'tel:' +  phone} className={""}>{phone}</a>}
+                <a href={'mailto:' + email} className={""}>{email}</a>
             </div>
         </motion.div>
     );
