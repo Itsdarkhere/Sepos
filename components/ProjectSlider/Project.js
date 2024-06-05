@@ -20,7 +20,7 @@ export default function Project({project, lang, projectIndex}) {
           " w-full z-10 px-4 md:px-8 py-6 md:py-24 flex flex-col justify-center items-start md:items-center"
         }
       >
-        <h4 className={" font-semibold text-3xl mb-2"}>{project.name}</h4>
+        <h4 className={" font-semibold text-white text-3xl mb-2"}>{project.name}</h4>
         <p
           className={
             " max-w-[600px] line-clamp-4 mb-8 text-sm md:text-base font-light text-neutral-200 text-start md:text-center"
@@ -33,7 +33,7 @@ export default function Project({project, lang, projectIndex}) {
         <Link
           href={project.projectPage}
           className={
-            " flex flex-row text-sm border bg-opacity-40 bg-neutral-800 px-4 py-2 border-orange-400 rounded-md gap-2 items-center"
+            " flex flex-row text-sm border bg-opacity-40 text-white bg-neutral-800 px-4 py-2 border-orange-400 rounded-md gap-2 items-center"
           }
         >
           {lang === "en" ? "Learn More" : "Lue lisää"}

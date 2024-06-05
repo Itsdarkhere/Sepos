@@ -86,7 +86,7 @@ export default function EntryView({ lang }) {
         <div className="w-full px-5 bg-neutral-900 sm:px-20 mt-16 py-40 sm:py-60 relative flex flex-col justify-center items-center text-center">
             {getImage()}
             <div className={" z-10 max-w-[830px] flex flex-col items-center gap-4 text-center"}>
-                <motion.div className={" text-3xl md:text-7xl font-semibold tracking-tighter "} animate={controls}>
+                <motion.div className={" text-3xl text-white md:text-7xl font-semibold tracking-tighter "} animate={controls}>
                     <h1>{texts.line}</h1>
                 </motion.div>  
                 <motion.div className={" hidden md:block text-xl font-light max-w-[600px]"} animate={controls2}>
