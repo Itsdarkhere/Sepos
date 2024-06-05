@@ -21,8 +21,7 @@
     align-items: center;
 }
 .footer_logo_button {
-    font-size: 22px;
-    background-color: rgba(0,0,0,0);
+    font-size: 16px;
     color: rgb(255, 139, 6);
     font-family: var(--kameron), sans-serif;
     text-decoration: none;
@@ -31,7 +30,6 @@
     justify-content: flex-start;
     align-items: center;
     scroll-behavior: smooth;
-    padding: 0 !important;;
 }
 .footer_tags_container {
     display: flex;
@@ -68,8 +66,6 @@
 }
 @media (max-width: 450px) {
     .footer_logo_button {
-        margin-top: 20px;
-        padding-bottom: 10px !important;
         justify-content: flex-start;
     }
     .footer_tags_container {
