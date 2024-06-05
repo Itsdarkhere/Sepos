@@ -10,7 +10,7 @@ export default function OtherProjects({ projectArray, lang }) {
         >
           <p>{lang === "en" ? "Other Projects" : "Muut Projektit"}</p>
         </div>
-        <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+        <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {projectArray.map((project, i) => {
               return (
                 <Project key={i} project={project} lang={lang} projectIndex={i} />

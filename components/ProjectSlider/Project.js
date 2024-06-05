@@ -8,7 +8,7 @@ export default function Project({project, lang, projectIndex}) {
   return (
     <motion.div
       className={
-        "w-full h-full relative flex justify-start items-end overflow-hidden cursor-pointer"
+        "w-full relative flex justify-start items-end overflow-hidden cursor-pointer"
       }
       key={projectIndex} // Consider using a more unique key
       initial={{ opacity: 0 }}
