@@ -5,7 +5,7 @@ import MobileSwiper from "./MobileSwiper";
 export default function Companies({ companyArray, lang }) {
   return (
     <div
-      className=' w-full py-16 px-6 bg-neutral-900 flex justify-center items-center '
+      className=' w-full py-16 pl-6 md:px-6 bg-neutral-900 flex justify-center items-center '
       id='companies'
     >
       <div className={"w-full max-w-7xl"}>

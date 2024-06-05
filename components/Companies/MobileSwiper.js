@@ -15,7 +15,7 @@ export default function MobileSwiper({ companyArray, lang }) {
         nextEl: `.${styles.swiper_button_right}`,
         prevEl: `.${styles.swiper_button_left}`,
       }}
-      className={styles.company_swiper}
+      className={"w-full"}
       spaceBetween={25}
       slidesPerGroup={4}
       slidesPerView={4}
