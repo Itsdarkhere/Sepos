@@ -56,15 +56,15 @@ export default function ProjectSlider({ projectArray, lang }) {
       <div className={styles.project_slider_inner_container}>
         <div className={styles.project_slider_container}>
           <div className={styles.header}>
-            <h3 className={styles.header_inner}>
+            <h3 className={" text-base md:text-3xl font-semibold text-neutral-300"}>
               {lang === 'en' ? (
-                <motion.p key="red" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                <p>
                     Real Estate <br /> Development
-                </motion.p>
+                </p>
               ) : (
-                <motion.p key="blue" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+                <p>
                     Kiinteistökehitys
-                </motion.p>
+                </p>
               )}
             </h3>
           </div>

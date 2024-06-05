@@ -1,7 +1,6 @@
 'use client'
 import styles from './Companies.module.css';
 import Company from './Company/Company';
-import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import Image from 'next/image';
@@ -13,17 +12,11 @@ export default function Companies({ companyArray, lang }) {
     return (
         <div className={styles.companies_outer_container} id="companies">
             <div className={styles.companies_inner_container}>
-                <motion.div className={styles.companies_text} transition={{ duration: 1 }}>
-                    <div className={styles.companies_text_header}>
+                <div className=' mb-8'>
+                    <div className={" text-base md:text-3xl font-semibold text-neutral-300"}>
                         <p>{lang === 'en' ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}</p>
                     </div>
-                </motion.div>
-                <button className={styles.swiper_button_left}>
-                    <Image height={19} alt="arrow left" src={arrowRight} />
-                </button>
-                <button className={styles.swiper_button_right}>
-                    <Image height={19} alt="arrow right" src={arrowRight} />
-                </button>
+                </div>
                 <Swiper
                     modules={[Navigation]}
                     direction={'horizontal'}
