@@ -33,6 +33,12 @@
     color: white !important;
     border: 0px solid white !important;
 }
+
+.sidenav_logo {
+    font-family: var(--kameron), sans-serif;
+    color: rgb(255, 139, 6);
+    font-size: 16px;
+}
 .navbar_header {
     height: 80%;
     font-size: 22px;
