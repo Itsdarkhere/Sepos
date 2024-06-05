@@ -39,13 +39,17 @@ export default function ProjectPage({ projectArray, lang, arrayObject, languageP
             <ImagePopup popupOpen={popupOpen} setPopupOpen={setPopupOpen} arrayObject={arrayObject} index={index} />
             <div className={styles.pp_top_container}>  
                 <BigImage arrayObject={arrayObject} />
-                <div className={styles.text_name_container}>
-                    <p className={styles.text_projectname}>{arrayObject.name}</p>
+                <div className={" absolute bottom-0 py-4 px-6 flex justify-center items-end left-0 top bg-neutral-800 h-full bg-opacity-60 right-0 z-10"}>
+                    <div className=' w-full max-w-7xl'>
+                        <h1 className={`${styles.font_k} text-5xl`}>{arrayObject.name}</h1>
+                    </div>
                 </div>
             </div>
-            <div className={styles.pp_bottom_container}>
-                <Text languagePack={languagePack} arrayObject={arrayObject} />
-                <Gallery activatePopup={activatePopup} arrayObject={arrayObject} setIndex={setPictureIndex}/>
+            <div className=' w-full flex justify-center items-center py-16 px-6'>
+                <div className={" w-full max-w-7xl flex flex-col lg:flex-row gap-16 justify-between"}>
+                    <Text languagePack={languagePack} arrayObject={arrayObject} />
+                    <Gallery activatePopup={activatePopup} arrayObject={arrayObject} setIndex={setPictureIndex}/>
+                </div>
             </div>
             <Map arrayObject={arrayObject}/>
             <OtherProjects projectArray={projectArray} lang={lang} />
