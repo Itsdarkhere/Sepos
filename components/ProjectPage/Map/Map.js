@@ -13,8 +13,8 @@ export default function Map({ arrayObject }) {
 
   if (center.lat !== '') {
     return (
-        <div className={styles.mapdaddy}>
-            <div className={styles.map_container}>
+        <div className={" w-full flex justify-center items-center py-16 px-6"}>
+            <div className={" h-96 w-full max-w-7xl rounded-md overflow-hidden"}>
                 <GoogleMapReact
                 bootstrapURLKeys={{ key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
                 defaultCenter={center}

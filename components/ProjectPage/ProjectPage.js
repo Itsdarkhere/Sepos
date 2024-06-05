@@ -8,8 +8,9 @@ import ImagePopup from './ImagePopup/ImagePopup'
 import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import Map from './Map/Map'
 import React, { useEffect, useState } from 'react'
+import OtherProjects from './OtherProjects/OtherProjects';
     
-export default function ProjectPage({ arrayObject, languagePack }) {
+export default function ProjectPage({ projectArray, lang, arrayObject, languagePack }) {
 
     const [popupOpen, setPopupOpen] = useState(false);
     const [index, setIndex] = useState(0);
@@ -38,22 +39,6 @@ export default function ProjectPage({ arrayObject, languagePack }) {
             <ImagePopup popupOpen={popupOpen} setPopupOpen={setPopupOpen} arrayObject={arrayObject} index={index} />
             <div className={styles.pp_top_container}>  
                 <BigImage arrayObject={arrayObject} />
-                <div className={styles.under_nav}>
-                    <div className={styles.under_nav_inner}>
-                        <Link className={styles.project_link} href={arrayObject.previousProject[0]}>
-                            <div className={styles.icon_container}>
-                                <MdKeyboardArrowLeft className={styles.next_icon} />
-                            </div>
-                            <span className={styles.next_name}>{arrayObject.previousProject[1]}</span>
-                        </Link>
-                        <Link className={styles.project_link} href={arrayObject.nextProject[0]}>
-                            <p className={styles.next_name}>{arrayObject.nextProject[1]}</p>
-                            <div className={styles.icon_container2}>
-                                <MdKeyboardArrowRight className={styles.next_icon} />
-                            </div>
-                        </Link>
-                    </div>
-                </div>
                 <div className={styles.text_name_container}>
                     <p className={styles.text_projectname}>{arrayObject.name}</p>
                 </div>
@@ -63,6 +48,7 @@ export default function ProjectPage({ arrayObject, languagePack }) {
                 <Gallery activatePopup={activatePopup} arrayObject={arrayObject} setIndex={setPictureIndex}/>
             </div>
             <Map arrayObject={arrayObject}/>
+            <OtherProjects projectArray={projectArray} lang={lang} />
         </div>
     )
 }
