@@ -41,7 +41,7 @@ export default function ProjectPage({ projectArray, lang, arrayObject, languageP
                 <BigImage arrayObject={arrayObject} />
                 <div className={" absolute bottom-0 py-4 px-6 flex justify-center items-end left-0 top bg-neutral-800 h-full bg-opacity-60 right-0 z-10"}>
                     <div className=' w-full max-w-7xl'>
-                        <h1 className={`${styles.font_k} text-5xl`}>{arrayObject.name}</h1>
+                        <h1 className={`${styles.font_k} text-3xl md:text-5xl`}>{arrayObject.name}</h1>
                     </div>
                 </div>
             </div>

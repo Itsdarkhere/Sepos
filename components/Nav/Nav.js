@@ -112,7 +112,7 @@ export default function Nav({ lang }) {
 
   return (
     <div className={styles.navbar_container} id='navbar'>
-      <div className={styles.nav_inner}>
+      <div className={" max-w-7xl flex flex-row justify-between items-center w-full"}>
         <Link className={styles.navbar_header} href='/'>
           <p className={styles.company_name}>SEPOS OY</p>
         </Link>
