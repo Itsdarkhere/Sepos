@@ -3,20 +3,21 @@ import styles from "./Footer.module.css";
 
 export default function Footer({ english }) {
   const RE_ARRAY = [
-    { name: "Garden Helsinki", link: "" },
-    { name: "Hangon Läntinen Laituri", link: "" },
-    { name: "Hippos Jyväskylä", link: "" },
-    { name: "Turun Ratapiha  ", link: "" },
-    { name: "Hämeensaari", link: "" },
-    { name: "Inkoonranta", link: "" },
+    { name: "Garden Helsinki", link: "/garden" },
+    { name: "Hangon Läntinen Laituri", link: "/hanko" },
+    { name: "Hippos Jyväskylä", link: "/hippos" },
+    { name: "Turun Ratapiha  ", link: "/turku" },
+    { name: "Hämeensaari", link: "/hameensaari" },
+    { name: "Inkoonranta", link: "/inkoonranta" },
   ];
 
   const COMPANY_ARRAY = [
-    { name: "Modum Oy", link: "" },
-    { name: "LUV Kodit Oy", link: "" },
-    { name: "NPC", link: "" },
-    { name: "Hög", link: "" },
+    { name: "Modum Oy", link: "https://modumdigital.com/en/" },
+    { name: "LUV Kodit Oy", link: "http://www.luvkoti.fi/" },
+    { name: "NPC", link: "https://www.nordicpictures.fi/" },
+    { name: "Hög", link: "https://hoglive.fi" },
   ];
+
   return (
     <footer
       className={" py-12 px-6 flex justify-center items-center bg-neutral-900"}
@@ -28,7 +29,7 @@ export default function Footer({ english }) {
             <div className=' flex flex-row flex-wrap gap-4'>
               {RE_ARRAY.map((project, i) => {
                 return (
-                  <FooterLink key={i} name={project.name} link={project.link} />
+                  <FooterLink key={i} name={project.name} link={project.link} target="" />
                 );
               })}
             </div>
@@ -38,7 +39,7 @@ export default function Footer({ english }) {
             <div className=' flex flex-row flex-wrap gap-4'>
               {COMPANY_ARRAY.map((company, i) => {
                 return (
-                  <FooterLink key={i} name={company.name} link={company.link} />
+                  <FooterLink key={i} name={company.name} link={company.link} target={"_blank"} />
                 );
               })}
             </div>
@@ -52,9 +53,9 @@ export default function Footer({ english }) {
   );
 }
 
-function FooterLink({ name, link }) {
+function FooterLink({ name, link, target }) {
   return (
-    <Link href={link} className=' text-neutral-500 text-xs font-light'>
+    <Link href={link} target={target} className=' text-neutral-500 hover:text-neutral-400 text-xs font-light'>
       {name}
     </Link>
   );
