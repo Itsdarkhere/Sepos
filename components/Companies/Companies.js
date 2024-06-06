@@ -9,7 +9,7 @@ export default function Companies({ companyArray, lang }) {
       id='companies'
     >
       <div className={"w-full max-w-7xl"}>
-        <div className=' mb-8'>
+        <div className='  mb-4 md:mb-8'>
           <div
             className={" text-xl md:text-3xl font-semibold text-neutral-300"}
           >
