@@ -39,7 +39,7 @@ export default function ProjectPage({ projectArray, lang, arrayObject, languageP
             <ImagePopup popupOpen={popupOpen} setPopupOpen={setPopupOpen} arrayObject={arrayObject} index={index} />
             <div className={styles.pp_top_container}>  
                 <BigImage arrayObject={arrayObject} />
-                <div className={" absolute bottom-0 py-4 px-6 flex justify-center items-end left-0 top bg-neutral-800 h-full bg-opacity-50 right-0 z-10"}>
+                <div className={" absolute bottom-0 py-4 px-6 flex justify-center items-end left-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 to-transparent right-0 z-10"}>
                     <div className=' w-full max-w-7xl'>
                         <h1 className={`${styles.font_k} text-white text-3xl md:text-5xl`}>{arrayObject.name}</h1>
                     </div>
