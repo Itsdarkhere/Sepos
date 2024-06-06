@@ -51,6 +51,9 @@ export default function ImagePopup({
               speed={300}
               pagination={false}
               loop={true}
+              observer={true}
+              observeParents={true}
+              parallax={true}
               initialSlide={index}
               navigation={{
                 nextEl: `#swiper-button-next`,
