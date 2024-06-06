@@ -25,7 +25,7 @@ export default function ProjectSlider({ projectArray, lang }) {
   return (
     <div
       className={
-        " w-full bg-neutral-800 flex justify-center items-center py-16 px-6"
+        " w-full bg-neutral-800 flex justify-center items-center pb-16 md:py-16 px-6"
       }
       id='projects'
     >
