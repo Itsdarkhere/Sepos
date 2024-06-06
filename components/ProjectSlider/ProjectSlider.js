@@ -8,7 +8,7 @@ export default function ProjectSlider({ projectArray, lang }) {
   const content = () => {
     const project = projectArray[projectIndex];
     return (
-      <Project project={project} lang={lang} projectIndex={projectIndex} />
+      <Project project={project} lang={lang} projectIndex={projectIndex} projectPage={false} />
     );
   };
 
@@ -58,7 +58,7 @@ export default function ProjectSlider({ projectArray, lang }) {
         <div className="w-full h-full flex flex-col gap-4 md:hidden">
             {projectArray.map((project, i) => {
               return (
-                <Project key={i} project={project} lang={lang} projectIndex={i} />
+                <Project key={i} project={project} lang={lang} projectIndex={i} projectPage={false} />
               )
             })}
         </div>

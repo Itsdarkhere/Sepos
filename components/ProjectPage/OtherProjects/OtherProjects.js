@@ -13,7 +13,7 @@ export default function OtherProjects({ projectArray, lang }) {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {projectArray.map((project, i) => {
               return (
-                <Project key={i} project={project} lang={lang} projectIndex={i} />
+                <Project key={i} project={project} lang={lang} projectIndex={i} projectPage={true} />
               )
             })}
         </div>

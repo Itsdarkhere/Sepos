@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import arrowIcon from "../../public/arrow-icon.svg";
 import styles from "./ProjectSlider.module.css";
 
-export default function Project({project, lang, projectIndex}) {
+export default function Project({project, lang, projectIndex, projectPage}) {
   return (
     <motion.div
       className={
@@ -20,10 +20,10 @@ export default function Project({project, lang, projectIndex}) {
           " w-full z-10 px-4 md:px-8 py-6 md:py-24 flex flex-col justify-center items-start md:items-center"
         }
       >
-        <h4 className={" font-semibold text-white text-3xl mb-2"}>{project.name}</h4>
+        <h4 className={`font-semibold text-white text-3xl ${projectPage ? 'mb-8' : 'mb-2'}`}>{project.name}</h4>
         <p
           className={
-            " max-w-[600px] line-clamp-4 mb-8 text-sm md:text-base font-light text-neutral-200 text-start md:text-center"
+            ` ${projectPage && 'hidden'} max-w-[600px] line-clamp-4 mb-8 text-sm md:text-base font-light text-neutral-200 text-start md:text-center`
           }
         >
           {lang === "en"
