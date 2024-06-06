@@ -27,7 +27,7 @@ export default function ImagePopup({
             className={
               "w-11/12 h-4/5 md:w-4/5 flex justify-center items-center pointer-events-none"
             }
-            // onClick={() => setPopupOpen(false)}
+            onClick={() => setPopupOpen(false)}
           >
             <div className={styles.image_loader}></div>
             <Swiper
