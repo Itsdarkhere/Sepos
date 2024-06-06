@@ -25,7 +25,7 @@ export default function Text({ arrayObject, languagePack }) {
 
   const getLocation = () => {
     if (languagePack?.location) {
-      return <p className={`${styles.text_description} ${styles.location}`}>{languagePack.location}</p>;
+      return <p className={` mb-4`}>{languagePack.location}</p>;
     }
   };
 
