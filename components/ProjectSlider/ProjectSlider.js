@@ -33,7 +33,7 @@ export default function ProjectSlider({ projectArray, lang }) {
         <div className={" text-start md:text-center"}>
           <h3
             className={
-              " text-base md:text-3xl mb-4 md:mb-6 font-semibold text-neutral-300"
+              " text-xl md:text-3xl mb-4 md:mb-6 font-semibold text-neutral-300"
             }
           >
             {lang === "en" ? "Real Estate Development" : "Kiinteistökehitys"}

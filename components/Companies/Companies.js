@@ -11,7 +11,7 @@ export default function Companies({ companyArray, lang }) {
       <div className={"w-full max-w-7xl"}>
         <div className=' mb-8'>
           <div
-            className={" text-base md:text-3xl font-semibold text-neutral-300"}
+            className={" text-xl md:text-3xl font-semibold text-neutral-300"}
           >
             <p>{lang === "en" ? "Affiliated Companies" : "Osakkuusyhtiöt"}</p>
           </div>

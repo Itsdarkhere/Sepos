@@ -14,7 +14,7 @@ export default function Contacts({ lang }) {
         <div className={"w-full bg-neutral-800 py-16 px-6 flex justify-center items-center"}  id="contact">
             <div className='w-full max-w-7xl'>
                 <div className={" mb-4 md:mb-8"}>
-                    <div className={" text-base md:text-3xl font-semibold text-neutral-300"}>
+                    <div className={" text-xl md:text-3xl font-semibold text-neutral-300"}>
                         <p>{lang === 'en' ? 'Contact Us' : 'Yhteystiedot'}</p>
                     </div>
                 </div>
