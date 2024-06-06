@@ -23,7 +23,7 @@ export default function Project({project, lang, projectIndex, projectPage}) {
         <h4 className={`font-semibold text-white text-2xl ${projectPage ? 'mb-8' : 'mb-2'}`}>{project.name}</h4>
         <p
           className={
-            ` ${projectPage && 'hidden'} max-w-[600px] line-clamp-2 md:line-clamp-4 mb-8 text-sm md:text-base font-light text-neutral-200 text-start md:text-center`
+            ` ${projectPage && 'hidden md:line-clamp-2'} max-w-[600px] line-clamp-2 mb-8 text-sm md:text-base font-light text-neutral-200 text-start md:text-center`
           }
         >
           {lang === "en"
@@ -33,7 +33,7 @@ export default function Project({project, lang, projectIndex, projectPage}) {
         <Link
           href={project.projectPage}
           className={
-            " flex flex-row text-sm border bg-opacity-40 hover:bg-opacity-60 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-orange-400 text-white bg-neutral-800 px-4 py-2 border-orange-400 rounded-md gap-2 items-center"
+            " flex flex-row text-sm border bg-opacity-40 hover:bg-opacity-80 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-orange-400 text-white bg-neutral-800 px-4 py-2 border-orange-400 rounded-md gap-2 items-center"
           }
         >
           {lang === "en" ? "Learn More" : "Lue lisää"}
