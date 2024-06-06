@@ -70,12 +70,12 @@ export default function Nav({ lang }) {
                   : "Kiinteistökehitys"}
               </Link>
             </li>
-            <div className='pl-4 border-b border-neutral-400 mb-2 pb-2'>
+            <div className='pl-4 flex flex-col gap-1 border-b border-neutral-400 mb-2 pb-2'>
               {projectArray.map((project, index) => (
                 <li key={index}>
                   <Link
                     href={project.projectPage}
-                    className='text-neutral-400 text-sm rounded-md hover:bg-neutral-700 focus-within:bg-neutral-700 focus-within:text-neutral-400 leading-8 transition duration-300'
+                    className='text-neutral-400 py-1 text-sm rounded-md hover:bg-neutral-700 focus-within:bg-neutral-700 focus-within:text-neutral-400 leading-8 transition duration-300'
                   >
                     <Image height={12} src={arr} alt="building" />
                     {project.name}
@@ -101,7 +101,7 @@ export default function Nav({ lang }) {
                 {lang === "en" ? "Contact" : "Yhteystiedot"}
               </Link>
             </li>
-            <div className=" absolute left-0 bottom-0 p-4 right-0 rounded-br-xl flex justify-center items-center">
+            <div className=" absolute left-0 bottom-0 py-4 px-8 right-0 rounded-br-xl flex justify-start items-center">
               <h3 className={styles.sidenav_logo}>SEPOS OY</h3>
             </div>
           </ul>

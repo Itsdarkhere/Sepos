@@ -33,7 +33,7 @@ export default function Project({project, lang, projectIndex, projectPage}) {
         <Link
           href={project.projectPage}
           className={
-            " flex flex-row text-sm border bg-opacity-40 text-white bg-neutral-800 px-4 py-2 border-orange-400 rounded-md gap-2 items-center"
+            " flex flex-row text-sm border bg-opacity-40 hover:bg-opacity-60 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-orange-400 text-white bg-neutral-800 px-4 py-2 border-orange-400 rounded-md gap-2 items-center"
           }
         >
           {lang === "en" ? "Learn More" : "Lue lisää"}
