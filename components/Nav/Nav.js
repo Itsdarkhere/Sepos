@@ -58,7 +58,7 @@ export default function Nav({ lang }) {
             aria-label='close sidebar'
             className='drawer-overlay'
           ></label>
-          <ul className='menu px-4 rounded-r-xl py-12 w-80 min-h-full bg-neutral-900 text-base-content'>
+          <ul className='menu px-4 rounded-r-xl py-8 w-80 min-h-full bg-neutral-900 text-base-content'>
             <li>
               <Link
                 href='/#projects'
