@@ -17,10 +17,10 @@ export default function Project({project, lang, projectIndex, projectPage}) {
     >
       <div
         className={
-          " w-full z-10 px-4 md:px-8 py-6 md:py-24 flex flex-col justify-center items-start md:items-center"
+          `w-full z-10 px-4 md:px-8 py-6 md:py-24 flex flex-col justify-center ${projectPage ? ' items-center' : 'items-start'} md:items-center`
         }
       >
-        <h4 className={`font-semibold text-white text-3xl ${projectPage ? 'mb-8' : 'mb-2'}`}>{project.name}</h4>
+        <h4 className={`font-semibold text-white text-2xl ${projectPage ? 'mb-8' : 'mb-2'}`}>{project.name}</h4>
         <p
           className={
             ` ${projectPage && 'hidden'} max-w-[600px] line-clamp-4 mb-8 text-sm md:text-base font-light text-neutral-200 text-start md:text-center`

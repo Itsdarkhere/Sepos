@@ -70,7 +70,7 @@ export default function Nav({ lang }) {
                   : "Kiinteistökehitys"}
               </Link>
             </li>
-            <div className='pl-4 flex flex-col gap-1 border-b border-neutral-400 mb-2 pb-2'>
+            <div className=' pl-3 flex flex-col gap-1 border-b border-neutral-400 mb-2 pb-2'>
               {projectArray.map((project, index) => (
                 <li key={index}>
                   <Link
