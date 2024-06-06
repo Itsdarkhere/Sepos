@@ -36,18 +36,18 @@ function ProjectArray() {
             nextProject: ["/turku", "Turun Ratapiha"],
             finnish: {
                 finnish: true,
-                description: `Garden Helsinki on Töölöön, Nordenskiöldinkadun varrelle suunnitteilla oleva kiinteistökehityshanke. Gardeniin suunnitellaan modernia kansainvälisen tason tapahtuma-areenaa ja sen ympärille kehitettäviä kattavia oheispalveluja sekä jokapäiväisiä palveluita kaupunkilaisten käyttöön. Garden Helsinki on 2020-luvun kiinteistökonsepti, joka tarjoaa huippulaatuisen teknologian ja palveludesignin kautta päivittäisille käyttäjilleen arkea elävöittäviä palvelukokemuksia ja puitteet maailmanluokan tapahtumille.`,
+                description: `Garden Helsinki on Töölöön, Nordenskiöldinkadun varrelle suunnitteilla oleva kiinteistökehityshanke.
+                Gardeniin suunnitellaan modernia kansainvälisen tason tapahtuma-areenaa ja sen ympärille kehitettäviä kattavia oheispalveluja sekä jokapäiväisiä palveluita kaupunkilaisten käyttöön.
+                Garden Helsinki on 2020-luvun kiinteistökonsepti, joka tarjoaa huippulaatuisen teknologian ja palveludesignin kautta päivittäisille käyttäjilleen arkea elävöittäviä palvelukokemuksia ja puitteet maailmanluokan tapahtumille.`,
                 status: 'Kaavoitus valmis, Helsingin kaupungin päätöstä kiinteistön myynnistä odotetaan. Suunnittelu käynnissä, hotellien vuokrasopimus valmis, tavoite aloittaa rakentaminen H1/2025.',
                 facts: ['n. 160.000m2', '2 areenaa, monitoimiareena 16000 + mid areena 5000 paikkaa', '2 hotellia, toimistotiloja, liiketiloja, liikuntatiloja, pysäköinti', 'n. 200 asuntoa'],
             },
             english: {
                 finnish: false,
                 location: '',
-                description: `Garden Helsinki is a real estate development project planned for Helsinki Töölö area, 
-                along the street Nordenskiöldinkatu. Garden is planned to be a modern international event arena that 
-                also includes comprehensive everyday services for the use of urban dwellers. Garden Helsinki is a real 
-                estate concept of the 2020s that provides a framework for world-class events and offers it’s users 
-                experiences that enliven everyday life through top quality technology and service design.`,
+                description: `Garden Helsinki is a real estate development project planned for Helsinki Töölö area, along the street Nordenskiöldinkatu. 
+                Garden is planned to be a modern international event arena that also includes comprehensive everyday services for the use of urban dwellers.
+                Garden Helsinki is a real estate concept of the 2020s that provides a framework for world-class events and offers it’s users experiences that enliven everyday life through top quality technology and service design.`,
                 status: 'Zoning complete, awaiting the City of Helsinki’s decision on the sale of the property. Planning underway, hotel lease agreement ready, aim to start construction in H1/2025.',
                 facts: ['About. 160.000m2', 'Two arena\'s, multipurpose arena 16 000 + mid arena 5 000 seats', 'Two hotels, office and retail spaces, areas for exercise and parking', 'About. 200 apartments'],
             }
@@ -85,19 +85,19 @@ function ProjectArray() {
             nextProject: ["/hippos", "Hippos Jyväskylä"],
             finnish: {
                 finnish: true,
-                status: 'Kaavoituksesta tehty valitus käsittelyssä, käsittelyn valmistumisen tavoite Q1/2024. Turun kaupunki ostanut maa-alueet 9/2023, suunnittelu käynnissä, rakentamisen aloituksen tavoite Q1/2025.',
+                status: `Kaavoituksesta tehty valitus käsittelyssä, käsittelyn valmistumisen tavoite Q1/2024.
+                Turun kaupunki ostanut maa-alueet 9/2023, suunnittelu käynnissä, rakentamisen aloituksen tavoite Q1/2025.`,
                 facts: ['n. 120.000m2', 'Monitoimiareena 10 000 paikkaa', 'Hotelli, toimistotiloja, liiketiloja, digitaalinen elämyskeskus, liikuntatiloja, pysäköinti', 'n. 1 000 asuntoa'],
-                description: `Turun Ratapiha -hanke monipuolistaa osaltaan Turun kaupunkikeskustan tapahtuma-, kulttuuri- ja elämystarjontaa, lisää sen vetovoimaisuutta ja yhdistää ratapiha-alueen erottamia kaupunginosia toisiinsa. Elävä kaupunkikeskus tarjoaa ajanmukaiset puitteet elämää rikastuttavien kulttuuri-, viihde- ja liikuntapalvelujen tuottamiseen, työpaikkoja, keskusta-asumista sekä kaupunkilaisten ympärivuotisen olohuoneen.`,
+                description: `Turun Ratapiha -hanke monipuolistaa osaltaan Turun kaupunkikeskustan tapahtuma-, kulttuuri- ja elämystarjontaa, lisää sen vetovoimaisuutta ja yhdistää ratapiha-alueen erottamia kaupunginosia toisiinsa.
+                Elävä kaupunkikeskus tarjoaa ajanmukaiset puitteet elämää rikastuttavien kulttuuri-, viihde- ja liikuntapalvelujen tuottamiseen, työpaikkoja, keskusta-asumista sekä kaupunkilaisten ympärivuotisen olohuoneen.`,
             },
             english: {
                 finnish: false,
                 facts: ['About. 120.000m2', 'Multipurpose arena with 10 000 seats', 'A hotel, office and retail spaces, digital experience center, areas dedicated for exercise and parking', 'About. 1 000 apartments'],
                 status: 'Appeal made on zoning is under consideration, target for completion of the process is Q1/2024. The City of Turku bought the land areas in 9/2023, planning is underway, target to start construction is Q1/2025.',
-                location: 'Location: City of Turku (6.th largest city in Finland), ca. 200km west from Helsinki.',
-                description: `The Turku Ratapiha development unites the areas separated by the railway yard area and 
-                contributes to expanding the city’s cultural-, events- and experience offerings. 
-                A vibrant city center needs jobs, city center living and modern facilities to produce cultural, entertainment and 
-                exercise services that enrichen people’s life’s.`,
+                location: 'City of Turku (6.th largest city in Finland), ca. 200km west from Helsinki.',
+                description: `The Turku Ratapiha development unites the areas separated by the railway yard area and contributes to expanding the city’s cultural-, events- and experience offerings. 
+                A vibrant city center needs jobs, city center living and modern facilities to produce cultural, entertainment and exercise services that enrichen people’s life’s.`,
 
             }
         },
@@ -133,7 +133,8 @@ function ProjectArray() {
             finnish: {
                 finnish: true,
                 status: 'Kaavoitus valmis, suunnittelu käynnissä, tavoite aloittaa vaihe 1 rakentaminen Q1/2024 ja vaiheiden 2 ja 3 tavoite aloitus 2024 aikana.',
-                description: `Hippos on valmistuessaan paitsi kaupunkilaisten kohtaamispaikka, myös Pohjoismaiden merkittävin liikunnan, urheilun ja huippu-urheilun, terveyden edistämisen sekä hyvinvoinnin ja tapahtumien keskus. Lisäksi se yhdistää liikunnan tutkimuksen ja teknologisen tuotekehityksen kansainvälisesti merkittäväksi kokonaisuudeksi.`,
+                description: `Hippos on valmistuessaan paitsi kaupunkilaisten kohtaamispaikka, myös Pohjoismaiden merkittävin liikunnan, urheilun ja huippu-urheilun, terveyden edistämisen sekä hyvinvoinnin ja tapahtumien keskus.
+                Lisäksi se yhdistää liikunnan tutkimuksen ja teknologisen tuotekehityksen kansainvälisesti merkittäväksi kokonaisuudeksi.`,
                 facts: ['Jääurheilukeskus, areena 6 000 paikkaa ja 3 harjoitusjäätä',
             'Liikuntakeskus, sisäpeliareena 2000 paikkaa, liikuntatilat n. 20 lajille sekä tutkimustiloja',
             'Osaamiskeskus, opetus-, tutkimus- ja laboratoriotilat, toimistotiloja ja liiketilaa, majoitustilaa ja pysäköintilaitos',
@@ -142,10 +143,9 @@ function ProjectArray() {
             english: {
                 finnish: false,
                 status: 'Zoning complete, planning underway, aim to start construction of phase 1 in Q1/2024 and target to start phases 2 and 3 during 2024.',
-                location: 'Location: City of Jyväskylä (7.th largest city in Finland), ca. 250km north from Helsinki) n. 100.000m2',
-                description: `On completion Hippos is not only a meeting place for citizens of Jyväskylä, but also the most 
-            significant exercise, professional-sports, health, wellbeing and events center in the Nordic countries. At 
-            Hippos sports research and technological product development is combined into a world-class entity.`,
+                location: 'City of Jyväskylä (7.th largest city in Finland), ca. 250km north from Helsinki) n. 100.000m2',
+                description: `On completion Hippos is not only a meeting place for citizens of Jyväskylä, but also the most significant exercise, professional-sports, health, wellbeing and events center in the Nordic countries.
+                At Hippos sports research and technological product development is combined into a world-class entity.`,
                 facts: ['Ice sports center, arena with 6 000 seats and 3 practise rinks',
             'Sports center, indoor sports arena with 2 000 seats, areas for about 20 different sports and for sports research, ',
             'Knowledge center, teaching-, research-, and laboratory spaces for the University and the University of applied sciences of Jyväskylä, office spaces, business venues, a hotel and parking',
@@ -185,12 +185,14 @@ function ProjectArray() {
                 finnish: true,
                 facts: ['n. 35.000m2', 'Asuntoja, majoitusta, kaupallisia tiloja, pysäköinti.', 'n. 450 asuntoa'],
                 status: 'Suunnitteluvaraus ja kehitysvaihe yhdessä kaupungin kanssa käynnissä',
-                description: `Hämeenlinnan keskustakehityshanke on vetovoimainen keskustan laadukkain asuinalue ja palveluijen keskittymä. Kokonaisuus muodostuu asunnoista, majoituksesta, kaupallisista palveluista, pysäköintilaitoksesta ja Vanajaveden rannan kaupunkipuistosta.`,
+                description: `Hämeenlinnan keskustakehityshanke on vetovoimainen keskustan laadukkain asuinalue ja palveluijen keskittymä.
+                Kokonaisuus muodostuu asunnoista, majoituksesta, kaupallisista palveluista, pysäköintilaitoksesta ja Vanajaveden rannan kaupunkipuistosta.`,
             },
             english: {
                 finnish: false,
-                description: `The Hämeenlinna downtown development project is an attractive, high-quality residential area in the city center and a concentration of services. The whole consists of apartments, accommodation, commercial services, a parking facility, and an urban park on the shore of Lake Vanajavesi.`,
-                location: 'Location: City of Hämeenlinna (14.th largest city in Finland), ca. 100km north from Helsinki',
+                description: `The Hämeenlinna downtown development project is an attractive, high-quality residential area in the city center and a concentration of services. 
+                The whole consists of apartments, accommodation, commercial services, a parking facility, and an urban park on the shore of Lake Vanajavesi.`,
+                location: 'City of Hämeenlinna (14.th largest city in Finland), ca. 100km north from Helsinki',
                 facts: ['Approximately 35.000m2', 'Apartments, accommodation, commercial spaces, parking.', 'Approximately 450 apartments'],
                 status: 'Planning reservation and development phase in progress with the city.',
             }
@@ -259,9 +261,9 @@ function ProjectArray() {
             },
             english: {
                 finnish: false,
-                description: `Inkoonranta development is real quality of life by the ocean. It is tranquality, happiness and community
-                spirit. In essence Inkoonranta is a choice without waiver.`,
-                location: 'Location: Municipality of Inkoo, ca. 50km west from Helsinki',
+                description: `Inkoonranta development is real quality of life by the ocean. 
+                It is tranquality, happiness and community spirit. In essence Inkoonranta is a choice without waiver.`,
+                location: 'Municipality of Inkoo, ca. 50km west from Helsinki',
                 facts: ['Brand new high quality apartments', 'Low-rise apartment houses', 'Row- and detached houses', 'Sports and leisure services', 'In the center of Inkoo, by the ocean'],
                 status: '',
             }
@@ -308,9 +310,8 @@ function ProjectArray() {
                 finnish: false,
                 status: '',
                 facts: ['High quality apartments', 'Low-rise apartments', 'In the center of Hanko, by the ocean.'],
-                description: `80 - 100 beach front apartments will be built for seasonal and year-round living at Kuningatarvuori 
-                in the Eastern harbour of Hanko city, right next to all the amenities.`,
-                location: 'Location: City of Hanko, ca. 120km west from Helsinki',
+                description: `80 - 100 beach front apartments will be built for seasonal and year-round living at Kuningatarvuori in the Eastern harbour of Hanko city, right next to all the amenities.`,
+                location: 'City of Hanko, ca. 120km west from Helsinki',
             }
         },
 
