@@ -58,7 +58,7 @@ export default function Nav({ lang }) {
             aria-label='close sidebar'
             className='drawer-overlay'
           ></label>
-          <ul className='menu px-4 rounded-r-xl py-8 w-80 min-h-full bg-neutral-900 text-base-content'>
+          <ul className='menu px-4 rounded-r-xl py-12 w-80 min-h-full bg-neutral-900 text-base-content'>
             <li>
               <Link
                 href='/#projects'
@@ -75,7 +75,7 @@ export default function Nav({ lang }) {
                 <li key={index}>
                   <Link
                     href={project.projectPage}
-                    className='text-neutral-400 rounded-md hover:bg-neutral-700 focus-within:bg-neutral-700 focus-within:text-neutral-400 leading-8 transition duration-300'
+                    className='text-neutral-400 text-sm rounded-md hover:bg-neutral-700 focus-within:bg-neutral-700 focus-within:text-neutral-400 leading-8 transition duration-300'
                   >
                     <Image height={12} src={arr} alt="building" />
                     {project.name}
@@ -101,7 +101,7 @@ export default function Nav({ lang }) {
                 {lang === "en" ? "Contact" : "Yhteystiedot"}
               </Link>
             </li>
-            <div className=" absolute left-0 bottom-0 p-4 right-0 rounded-br-xl bg-neutral-950 flex justify-center items-center">
+            <div className=" absolute left-0 bottom-0 p-4 right-0 rounded-br-xl flex justify-center items-center">
               <h3 className={styles.sidenav_logo}>SEPOS OY</h3>
             </div>
           </ul>
