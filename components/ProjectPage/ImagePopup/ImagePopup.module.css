@@ -87,21 +87,6 @@
     align-items: center;
 }
 
-.modal_slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.popup_gallery_image {
-    pointer-events: all;
-    object-fit: contain;
-}
-
-.popup_gallery_image:hover {
-    cursor: pointer;
-}
-
 .swiper_button_prev,
 .swiper_button_next {
     position: fixed;
@@ -115,11 +100,11 @@
 }
 
 .swiper_button_prev {
-    left: 0;
+    left: 5px;
 }
 
 .swiper_button_next {
-    right: 0;
+    right: 5px;
 }
 
 .popup_button:hover {
