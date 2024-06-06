@@ -23,7 +23,7 @@ export default function Project({project, lang, projectIndex, projectPage}) {
         <h4 className={`font-semibold text-white text-2xl ${projectPage ? 'mb-8' : 'mb-2'}`}>{project.name}</h4>
         <p
           className={
-            ` ${projectPage && 'hidden'} max-w-[600px] line-clamp-4 mb-8 text-sm md:text-base font-light text-neutral-200 text-start md:text-center`
+            ` ${projectPage && 'hidden'} max-w-[600px] line-clamp-2 md:line-clamp-4 mb-8 text-sm md:text-base font-light text-neutral-200 text-start md:text-center`
           }
         >
           {lang === "en"

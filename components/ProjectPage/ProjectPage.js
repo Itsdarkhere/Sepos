@@ -45,7 +45,7 @@ export default function ProjectPage({ projectArray, lang, arrayObject, languageP
                     </div>
                 </div>
             </div>
-            <div className=' w-full flex justify-center items-center py-16 px-6'>
+            <div className=' w-full flex justify-center items-center py-8 md:py-16 px-6'>
                 <div className={" w-full max-w-7xl flex flex-col lg:flex-row gap-16 justify-between"}>
                     <Text languagePack={languagePack} arrayObject={arrayObject} />
                     <Gallery activatePopup={activatePopup} arrayObject={arrayObject} setIndex={setPictureIndex}/>
