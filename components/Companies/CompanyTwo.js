@@ -13,7 +13,7 @@ export default function CompanyTwo({ companyObject, lang }) {
                 <Link
                     target="_blank"
                     href={companyObject.website}
-                    className="text-gray-300 text-sm border-b-2 border-b-primary transition duration-300 ease-in-out hover:text-white hover:border-b-yellow-500"
+                    className="text-gray-300 text-sm border-b-2 border-b-orange-400 transition duration-300 ease-in-out hover:text-white hover:border-b-orange-500"
                 >
                     {companyObject.displayWebsite}
                 </Link>

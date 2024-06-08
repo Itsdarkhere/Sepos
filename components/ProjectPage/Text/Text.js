@@ -16,7 +16,7 @@ export default function Text({ arrayObject, languagePack, lang }) {
   const getWebsiteLink = () => {
     if (arrayObject.website !== '') {
       return (
-        <Link className="text-neutral-700 border-b-2 border-b-primary transition duration-300 ease-in-out hover:text-gray-700 hover:border-b-yellow-400" target="_blank" href={arrayObject.website}>
+        <Link className="text-neutral-700 border-b-2 border-b-orange-400 transition duration-300 ease-in-out hover:text-gray-700 hover:border-b-orange-500" target="_blank" href={arrayObject.website}>
           {arrayObject.websiteLinkName}
         </Link>
       );
