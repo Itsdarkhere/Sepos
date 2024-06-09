@@ -9,7 +9,7 @@ export default function CompanyTwo({ companyObject, lang }) {
             </figure>
             <div className="absolute inset-0 flex rounded-md flex-col justify-end items-start p-6 bg-gradient-to-t from-zinc-900 via-zinc-900/80 to-zinc-900/70">
                 <h2 className=" text-lg font-semibold text-white mb-2">{companyObject.name}</h2>
-                <p className="text-neutral-300 text-sm md:text-base max-w-96 mb-8">{lang === 'en' ? companyObject.description : companyObject.fin_description}</p>
+                <p className="font-light text-neutral-200 text-sm md:text-base max-w-96 mb-8">{lang === 'en' ? companyObject.description : companyObject.fin_description}</p>
                 <Link
                     target="_blank"
                     href={companyObject.website}
