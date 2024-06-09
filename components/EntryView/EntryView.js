@@ -83,15 +83,17 @@ export default function EntryView({ lang }) {
     }, [])
 
     return (
-        <div className="w-full px-5 bg-neutral-900 sm:px-20 mt-16 py-40 sm:py-60 relative flex flex-col justify-center items-center text-center">
+        <div className="w-full bg-neutral-900 mt-16 relative flex justify-center items-center">
             {getImage()}
-            <div className={" z-10 max-w-[830px] flex flex-col items-center gap-4 text-start md:text-center"}>
-                <motion.div className={" text-4xl text-white md:text-7xl font-semibold tracking-tighter "} animate={controls}>
-                    <h1>{texts.line}</h1>
-                </motion.div>  
-                <motion.div className={" hidden md:block text-xl font-light max-w-[600px]"} animate={controls2}>
-                    <h4>{texts.story}</h4>
-                </motion.div>  
+            <div className=' z-10 px-5 sm:px-20 py-40 sm:py-60 bg-neutral-800 bg-opacity-35 w-full h-full flex flex-col justify-center items-center text-center'>
+                <div className={" max-w-[830px] flex flex-col items-center gap-4 text-start md:text-center"}>
+                    <motion.div className={" opacity-0 text-4xl text-white md:text-7xl font-semibold tracking-tighter "} animate={controls}>
+                        <h1>{texts.line}</h1>
+                    </motion.div>  
+                    <motion.div className={" opacity-0 hidden md:block text-xl font-light max-w-[600px]"} animate={controls2}>
+                        <h4>{texts.story}</h4>
+                    </motion.div>  
+                </div>
             </div>
         </div>
     )   
