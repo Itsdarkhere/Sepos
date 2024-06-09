@@ -55,7 +55,7 @@ export default function Footer({ english }) {
 
 function FooterLink({ name, link, target }) {
   return (
-    <Link href={link} target={target} className=' text-neutral-500 hover:text-neutral-400 text-xs font-light'>
+    <Link href={link} target={target} className={`${target !== '' && 'underline'} text-neutral-500 hover:text-neutral-400 text-xs font-light`}>
       {name}
     </Link>
   );
