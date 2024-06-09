@@ -116,7 +116,7 @@ export default function Nav({ lang }) {
         <Link className={styles.navbar_header} href='/'>
           <p className={styles.company_name}>SEPOS OY</p>
         </Link>
-        <div className={styles.navbar_right}>{getNav()}</div>
+        <div className={" -mr-5"}>{getNav()}</div>
       </div>
     </div>
   );
