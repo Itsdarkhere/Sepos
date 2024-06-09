@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import arrowIcon from "../../public/arrow-icon.svg";
+import arrowIcon from "../../public/arrow-right3.svg";
 import styles from "./ProjectSlider.module.css";
 
 export default function Project({project, lang, projectIndex, projectPage}) {
@@ -33,11 +33,11 @@ export default function Project({project, lang, projectIndex, projectPage}) {
         <Link
           href={project.projectPage}
           className={
-            " flex flex-row text-sm border bg-opacity-40 hover:bg-opacity-80 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-orange-400 text-white bg-neutral-800 px-4 py-2 border-orange-400 rounded-md gap-2 items-center"
+            " flex flex-row text-sm border bg-opacity-40 hover:bg-opacity-80 focus:outline focus:outline-2 focus:outline-offset-2 focus:outline-orange-400 text-white bg-neutral-800 px-4 py-2 border-orange-400 rounded-md gap-1 items-center"
           }
         >
           {lang === "en" ? "Learn More" : "Lue lisää"}
-          <Image height={16} className={""} src={arrowIcon} alt='arrow icon' />
+          <Image height={20} className={""} src={arrowIcon} alt='arrow icon' />
         </Link>
       </div>
       <Image
