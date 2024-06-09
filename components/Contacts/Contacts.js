@@ -19,11 +19,11 @@ export default function Contacts({ lang }) {
                     </div>
                 </div>
                 <div className={"w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-6 gap-4"}>
-                    <Person cl={" col-span-1 xl:col-span-3"} dude={dude1} image="Bean.jpeg" firstname={"Jouni"} lastname={"Alho"}  phone={'+358 50 3054104'} email="jouni.alho@sepos.fi" />
-                    <Person cl={" col-span-1 xl:col-span-3"} dude={dude2} image="Bean.jpeg" firstname={"Juha"} lastname={"Pajunen"}  phone={'+358 40 7441272'} email="juha.pajunen@axecon.fi" />    
-                    <Person cl={" col-span-1 xl:col-span-2"} dude={dude3} image="Bean.jpeg" firstname={"Ilkka"} lastname={"Kilpimaa"}  phone={'+358 40 7435223'} email="ilkka.kilpimaa@sepos.fi" />
-                    <Person cl={" col-span-1 xl:col-span-2"} dude={dude4} image="Bean.jpeg" firstname={"Timo"} lastname={"Everi"}  phone={'+358 40 8600231'} email="timo.everi@sepos.fi" />
-                    <Person cl={" col-span-1 xl:col-span-2"} dude={dude5} image="Bean.jpeg" firstname={"Jorma"} lastname={"Alanne"} email="jorma.alanne@taaleri.com" />
+                    <Person cl={" col-span-1 xl:col-span-3"} image="Bean.jpeg" firstname={"Jouni"} lastname={"Alho"}  phone={'+358 50 3054104'} email="jouni.alho@sepos.fi" />
+                    <Person cl={" col-span-1 xl:col-span-3"} image="Bean.jpeg" firstname={"Juha"} lastname={"Pajunen"}  phone={'+358 40 7441272'} email="juha.pajunen@axecon.fi" />    
+                    <Person cl={" col-span-1 xl:col-span-2"} image="Bean.jpeg" firstname={"Ilkka"} lastname={"Kilpimaa"}  phone={'+358 40 7435223'} email="ilkka.kilpimaa@sepos.fi" />
+                    <Person cl={" col-span-1 xl:col-span-2"} image="Bean.jpeg" firstname={"Timo"} lastname={"Everi"}  phone={'+358 40 8600231'} email="timo.everi@sepos.fi" />
+                    <Person cl={" col-span-1 xl:col-span-2"} image="Bean.jpeg" firstname={"Jorma"} lastname={"Alanne"} email="jorma.alanne@taaleri.com" />
                 </div>
             </div>
         </div>
