@@ -58,7 +58,7 @@ export default function Nav({ lang }) {
             aria-label='close sidebar'
             className='drawer-overlay'
           ></label>
-          <ul className='menu px-4 rounded-r-xl py-8 w-80 min-h-full bg-neutral-900 text-base-content'>
+          <ul className='menu px-4 rounded-r-md py-8 w-80 min-h-full bg-neutral-900 text-base-content'>
             <li>
               <Link
                 href='/#projects'
@@ -101,7 +101,7 @@ export default function Nav({ lang }) {
                 {lang === "en" ? "Contact" : "Yhteystiedot"}
               </Link>
             </li>
-            <div className=" absolute left-0 bottom-0 py-4 px-8 right-0 rounded-br-xl flex justify-start items-center">
+            <div className=" absolute left-0 bottom-0 py-4 px-8 right-0 rounded-br-md flex justify-start items-center">
               <h3 className={styles.sidenav_logo}>SEPOS OY</h3>
             </div>
           </ul>
