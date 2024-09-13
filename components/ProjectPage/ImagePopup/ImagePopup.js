@@ -45,7 +45,7 @@ export default function ImagePopup({
             leaveTo="opacity-0 scale-95"
           >
             <div className="bg-zinc-900 rounded-lg shadow-xl transform overflow-hidden transition-all w-[80vw] h-[350px] max-h-full md:h-[60vh] flex items-center justify-center">
-              <div className="w-full h-full overflow-hidden">
+              <div className="w-full h-full md:p-6 overflow-hidden">
                 <Carousel images={arrayObject.pictures2} initialIndex={index} />
               </div>
             </div>
