@@ -90,7 +90,7 @@ export default function EntryView({ lang }) {
                     <motion.div className={" opacity-0 text-4xl text-white md:text-7xl font-semibold tracking-tighter "} animate={controls}>
                         <h1>{texts.line}</h1>
                     </motion.div>  
-                    <motion.div className={" opacity-0 hidden md:block text-xl font-light max-w-[600px]"} animate={controls2}>
+                    <motion.div className={" opacity-0 text-sm text-neutral-300 md:text-xl font-light max-w-[600px]"} animate={controls2}>
                         <h4>{texts.story}</h4>
                     </motion.div>  
                 </div>

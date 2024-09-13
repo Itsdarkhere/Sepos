@@ -93,7 +93,6 @@ export default function Home({ params: { lang } }) {
   return (
     <main className={styles.main}>
       <EntryView lang={lang} />
-      <Information />
       <ProjectSlider projectArray={projectArray} lang={lang}/>
       <Companies companyArray={companyArray} lang={lang}/>
       {/* <About english={english}/> */}

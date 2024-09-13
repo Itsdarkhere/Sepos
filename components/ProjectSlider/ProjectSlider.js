@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Project from "./Project";
+import ProjectTwo from "./ProjectTwo";
 
 export default function ProjectSlider({ projectArray, lang }) {
   const [projectIndex, setProjectIndex] = useState(0);
@@ -25,7 +26,7 @@ export default function ProjectSlider({ projectArray, lang }) {
   return (
     <div
       className={
-        " w-full bg-neutral-800 flex justify-center items-center py-16 px-6"
+        " w-full bg-neutral-800 flex justify-center items-center py-8 md:py-16 px-6"
       }
       id='projects'
     >
@@ -33,7 +34,7 @@ export default function ProjectSlider({ projectArray, lang }) {
         <div className={" text-start md:text-center"}>
           <h3
             className={
-              " text-xl md:text-3xl mb-4 md:mb-6 font-semibold text-neutral-300"
+              " hidden md:block text-3xl mb-6 font-semibold text-neutral-300"
             }
           >
             {lang === "en" ? "Real Estate Development" : "Kiinteistökehitys"}
@@ -58,7 +59,7 @@ export default function ProjectSlider({ projectArray, lang }) {
         <div className="w-full h-full flex flex-col gap-4 md:hidden">
             {projectArray.map((project, i) => {
               return (
-                <Project key={i} project={project} lang={lang} projectIndex={i} projectPage={false} />
+                <ProjectTwo key={i} project={project} lang={lang} projectIndex={i}/>
               )
             })}
         </div>
