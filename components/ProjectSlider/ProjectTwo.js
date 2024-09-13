@@ -8,7 +8,7 @@ export default function ProjectTwo({project, lang, projectIndex}) {
         <Link
         href={project.projectPage}
       className={
-        "w-full cursor-pointer relative overflow-hidden rounded-md flex justify-start items-end cursor-pointer"
+        "w-full relative overflow-hidden rounded-md flex justify-start items-end cursor-pointer"
       }
       key={projectIndex} // Consider using a more unique key
     >
