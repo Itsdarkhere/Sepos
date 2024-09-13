@@ -78,34 +78,11 @@
     color: rgb(255, 139, 6) !important;
 }
 
-.modal_swiper {
-    height: 100%;
-    width: 100%;
-    pointer-events: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.swiper_button_prev,
-.swiper_button_next {
-    position: fixed;
-    top: 50%;
-    transform: translate(0, -50%);
-    z-index: 1000;
-}
 .popup_button_icon {
     height: 75px;
     width: 75px;
 }
 
-.swiper_button_prev {
-    left: 5px;
-}
-
-.swiper_button_next {
-    right: 5px;
-}
 
 .popup_button:hover {
     color: rgb(255, 139, 6) !important;

@@ -1,46 +1,23 @@
-import styles from '../Companies/Companies.module.css';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import CompanyTwo from './CompanyTwo';
+import React from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import CompanyTwo from "./CompanyTwo";
 
-export default function MobileSwiper({ companyArray, lang }) {
+export default function MobileCarousel({ companyArray, lang }) {
+  const [emblaRef, emblaApi] = useEmblaCarousel({
+    loop: false,
+    align: "center",
+    slidesToScroll: 1,
+  });
+
   return (
-    <Swiper
-      modules={[Navigation]}
-      direction={"horizontal"}
-      loop={true}
-      navigation={{
-        nextEl: `.${styles.swiper_button_right}`,
-        prevEl: `.${styles.swiper_button_left}`,
-      }}
-      className={"w-full"}
-      spaceBetween={25}
-      slidesPerGroup={4}
-      slidesPerView={4}
-      speed={500}
-      pagination={false}
-      breakpoints={{
-        600: {
-          slidesPerView: 2,
-          slidesPerGroup: 2,
-          spaceBetween: 10,
-        },
-        "000": {
-          slidesPerView: 1.1,
-          slidesPerGroup: 1,
-          spaceBetween: 10,
-        },
-      }}
-    >
-      {companyArray.map((company, index) => {
-        return (
-          <SwiperSlide className={styles.swiper_slide} key={index}>
+    <div className='embla' ref={emblaRef}>
+      <div className='embla__container flex'>
+        {companyArray.map((company, index) => (
+          <div className='embla__slide mr-4 flex-[0_0_85%] min-w-0' key={index}>
             <CompanyTwo companyObject={company} lang={lang} />
-          </SwiperSlide>
-        );
-      })}
-    </Swiper>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
