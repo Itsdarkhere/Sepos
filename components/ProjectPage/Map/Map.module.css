@@ -1,7 +1,7 @@
 .marker {
-    transform: scale(3);
-    color: black !important;
-    animation: location 3s infinite;
+    /* transform: scale(3); */
+    color: rgb(255, 139, 6) !important;
+    /* animation: location 3s infinite; */
 }
 @keyframes location {
     0% {
