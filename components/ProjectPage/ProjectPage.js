@@ -39,13 +39,17 @@ export default function ProjectPage({ projectArray, lang, arrayObject, languageP
             <ImagePopup popupOpen={popupOpen} setPopupOpen={setPopupOpen} arrayObject={arrayObject} index={index} />
             <div className={styles.pp_top_container}>  
                 <BigImage arrayObject={arrayObject} />
-                <div className={" absolute bottom-0 py-4 px-6 flex justify-center items-end left-0 bg-gradient-to-t from-zinc-900 via-zinc-900/80 to-transparent right-0 z-10"}>
-                    <div className=' w-full max-w-7xl'>
-                        <h1 className={`${styles.font_k} text-white text-3xl md:text-5xl`}>{arrayObject.name}</h1>
+                <div className={" w-full flex justify-center items-end z-10"}>
+                    <div className=' pt-44 md:pt-80 flex justify-center items-start w-full'>
+                        <div className=' pb-2 px-6 flex justify-center pt-2 w-full bg-gradient-to-t from-zinc-900 via-zinc-900/80 to-transparent'>
+                            <div className='max-w-7xl w-full '>
+                                <h1 className={`${styles.font_k} text-neutral-200 text-3xl md:text-5xl`}>{arrayObject.name}</h1>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className=' w-full flex justify-center items-center py-8 md:py-16 px-6'>
+            <div className=' w-full flex justify-center items-center py-4 md:py-8 px-6'>
                 <div className={" w-full max-w-7xl flex flex-col lg:flex-row gap-16 justify-between"}>
                     <Text languagePack={languagePack} arrayObject={arrayObject} lang={lang} />
                     <Gallery activatePopup={activatePopup} arrayObject={arrayObject} setIndex={setPictureIndex}/>

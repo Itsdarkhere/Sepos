@@ -6,7 +6,7 @@ export default function Text({ arrayObject, languagePack, lang }) {
     if (languagePack.status !== '') {
       return (
         <div className={"flex flex-col mb-8"}>
-          <p className={" text-xl font-semibold text-neutral-700 mb-4"}>{languagePack.finnish ? 'Hanketilanne' : 'Project status'}</p>
+          <p className={" text-xl font-semibold text-neutral-700 mb-2"}>{languagePack.finnish ? 'Hanketilanne' : 'Project status'}</p>
           <p className={"text-base text-neutral-600"}>{languagePack.status}</p>
         </div>
       );
@@ -25,7 +25,7 @@ export default function Text({ arrayObject, languagePack, lang }) {
 
   const getLocation = () => {
     if (languagePack?.location) {
-      return <p className={` mb-4`}><span className=" font-semibold" >{lang === 'en' ? "Location: ": "Sijainti: "}</span>{languagePack.location}</p>;
+      return <p className={` mb-4`}><span className=" text-neutral-700 font-semibold" >{lang === 'en' ? "Location: ": "Sijainti: "}</span>{languagePack.location}</p>;
     }
   };
 
@@ -58,7 +58,7 @@ export default function Text({ arrayObject, languagePack, lang }) {
                 );
             })}
           </div>
-          <p className={"text-xl font-semibold text-neutral-700 mb-4"}>{languagePack.finnish ? 'Faktoja' : 'Facts'}</p>
+          <p className={"text-xl font-semibold text-neutral-700 mb-2"}>{languagePack.finnish ? 'Faktoja' : 'Facts'}</p>
         </div>
         {getWebsiteLink()}
       </div>
