@@ -2,7 +2,7 @@
 import Project from "@/components/ProjectSlider/Project";
 import ProjectTwo from "@/components/ProjectSlider/ProjectTwo";
 
-export default function OtherProjects({ projectArray, lang }) {
+export default function OtherProjects({ projectArray, arrayObject, lang }) {
   return (
     <div className=' w-full bg-neutral-800 flex justify-center items-center py-16 px-6'>
       <div className='w-full flex flex-col items-start md:items-center max-w-7xl gap-4  md:gap-8'>
@@ -15,7 +15,7 @@ export default function OtherProjects({ projectArray, lang }) {
         <div className="w-full hidden md:grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             {projectArray.map((project, i) => {
               return (
-                <Project key={i} project={project} lang={lang} projectIndex={i} projectPage={true} />
+                <Project key={i} project={project} lang={lang} projectIndex={i} projectPage={true} viewing={project.name === arrayObject.name} />
               )
             })}
         </div>
@@ -23,7 +23,7 @@ export default function OtherProjects({ projectArray, lang }) {
         <div className="w-full grid md:hidden grid-cols-1 gap-4">
             {projectArray.map((project, i) => {
               return (
-                <ProjectTwo key={i} project={project} lang={lang} projectIndex={i} />
+                <ProjectTwo key={i} project={project} lang={lang} projectIndex={i} viewing={project.name === arrayObject.name} />
               )
             })}
         </div>

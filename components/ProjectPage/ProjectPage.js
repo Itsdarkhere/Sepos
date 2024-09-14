@@ -2,10 +2,8 @@
 import styles from './ProjectPage.module.css'
 import BigImage from './BigImage/BigImage'
 import Gallery from './Gallery/Gallery'
-import Link from "next/link";
 import Text from './Text/Text'
 import ImagePopup from './ImagePopup/ImagePopup'
-import { MdKeyboardArrowRight, MdKeyboardArrowLeft } from 'react-icons/md';
 import Map from './Map/Map'
 import React, { useEffect, useState } from 'react'
 import OtherProjects from './OtherProjects/OtherProjects';
@@ -56,7 +54,7 @@ export default function ProjectPage({ projectArray, lang, arrayObject, languageP
                 </div>
             </div>
             <Map arrayObject={arrayObject}/>
-            <OtherProjects projectArray={projectArray} lang={lang} />
+            <OtherProjects projectArray={projectArray} arrayObject={arrayObject} lang={lang} />
         </div>
     )
 }
