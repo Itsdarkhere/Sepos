@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styles from "./Footer.module.css";
 
-export default function Footer({ english }) {
+export default function Footer({ lang }) {
   const RE_ARRAY = [
     { name: "Garden Helsinki", link: "/garden" },
     { name: "Hangon Läntinen Laituri", link: "/hanko" },
@@ -25,7 +25,7 @@ export default function Footer({ english }) {
       <div className=" flex flex-col-reverse lg:flex-row gap-8 justify-between max-w-7xl w-full">
         <div className='flex flex-col gap-8 justify-start'>
           <div className='flex flex-col gap-4'>
-            <h5 className=" text-base text-neutral-300">Real Estate Projects</h5>
+            <h5 className=" text-base text-neutral-300">{lang === "en" ? 'Real Estate Projects' : 'Kiinteistökehitys Projektit'}</h5>
             <div className=' flex flex-row flex-wrap gap-4'>
               {RE_ARRAY.map((project, i) => {
                 return (
@@ -35,7 +35,7 @@ export default function Footer({ english }) {
             </div>
           </div>
           <div className='flex flex-col gap-4'>
-            <h5 className=" text-base text-neutral-300">Affiliated Companies</h5>
+            <h5 className=" text-base text-neutral-300">{lang === "en" ? 'Affiliated Companies' : 'Osakkuusyhtiöt'}</h5>
             <div className=' flex flex-row flex-wrap gap-4'>
               {COMPANY_ARRAY.map((company, i) => {
                 return (
