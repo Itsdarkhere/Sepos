@@ -1,10 +1,9 @@
-import styles from './Gallery.module.css';
 import React from 'react';
 
 export default function Gallery({ activatePopup, arrayObject, setIndex }) {
   return (
-    <div className={styles.direction_container}>
-      <div className={" grid grid-cols-2 gap-3"} onClick={() => activatePopup()}>
+    <div className={" flex-1"}>
+      <div className={" grid grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-3"} onClick={() => activatePopup()}>
         {arrayObject.pictures.map((src, index) => {
           return (
             <picture
@@ -16,7 +15,7 @@ export default function Gallery({ activatePopup, arrayObject, setIndex }) {
               transition={{ duration: 2 }}
               key={src}
             >
-              <img className={" rounded-sm"} src={src} alt="project" />
+              <img className={" rounded-md"} src={src} alt="project" />
             </picture>
           );
         })}

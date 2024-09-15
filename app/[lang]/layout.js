@@ -31,7 +31,7 @@ export default function RootLayout({ children, params: { lang } }) {
       <body className={`${kameron.variable} ${raleway.variable}`}>
         <Nav lang={lang} />
         {children}
-        <Footer english={true} />
+        <Footer lang={lang} />
         <SpeedInsights/>
         <NextTopLoader color='#ff8b06' height={2} showSpinner={false} />
       </body>

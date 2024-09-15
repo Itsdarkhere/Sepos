@@ -82,5 +82,5 @@ export async function generateMetadata({params}) {
 export default function Turku({ params: { lang } }) {
     const projectArray = ProjectArray();
     const languagePack = lang === 'en' ? projectArray[1].english : projectArray[1].finnish
-    return <ProjectPage arrayObject={projectArray[1]} languagePack={languagePack} />
+    return <ProjectPage projectArray={projectArray} lang={lang} arrayObject={projectArray[1]} languagePack={languagePack} />
 }

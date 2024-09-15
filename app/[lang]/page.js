@@ -5,6 +5,7 @@ import Companies from '@/components/Companies/Companies';
 // import About from '@/components/About/About';
 import Contacts from '@/components/Contacts/Contacts';
 import { ProjectArray, CompanyArray } from '@/utils/Array';
+import Information from '@/components/Information';
 
 export async function generateMetadata({params}) {
   if (params?.lang === 'en') {

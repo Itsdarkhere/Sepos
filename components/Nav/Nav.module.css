@@ -1,5 +1,5 @@
 .navbar_container {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     height: 65px;  
@@ -10,8 +10,8 @@
     align-items: center;
     background-color: #212121;
     z-index: 200;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .nav_inner {
     width: 100%;
@@ -22,16 +22,16 @@
     justify-content: space-between;
     align-items: center;
 }       
-.navbar_right {
-    width: 15%;
-    height: 100%; 
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+
 .MuiButton_outlinedPrimary {
     color: white !important;
     border: 0px solid white !important;
+}
+
+.sidenav_logo {
+    font-family: var(--kameron), sans-serif;
+    color: rgb(255, 139, 6);
+    font-size: 14px;
 }
 .navbar_header {
     height: 80%;
@@ -88,12 +88,4 @@
 }
 .MuiSelect_icon {
     color: white !important;
-}
-@media (max-width: 700px) {
-    .navbar_right {
-        width: 20%;
-    }
-    .language_select {
-        width: 20%;
-    }   
 }
