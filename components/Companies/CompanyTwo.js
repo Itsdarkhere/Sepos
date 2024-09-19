@@ -8,7 +8,7 @@ export default function CompanyTwo({ companyObject, lang }) {
                 <img src={companyObject.image} alt="wide-project-img" className="w-full h-full object-cover" />
             </figure>
             <div className="absolute inset-0 flex rounded-md flex-col justify-end items-start p-6 bg-gradient-to-t from-zinc-900 via-zinc-900/80 to-zinc-900/70">
-                <h2 className=" text-lg md:text-xl font-semibold text-white mb-2">{companyObject.name}</h2>
+                <h3 className=" text-lg md:text-xl font-semibold text-white mb-2">{companyObject.name}</h3>
                 <p className="font-light text-neutral-200 text-sm md:text-base max-w-96 mb-8">{lang === 'en' ? companyObject.description : companyObject.fin_description}</p>
                 <Link
                     target="_blank"
