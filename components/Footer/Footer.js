@@ -7,13 +7,13 @@ export default function Footer({ lang }) {
     { name: "Hangon Läntinen Laituri", link: "/hanko" },
     { name: "Hippos Jyväskylä", link: "/hippos" },
     { name: "Turun Ratapiha  ", link: "/turku" },
-    { name: "Hämeensaari", link: "/hameensaari" },
+    // { name: "Hämeensaari", link: "/hameensaari" },
     { name: "Inkoonranta", link: "/inkoonranta" },
   ];
 
   const COMPANY_ARRAY = [
     { name: "Modum Oy", link: "https://modumdigital.com/en/" },
-    { name: "LUV Kodit Oy", link: "http://www.luvkoti.fi/" },
+    // { name: "LUV Kodit Oy", link: "http://www.luvkoti.fi/" },
     { name: "NPC", link: "https://www.nordicpictures.fi/" },
     { name: "Hög", link: "https://hoglive.fi" },
   ];

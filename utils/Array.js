@@ -39,7 +39,7 @@ function ProjectArray() {
                 description: `Garden Helsinki on Töölöön, Nordenskiöldinkadun varrelle suunnitteilla oleva kiinteistökehityshanke.
                 Gardeniin suunnitellaan modernia kansainvälisen tason tapahtuma-areenaa ja sen ympärille kehitettäviä kattavia oheispalveluja sekä jokapäiväisiä palveluita kaupunkilaisten käyttöön.
                 Garden Helsinki on 2020-luvun kiinteistökonsepti, joka tarjoaa huippulaatuisen teknologian ja palveludesignin kautta päivittäisille käyttäjilleen arkea elävöittäviä palvelukokemuksia ja puitteet maailmanluokan tapahtumille.`,
-                status: 'Kaavoitus valmis, Helsingin kaupungin päätöstä kiinteistön myynnistä odotetaan. Suunnittelu käynnissä, hotellien vuokrasopimus valmis, tavoite aloittaa rakentaminen H1/2025.',
+                status: 'Kaavoitus valmis, Helsingin kaupungin päätöstä kiinteistön myynnistä odotetaan. Suunnittelu käynnissä, hotellien vuokrasopimus valmis, tavoite aloittaa rakentaminen Q1/2026.',
                 facts: ['n. 160.000m2', '2 areenaa, monitoimiareena 16000 + mid areena 5000 paikkaa', '2 hotellia, toimistotiloja, liiketiloja, liikuntatiloja, pysäköinti', 'n. 200 asuntoa'],
             },
             english: {
@@ -48,7 +48,7 @@ function ProjectArray() {
                 description: `Garden Helsinki is a real estate development project planned for Helsinki Töölö area, along the street Nordenskiöldinkatu. 
                 Garden is planned to be a modern international event arena that also includes comprehensive everyday services for the use of urban dwellers.
                 Garden Helsinki is a real estate concept of the 2020s that provides a framework for world-class events and offers it’s users experiences that enliven everyday life through top quality technology and service design.`,
-                status: 'Zoning complete, awaiting the City of Helsinki’s decision on the sale of the property. Planning underway, hotel lease agreement ready, aim to start construction in H1/2025.',
+                status: 'Zoning complete, awaiting the City of Helsinki’s decision on the sale of the property. Planning underway, hotel lease agreement ready, aim to start construction in Q1/2026.',
                 facts: ['About. 160.000m2', 'Two arena\'s, multipurpose arena 16 000 + mid arena 5 000 seats', 'Two hotels, office and retail spaces, areas for exercise and parking', 'About. 200 apartments'],
             }
         },
@@ -85,8 +85,7 @@ function ProjectArray() {
             nextProject: ["/hippos", "Hippos Jyväskylä"],
             finnish: {
                 finnish: true,
-                status: `Kaavoituksesta tehty valitus käsittelyssä, käsittelyn valmistumisen tavoite Q1/2024.
-                Turun kaupunki ostanut maa-alueet 9/2023, suunnittelu käynnissä, rakentamisen aloituksen tavoite Q1/2025.`,
+                status: `Turun kaupunki ostanut maa-alueet 9/2023, suunnittelu käynnissä, rakentamisen aloituksen tavoite Q3/2025.`,
                 facts: ['n. 120.000m2', 'Monitoimiareena 10 000 paikkaa', 'Hotelli, toimistotiloja, liiketiloja, digitaalinen elämyskeskus, liikuntatiloja, pysäköinti', 'n. 1 000 asuntoa'],
                 description: `Turun Ratapiha -hanke monipuolistaa osaltaan Turun kaupunkikeskustan tapahtuma-, kulttuuri- ja elämystarjontaa, lisää sen vetovoimaisuutta ja yhdistää ratapiha-alueen erottamia kaupunginosia toisiinsa.
                 Elävä kaupunkikeskus tarjoaa ajanmukaiset puitteet elämää rikastuttavien kulttuuri-, viihde- ja liikuntapalvelujen tuottamiseen, työpaikkoja, keskusta-asumista sekä kaupunkilaisten ympärivuotisen olohuoneen.`,
@@ -94,7 +93,7 @@ function ProjectArray() {
             english: {
                 finnish: false,
                 facts: ['About. 120.000m2', 'Multipurpose arena with 10 000 seats', 'A hotel, office and retail spaces, digital experience center, areas dedicated for exercise and parking', 'About. 1 000 apartments'],
-                status: 'Appeal made on zoning is under consideration, target for completion of the process is Q1/2024. The City of Turku bought the land areas in 9/2023, planning is underway, target to start construction is Q1/2025.',
+                status: 'The City of Turku bought the land areas in 9/2023, planning is underway, target to start construction in Q3/2025.',
                 location: 'City of Turku (6.th largest city in Finland), ca. 200km west from Helsinki.',
                 description: `The Turku Ratapiha development unites the areas separated by the railway yard area and contributes to expanding the city’s cultural-, events- and experience offerings. 
                 A vibrant city center needs jobs, city center living and modern facilities to produce cultural, entertainment and exercise services that enrichen people’s life’s.`,
@@ -132,7 +131,7 @@ function ProjectArray() {
             nextProject: ["/hameensaari", "Hämeensaari"],
             finnish: {
                 finnish: true,
-                status: 'Kaavoitus valmis, suunnittelu käynnissä, tavoite aloittaa vaihe 1 rakentaminen Q1/2024 ja vaiheiden 2 ja 3 tavoite aloitus 2024 aikana.',
+                status: 'Kaavoitus valmis, suunnittelu käynnissä, tavoite aloittaa rakentaminen Q1/2025.',
                 description: `Hippos on valmistuessaan paitsi kaupunkilaisten kohtaamispaikka, myös Pohjoismaiden merkittävin liikunnan, urheilun ja huippu-urheilun, terveyden edistämisen sekä hyvinvoinnin ja tapahtumien keskus.
                 Lisäksi se yhdistää liikunnan tutkimuksen ja teknologisen tuotekehityksen kansainvälisesti merkittäväksi kokonaisuudeksi.`,
                 facts: ['Jääurheilukeskus, areena 6 000 paikkaa ja 3 harjoitusjäätä',
@@ -142,7 +141,7 @@ function ProjectArray() {
             },
             english: {
                 finnish: false,
-                status: 'Zoning complete, planning underway, aim to start construction of phase 1 in Q1/2024 and target to start phases 2 and 3 during 2024.',
+                status: 'Zoning complete, planning underway, aim to start construction in Q1/2025.',
                 location: 'City of Jyväskylä (7.th largest city in Finland), ca. 250km north from Helsinki) n. 100.000m2',
                 description: `On completion Hippos is not only a meeting place for citizens of Jyväskylä, but also the most significant exercise, professional-sports, health, wellbeing and events center in the Nordic countries.
                 At Hippos sports research and technological product development is combined into a world-class entity.`,
@@ -153,50 +152,50 @@ function ProjectArray() {
             }
         },
 
-        {
-            name: 'Hämeensaari',
-            index: 3,
-            pictures: [
-            'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-1_3XmwA3BOrz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664991668', 
-            'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-2_K64XyiFwqo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664992652',
-            'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-3_o_O1xd38NF.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664987496', 
-            'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-4_QExfemw3QG.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664990137', 
-            'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-5_jplEj1XpiQ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664991207'
-            ],
-            pictures2: [
-                'https://ik.imagekit.io/s93qwyistj0/pics-highres/h%C3%A4meensaari-1_5RB2axMYkR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1653664948542', 
-                'https://ik.imagekit.io/s93qwyistj0/pics-highres/h%C3%A4meensaari-2_DauwKZuig.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1653664946311',
-                'https://ik.imagekit.io/s93qwyistj0/pics-highres/h%C3%A4meensaari-3_QVieAIQPk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1653664946398', 
-                'https://ik.imagekit.io/s93qwyistj0/pics-highres/hameensaari-4_oHh9yB0nrB.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664944455', 
-                'https://ik.imagekit.io/s93qwyistj0/pics-highres/h%C3%A4meensaari-5_kES_r75IO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1653664943603'
-            ],
-            displayImage: [    
-            "https://ik.imagekit.io/s93qwyistj0/pics-highres/wide-dark-3_6tO-Z2QrJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664956895", 
-            "https://ik.imagekit.io/s93qwyistj0/pics-highres/3_FZsPHumSV.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664944050"
-            ],
-            finishedIn: '2028',
-            website: 'https://www.hameenlinna.fi/asuminen-ja-ymparisto/kaavoitus/suunnitteluvaraukset/',
-            websiteLinkName: 'www.hameenlinna.fi/suunnittelu',
-            latLong: [60.99287702675376, 24.46319381233294],
-            projectPage: '/hameensaari',
-            previousProject: ["/hippos", "Hippos Jyväskylä"],
-            nextProject: ["/inkoonranta", "Inkoonranta"],
-            finnish: {
-                finnish: true,
-                facts: ['n. 35.000m2', 'Asuntoja, majoitusta, kaupallisia tiloja, pysäköinti.', 'n. 450 asuntoa'],
-                status: 'Suunnitteluvaraus ja kehitysvaihe yhdessä kaupungin kanssa käynnissä',
-                description: `Hämeenlinnan keskustakehityshanke on vetovoimainen keskustan laadukkain asuinalue ja palveluijen keskittymä.
-                Kokonaisuus muodostuu asunnoista, majoituksesta, kaupallisista palveluista, pysäköintilaitoksesta ja Vanajaveden rannan kaupunkipuistosta.`,
-            },
-            english: {
-                finnish: false,
-                description: `The Hämeenlinna downtown development project is an attractive, high-quality residential area in the city center and a concentration of services. 
-                The whole consists of apartments, accommodation, commercial services, a parking facility, and an urban park on the shore of Lake Vanajavesi.`,
-                location: 'City of Hämeenlinna (14.th largest city in Finland), ca. 100km north from Helsinki',
-                facts: ['Approximately 35.000m2', 'Apartments, accommodation, commercial spaces, parking.', 'Approximately 450 apartments'],
-                status: 'Planning reservation and development phase in progress with the city.',
-            }
-        },
+        // {
+        //     name: 'Hämeensaari',
+        //     index: 3,
+        //     pictures: [
+        //     'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-1_3XmwA3BOrz.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664991668', 
+        //     'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-2_K64XyiFwqo.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664992652',
+        //     'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-3_o_O1xd38NF.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664987496', 
+        //     'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-4_QExfemw3QG.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664990137', 
+        //     'https://ik.imagekit.io/s93qwyistj0/pics/hameensaari-5_jplEj1XpiQ.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664991207'
+        //     ],
+        //     pictures2: [
+        //         'https://ik.imagekit.io/s93qwyistj0/pics-highres/h%C3%A4meensaari-1_5RB2axMYkR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1653664948542', 
+        //         'https://ik.imagekit.io/s93qwyistj0/pics-highres/h%C3%A4meensaari-2_DauwKZuig.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1653664946311',
+        //         'https://ik.imagekit.io/s93qwyistj0/pics-highres/h%C3%A4meensaari-3_QVieAIQPk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1653664946398', 
+        //         'https://ik.imagekit.io/s93qwyistj0/pics-highres/hameensaari-4_oHh9yB0nrB.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664944455', 
+        //         'https://ik.imagekit.io/s93qwyistj0/pics-highres/h%C3%A4meensaari-5_kES_r75IO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1653664943603'
+        //     ],
+        //     displayImage: [    
+        //     "https://ik.imagekit.io/s93qwyistj0/pics-highres/wide-dark-3_6tO-Z2QrJ.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664956895", 
+        //     "https://ik.imagekit.io/s93qwyistj0/pics-highres/3_FZsPHumSV.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1653664944050"
+        //     ],
+        //     finishedIn: '2028',
+        //     website: 'https://www.hameenlinna.fi/asuminen-ja-ymparisto/kaavoitus/suunnitteluvaraukset/',
+        //     websiteLinkName: 'www.hameenlinna.fi/suunnittelu',
+        //     latLong: [60.99287702675376, 24.46319381233294],
+        //     projectPage: '/hameensaari',
+        //     previousProject: ["/hippos", "Hippos Jyväskylä"],
+        //     nextProject: ["/inkoonranta", "Inkoonranta"],
+        //     finnish: {
+        //         finnish: true,
+        //         facts: ['n. 35.000m2', 'Asuntoja, majoitusta, kaupallisia tiloja, pysäköinti.', 'n. 450 asuntoa'],
+        //         status: 'Suunnitteluvaraus ja kehitysvaihe yhdessä kaupungin kanssa käynnissä',
+        //         description: `Hämeenlinnan keskustakehityshanke on vetovoimainen keskustan laadukkain asuinalue ja palveluijen keskittymä.
+        //         Kokonaisuus muodostuu asunnoista, majoituksesta, kaupallisista palveluista, pysäköintilaitoksesta ja Vanajaveden rannan kaupunkipuistosta.`,
+        //     },
+        //     english: {
+        //         finnish: false,
+        //         description: `The Hämeenlinna downtown development project is an attractive, high-quality residential area in the city center and a concentration of services. 
+        //         The whole consists of apartments, accommodation, commercial services, a parking facility, and an urban park on the shore of Lake Vanajavesi.`,
+        //         location: 'City of Hämeenlinna (14.th largest city in Finland), ca. 100km north from Helsinki',
+        //         facts: ['Approximately 35.000m2', 'Apartments, accommodation, commercial spaces, parking.', 'Approximately 450 apartments'],
+        //         status: 'Planning reservation and development phase in progress with the city.',
+        //     }
+        // },
         /*
         {
             name: 'Oulun Ratapiha',
@@ -334,14 +333,14 @@ function CompanyArray() {
             'fin_description': 'Nordic Pictures Company Oy on 2018 perustettu tuotantoyhtiö, joka tuottaa tv-sarjoja, elokuvia, digitaalista sisältöä, musiikkia ja kuluttajatuotteita.'
         },
 
-        {
-            'name': 'Luv Kodit Oy',
-            'image': 'https://ik.imagekit.io/s93qwyistj0/pics-highres/company-4_i5IWitY1k.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664942606',
-            'website': 'http://www.luvkoti.fi/',
-            'displayWebsite': 'luvkoti.fi',
-            'description': 'LUV is a new, fresh, entrepeneur drive home sales company. LUV specialises in taking on new entire development projects.',
-            'fin_description': 'LUV on uusi, raikas, yrittäjävetoinen asuntomyyntiyhtiö. Erikoisosaamistamme on paneutuminen kokonaisiin, uusiin kiinteistöhankkeisiin. Ja asiakkaidemme kokonaisvaltaiseen, yksilölliseen palveluun.'
-        },
+        // {
+        //     'name': 'Luv Kodit Oy',
+        //     'image': 'https://ik.imagekit.io/s93qwyistj0/pics-highres/company-4_i5IWitY1k.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664942606',
+        //     'website': 'http://www.luvkoti.fi/',
+        //     'displayWebsite': 'luvkoti.fi',
+        //     'description': 'LUV is a new, fresh, entrepeneur drive home sales company. LUV specialises in taking on new entire development projects.',
+        //     'fin_description': 'LUV on uusi, raikas, yrittäjävetoinen asuntomyyntiyhtiö. Erikoisosaamistamme on paneutuminen kokonaisiin, uusiin kiinteistöhankkeisiin. Ja asiakkaidemme kokonaisvaltaiseen, yksilölliseen palveluun.'
+        // },
 
         {
             'name': 'Modum Oy',
