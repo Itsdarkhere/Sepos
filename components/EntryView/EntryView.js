@@ -21,14 +21,14 @@ export default function EntryView({ lang }) {
     }, [])
 
     const textsFin = {
-        line: `Kaupunkikehityskohteita Helsingissä, Turussa, Jyväskylässä ja Hämeenlinnassa.`,
+        line: `Kaupunkikehityskohteita Helsingissä, Turussa ja Jyväskylässä.`,
         story: `Sepos Oy on vuonna 2014 perustettu Timo Everin, Ilkka Kilpimaan 
         ja NasdaqOMX listatun Taaleri Oyj:n omistama yritys, jonka toimialana on kiinteistökehitys 
         ja sijoittaminen aktiivisen elämäntavan arvoketjussa toimiviin yrityksiin.`
     }
 
     const textsEng = {
-        line: `Urban development projects in Helsinki, Turku, Jyväskylä and Hämeenlinna`,
+        line: `Urban development projects in Helsinki, Turku and Jyväskylä.`,
         story: `Sepos Oy is a company founded in 2014 and owned by Timo Everi, Ilkka Kilpimaa 
         and NasdaqOMX Helsinki listed Taaleri Sijoitus Oy. The Company's field of activity is real estate development
          and investing in companies operating in the active lifestyle value chain.`,
