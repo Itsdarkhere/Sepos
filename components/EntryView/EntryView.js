@@ -87,10 +87,10 @@ export default function EntryView({ lang }) {
             {getImage()}
             <div className=' z-10 px-5 sm:px-20 py-40 sm:pt-48 sm:pb-72 bg-neutral-800 bg-opacity-35 w-full h-full flex flex-col justify-center items-center text-center'>
                 <div className={" max-w-[830px] flex flex-col items-center gap-4 text-start md:text-center"}>
-                    <motion.div className={" opacity-0 text-4xl text-white md:text-7xl font-semibold tracking-tighter "} animate={controls}>
+                    <motion.div className={" opacity-0 text-4xl leading-[95%] md:leading-none text-white md:text-7xl font-semibold tracking-tighter "} animate={controls}>
                         <h1>{texts.line}</h1>
                     </motion.div>  
-                    <motion.div className={" opacity-0 text-sm text-neutral-300 md:text-xl font-light max-w-[600px]"} animate={controls2}>
+                    <motion.div className={" opacity-0 text-sm text-neutral-300 md:text-xl md:leading-6 font-light  max-w-[600px]"} animate={controls2}>
                         <h2>{texts.story}</h2>
                     </motion.div>  
                 </div>
