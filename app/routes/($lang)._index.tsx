@@ -1,5 +1,5 @@
 import type { LoaderFunctionArgs, MetaFunction } from "@remix-run/cloudflare";
-import { json } from "@remix-run/cloudflare";
+import { json, redirect } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 
 import EntryView from "@/components/EntryView/EntryView";
@@ -10,9 +10,23 @@ import { ProjectArray, CompanyArray } from "@/utils/Array";
 
 import styles from "../home.module.css";
 
-export async function loader({ params }: LoaderFunctionArgs) {
-  const lang = params.lang || "en";
-  return json({ lang });
+export async function loader({ params, request }: LoaderFunctionArgs) {
+  // If language is explicitly set in URL, use it
+  if (params.lang) {
+    return json({ lang: params.lang });
+  }
+
+  // Detect browser language from Accept-Language header
+  const acceptLanguage = request.headers.get("Accept-Language") || "";
+  const prefersFinnish = acceptLanguage.toLowerCase().includes("fi");
+
+  // Redirect to appropriate language version
+  if (prefersFinnish) {
+    return redirect("/fi");
+  }
+
+  // Default to English
+  return json({ lang: "en" });
 }
 
 export const meta: MetaFunction<typeof loader> = ({ data }) => {
