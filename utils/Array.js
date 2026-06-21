@@ -40,16 +40,14 @@ function ProjectArray() {
                 Gardeniin suunnitellaan modernia kansainvälisen tason tapahtuma-areenaa ja sen ympärille kehitettäviä kattavia oheispalveluja sekä jokapäiväisiä palveluita kaupunkilaisten käyttöön.
                 Garden Helsinki on 2020-luvun kiinteistökonsepti, joka tarjoaa huippulaatuisen teknologian ja palveludesignin kautta päivittäisille käyttäjilleen arkea elävöittäviä palvelukokemuksia ja puitteet maailmanluokan tapahtumille.`,
                 status: 'Kaavoitus valmis. Suunnittelu ja rahoitusneuvottelut käynnissä, tavoitteena n. 22000 katsojan areena, rakentamisen aloitustavoite Q4/2027.',
-                facts: ['n. 160.000m2', '2 areenaa, monitoimiareena 16000 + mid areena 5000 paikkaa', '2 hotellia, toimistotiloja, liiketiloja, liikuntatiloja, pysäköinti', 'n. 200 asuntoa'],
             },
             english: {
                 finnish: false,
                 location: '',
-                description: `Garden Helsinki is a real estate development project planned for Helsinki Töölö area, along the street Nordenskiöldinkatu. 
+                description: `Garden Helsinki is a real estate development project planned for Helsinki Töölö area, along the street Nordenskiöldinkatu.
                 Garden is planned to be a modern international event arena that also includes comprehensive everyday services for the use of urban dwellers.
-                Garden Helsinki is a real estate concept of the 2020s that provides a framework for world-class events and offers it’s users experiences that enliven everyday life through top quality technology and service design.`,
+                Garden Helsinki is a real estate concept of the 2020s that provides a framework for world-class events and offers it's users experiences that enliven everyday life through top quality technology and service design.`,
                 status: 'Zoning complete. Planning and financing negotiations underway, target approx. 22,000 seat arena, construction start target Q4/2027.',
-                facts: ['About. 160.000m2', 'Two arena\'s, multipurpose arena 16 000 + mid arena 5 000 seats', 'Two hotels, office and retail spaces, areas for exercise and parking', 'About. 200 apartments'],
             }
         },
 
