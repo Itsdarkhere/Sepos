@@ -7,8 +7,8 @@ import {
   useLoaderData,
   useNavigation,
 } from "@remix-run/react";
-import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
-import { json } from "@remix-run/node";
+import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/cloudflare";
+import { json } from "@remix-run/cloudflare";
 import { useEffect } from "react";
 import NProgress from "nprogress";
 import nProgressStyles from "nprogress/nprogress.css?url";
