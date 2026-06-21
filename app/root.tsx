@@ -36,9 +36,9 @@ export const links: LinksFunction = () => [
 
 export async function loader({ params, context }: LoaderFunctionArgs) {
   const lang = params.lang || "en";
-  const env = context.cloudflare?.env as Record<string, string> | undefined;
+  const env = context as Record<string, string>;
   const apiKey = env?.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "";
-  console.log("GOOGLE_MAPS_API_KEY:", apiKey ? "loaded" : "missing");
+  console.log("GOOGLE_MAPS_API_KEY:", apiKey ? "loaded" : "missing", "env keys:", Object.keys(env));
   return json({
     lang,
     ENV: {
