@@ -23,7 +23,7 @@
 .footer_logo_button {
     font-size: 16px;
     color: rgb(255, 139, 6);
-    font-family: var(--kameron), sans-serif;
+    font-family: 'Kameron', serif;
     text-decoration: none;
     border: none;
     display: flex;
