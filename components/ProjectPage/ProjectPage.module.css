@@ -67,7 +67,7 @@
     background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
 }
 .font_k {
-    font-family: var(--kameron), sans-serif;
+    font-family: 'Kameron', serif;
 }
 .pp_bottom_container {
     padding-top: 50px;

@@ -29,14 +29,14 @@
 }
 
 .sidenav_logo {
-    font-family: var(--kameron), sans-serif;
+    font-family: 'Kameron', serif;
     color: rgb(255, 139, 6);
     font-size: 14px;
 }
 .navbar_header {
     height: 80%;
     font-size: 22px;
-    font-family: var(--kameron), sans-serif;
+    font-family: 'Kameron', serif;
     background-color: rgba(0,0,0,0);
     color: rgb(255, 139, 6);
     text-decoration: none;
