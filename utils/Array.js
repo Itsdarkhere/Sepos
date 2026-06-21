@@ -39,7 +39,7 @@ function ProjectArray() {
                 description: `Garden Helsinki on Töölöön, Nordenskiöldinkadun varrelle suunnitteilla oleva kiinteistökehityshanke.
                 Gardeniin suunnitellaan modernia kansainvälisen tason tapahtuma-areenaa ja sen ympärille kehitettäviä kattavia oheispalveluja sekä jokapäiväisiä palveluita kaupunkilaisten käyttöön.
                 Garden Helsinki on 2020-luvun kiinteistökonsepti, joka tarjoaa huippulaatuisen teknologian ja palveludesignin kautta päivittäisille käyttäjilleen arkea elävöittäviä palvelukokemuksia ja puitteet maailmanluokan tapahtumille.`,
-                status: 'Kaavoitus valmis, Helsingin kaupungin päätöstä kiinteistön myynnistä odotetaan. Suunnittelu käynnissä, hotellien vuokrasopimus valmis, tavoite aloittaa rakentaminen Q1/2026.',
+                status: 'Kaavoitus valmis. Suunnittelu ja rahoitusneuvottelut käynnissä, tavoitteena n. 22000 katsojan areena, rakentamisen aloitustavoite Q4/2027.',
                 facts: ['n. 160.000m2', '2 areenaa, monitoimiareena 16000 + mid areena 5000 paikkaa', '2 hotellia, toimistotiloja, liiketiloja, liikuntatiloja, pysäköinti', 'n. 200 asuntoa'],
             },
             english: {
@@ -48,7 +48,7 @@ function ProjectArray() {
                 description: `Garden Helsinki is a real estate development project planned for Helsinki Töölö area, along the street Nordenskiöldinkatu. 
                 Garden is planned to be a modern international event arena that also includes comprehensive everyday services for the use of urban dwellers.
                 Garden Helsinki is a real estate concept of the 2020s that provides a framework for world-class events and offers it’s users experiences that enliven everyday life through top quality technology and service design.`,
-                status: 'Zoning complete, awaiting the City of Helsinki’s decision on the sale of the property. Planning underway, hotel lease agreement ready, aim to start construction in Q1/2026.',
+                status: 'Zoning complete. Planning and financing negotiations underway, target approx. 22,000 seat arena, construction start target Q4/2027.',
                 facts: ['About. 160.000m2', 'Two arena\'s, multipurpose arena 16 000 + mid arena 5 000 seats', 'Two hotels, office and retail spaces, areas for exercise and parking', 'About. 200 apartments'],
             }
         },
@@ -85,7 +85,7 @@ function ProjectArray() {
             nextProject: ["/hippos", "Hippos Jyväskylä"],
             finnish: {
                 finnish: true,
-                status: `Turun kaupunki ostanut maa-alueet 9/2023, suunnittelu käynnissä, rakentamisen aloituksen tavoite Q3/2025.`,
+                status: `Turun kaupunki ostanut maa-alueet 9/2023, suunnittelu käynnissä`,
                 facts: ['n. 120.000m2', 'Monitoimiareena 10 000 paikkaa', 'Hotelli, toimistotiloja, liiketiloja, digitaalinen elämyskeskus, liikuntatiloja, pysäköinti', 'n. 1 000 asuntoa'],
                 description: `Turun Ratapiha -hanke monipuolistaa osaltaan Turun kaupunkikeskustan tapahtuma-, kulttuuri- ja elämystarjontaa, lisää sen vetovoimaisuutta ja yhdistää ratapiha-alueen erottamia kaupunginosia toisiinsa.
                 Elävä kaupunkikeskus tarjoaa ajanmukaiset puitteet elämää rikastuttavien kulttuuri-, viihde- ja liikuntapalvelujen tuottamiseen, työpaikkoja, keskusta-asumista sekä kaupunkilaisten ympärivuotisen olohuoneen.`,
@@ -93,7 +93,7 @@ function ProjectArray() {
             english: {
                 finnish: false,
                 facts: ['About. 120.000m2', 'Multipurpose arena with 10 000 seats', 'A hotel, office and retail spaces, digital experience center, areas dedicated for exercise and parking', 'About. 1 000 apartments'],
-                status: 'The City of Turku bought the land areas in 9/2023, planning is underway, target to start construction in Q3/2025.',
+                status: 'The City of Turku bought the land areas in 9/2023, planning is underway.',
                 location: 'City of Turku (6.th largest city in Finland), ca. 200km west from Helsinki.',
                 description: `The Turku Ratapiha development unites the areas separated by the railway yard area and contributes to expanding the city’s cultural-, events- and experience offerings. 
                 A vibrant city center needs jobs, city center living and modern facilities to produce cultural, entertainment and exercise services that enrichen people’s life’s.`,
@@ -123,15 +123,15 @@ function ProjectArray() {
             "https://ik.imagekit.io/s93qwyistj0/pics-highres/2_-ebonMhRi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664960613"
             ],
             finishedIn: '2025',
-            website: 'https://www.businessjyvaskyla.fi/kehitys/hippos',
+            website: 'https://www.jyvaskyla.fi/uudistuva-hippoksen-alue',
             latLong: [62.2366093283036, 25.72246721237655],
-            websiteLinkName: 'www.businessjyvaskyla.fi/hippos',
+            websiteLinkName: 'jyvaskyla.fi',
             projectPage: '/hippos',
             previousProject: ["/turku", "Turun Ratapiha"],
             nextProject: ["/hameensaari", "Hämeensaari"],
             finnish: {
                 finnish: true,
-                status: 'Kaavoitus valmis, suunnittelu käynnissä, tavoite aloittaa rakentaminen Q1/2025.',
+                status: 'Rakentaminen alkanut 11/2025 ja valmistuu vaiheittain vuosien 2027-2028 aikana',
                 description: `Hippos on valmistuessaan paitsi kaupunkilaisten kohtaamispaikka, myös Pohjoismaiden merkittävin liikunnan, urheilun ja huippu-urheilun, terveyden edistämisen sekä hyvinvoinnin ja tapahtumien keskus.
                 Lisäksi se yhdistää liikunnan tutkimuksen ja teknologisen tuotekehityksen kansainvälisesti merkittäväksi kokonaisuudeksi.`,
                 facts: ['Jääurheilukeskus, areena 6 000 paikkaa ja 3 harjoitusjäätä',
@@ -141,7 +141,7 @@ function ProjectArray() {
             },
             english: {
                 finnish: false,
-                status: 'Zoning complete, planning underway, aim to start construction in Q1/2025.',
+                status: 'Construction started 11/2025, completion in phases during 2027-2028.',
                 location: 'City of Jyväskylä (7.th largest city in Finland), ca. 250km north from Helsinki) n. 100.000m2',
                 description: `On completion Hippos is not only a meeting place for citizens of Jyväskylä, but also the most significant exercise, professional-sports, health, wellbeing and events center in the Nordic countries.
                 At Hippos sports research and technological product development is combined into a world-class entity.`,
@@ -222,8 +222,8 @@ function ProjectArray() {
             "https://ik.imagekit.io/s93qwyistj0/pics-highres/5_we_gUTVZI.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664959850"
             ],
             finishedIn: '2025',
-            website: 'https://www.chyde.fi/hangon_laituri',
-            websiteLinkName: 'www.chyde.fi/hangon_laituri',
+            website: 'https://www.ssa.fi/hangonlaituri/',
+            websiteLinkName: 'ssa.fi/hangonlaituri',
             latLong: [59.81968268006804, 22.961955571814453],
             projectPage: '/hanko',
             previousProject: ["/inkoonranta", "Inkoonranta"],
