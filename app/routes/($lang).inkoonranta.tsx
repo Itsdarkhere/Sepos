@@ -5,7 +5,7 @@ import { useLoaderData } from "@remix-run/react";
 import ProjectPage from "@/components/ProjectPage/ProjectPage";
 import { ProjectArray } from "@/utils/Array";
 
-const PROJECT_INDEX = 5;
+const PROJECT_INDEX = 3;
 
 export async function loader({ params }: LoaderFunctionArgs) {
   const lang = params.lang || "en";

@@ -128,7 +128,7 @@ function ProjectArray() {
             websiteLinkName: 'jyvaskyla.fi',
             projectPage: '/hippos',
             previousProject: ["/turku", "Turun Ratapiha"],
-            nextProject: ["/hameensaari", "Hämeensaari"],
+            nextProject: ["/inkoonranta", "Inkoonranta"],
             finnish: {
                 finnish: true,
                 status: 'Rakentaminen alkanut 11/2025 ja valmistuu vaiheittain vuosien 2027-2028 aikana',
@@ -179,7 +179,7 @@ function ProjectArray() {
             websiteLinkName: 'www.inkoonranta.com',
             latLong: [60.04310344758483, 24.00724591227905],
             projectPage: '/inkoonranta',
-            previousProject: ["/hameensaari", "Hämeensaari"],
+            previousProject: ["/hippos", "Hippos Jyväskylä"],
             nextProject: ["/hanko", "Hangon läntinen laituri"],
             finnish: {
                 finnish: true,
