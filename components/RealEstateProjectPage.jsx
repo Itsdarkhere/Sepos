@@ -288,7 +288,7 @@ const ProjectDetails = ({ project }) => {
               <h3 className="text-2xl font-bold mb-6">Location</h3>
               <div className="rounded-lg overflow-hidden h-80 mb-4">
                 <iframe 
-                  src={`https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${project.mapCoordinates.lat},${project.mapCoordinates.lng}&zoom=15`}
+                  src={`https://www.google.com/maps/embed/v1/place?key=${typeof window !== 'undefined' ? window.ENV?.GOOGLE_MAPS_API_KEY : ''}&q=${project.mapCoordinates.lat},${project.mapCoordinates.lng}&zoom=15`}
                   width="100%" 
                   height="100%" 
                   style={{ border: 0 }} 

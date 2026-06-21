@@ -34,9 +34,15 @@ export const links: LinksFunction = () => [
   { rel: "alternate", hrefLang: "fi", href: "https://www.sepos.fi/fi" },
 ];
 
-export async function loader({ params }: LoaderFunctionArgs) {
+export async function loader({ params, context }: LoaderFunctionArgs) {
   const lang = params.lang || "en";
-  return json({ lang });
+  const env = context.cloudflare?.env as Record<string, string> | undefined;
+  return json({
+    lang,
+    ENV: {
+      GOOGLE_MAPS_API_KEY: env?.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "",
+    },
+  });
 }
 
 function ProgressBar() {
@@ -72,10 +78,15 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  const { lang } = useLoaderData<typeof loader>();
+  const { lang, ENV } = useLoaderData<typeof loader>();
 
   return (
     <>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `window.ENV = ${JSON.stringify(ENV)}`,
+        }}
+      />
       <ProgressBar />
       <Nav lang={lang} />
       <Outlet context={{ lang }} />
