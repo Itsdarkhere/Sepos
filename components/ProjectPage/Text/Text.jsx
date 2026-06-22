@@ -45,19 +45,23 @@ export default function Text({ arrayObject, languagePack, lang }) {
         </div>
         <div className={styles.text_button_facts_container}>
           {getStatus()}
-          <div className={" mb-8"}>
-            {languagePack.facts.map((fact, index) => {
-                return (
-                  <li
-                    key={index}
-                    className={" text-base text-neutral-600"}
-                  >
-                    {fact}
-                  </li>
-                );
-            })}
-          </div>
-          <p className={"text-xl font-semibold text-neutral-700 mb-2"}>{languagePack.finnish ? 'Faktoja' : 'Facts'}</p>
+{languagePack.facts?.length > 0 && (
+            <>
+              <p className={"text-xl font-semibold text-neutral-700 mb-2"}>{languagePack.finnish ? 'Faktoja' : 'Facts'}</p>
+              <div className={" mb-8"}>
+                {languagePack.facts.map((fact, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className={" text-base text-neutral-600"}
+                      >
+                        {fact}
+                      </li>
+                    );
+                })}
+              </div>
+            </>
+          )}
         </div>
         {getWebsiteLink()}
       </div>
