@@ -121,7 +121,7 @@ function ProjectArray() {
             "https://ik.imagekit.io/s93qwyistj0/pics-highres/2_-ebonMhRi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664960613"
             ],
             finishedIn: '2025',
-            website: 'https://www.jyvaskyla.fi/uudistuva-hippoksen-alue',
+            website: 'https://www.jyvaskyla.fi/liikunta/uudistuva-hippoksen-alue',
             latLong: [62.2366093283036, 25.72246721237655],
             websiteLinkName: 'jyvaskyla.fi',
             projectPage: '/hippos',
@@ -220,8 +220,8 @@ function ProjectArray() {
             "https://ik.imagekit.io/s93qwyistj0/pics-highres/5_we_gUTVZI.png?ik-sdk-version=javascript-1.4.3&updatedAt=1653664959850"
             ],
             finishedIn: '2025',
-            website: 'https://www.ssa.fi/hangonlaituri/',
-            websiteLinkName: 'ssa.fi/hangonlaituri',
+            website: 'https://ssa.fi/kodit/hangon-laituri/',
+            websiteLinkName: 'ssa.fi/kodit/hangon-laituri',
             latLong: [59.81968268006804, 22.961955571814453],
             projectPage: '/hanko',
             previousProject: ["/inkoonranta", "Inkoonranta"],
