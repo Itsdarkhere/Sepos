@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import { Dialog, Transition } from '@headlessui/react';
-import { Link } from '@remix-run/react';
+import { Link } from '@/components/LocalizedLink';
 
 const arr = "/arr.svg";
 const building = "/building.svg";
@@ -60,7 +60,7 @@ const NavDialog = ({ lang, projectArray, isOpen, setIsOpen }) => {
                 <ul className="">
                   <li>
                     <Link
-                      to="/#projects"
+                      to="#projects"
                       className="flex items-center space-x-2 text-neutral-300 hover:bg-neutral-700 p-2 rounded-md transition duration-300"
                       onClick={() => setIsOpen(false)}
                     >
@@ -84,7 +84,7 @@ const NavDialog = ({ lang, projectArray, isOpen, setIsOpen }) => {
                   </div>
                   <li className=' mb-2'>
                     <Link
-                      to="/#companies"
+                      to="#companies"
                       className="flex items-center space-x-2 text-neutral-300 hover:bg-neutral-700 p-2 rounded-md transition duration-300"
                       onClick={() => setIsOpen(false)}
                     >
@@ -94,7 +94,7 @@ const NavDialog = ({ lang, projectArray, isOpen, setIsOpen }) => {
                   </li>
                   <li>
                     <Link
-                      to="/#contact"
+                      to="#contact"
                       className="flex items-center space-x-2 text-neutral-300 hover:bg-neutral-700 p-2 rounded-md transition duration-300"
                       onClick={() => setIsOpen(false)}
                     >

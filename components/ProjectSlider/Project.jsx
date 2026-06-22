@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link } from "@/components/LocalizedLink";
 import { motion } from "framer-motion";
 import styles from "./ProjectSlider.module.css";
 

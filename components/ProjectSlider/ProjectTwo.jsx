@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "@remix-run/react";
+import { Link } from "@/components/LocalizedLink";
 import styles from "./ProjectSlider.module.css";
 
 const ProjectCard = ({ project, lang, projectIndex, viewing }) => {

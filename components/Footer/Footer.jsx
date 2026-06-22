@@ -1,4 +1,4 @@
-import { Link } from "@remix-run/react";
+import { Link } from "@/components/LocalizedLink";
 import styles from "./Footer.module.css";
 
 export default function Footer({ lang }) {

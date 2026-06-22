@@ -1,5 +1,5 @@
 import styles from "./Nav.module.css";
-import { Link } from "@remix-run/react";
+import { Link } from "@/components/LocalizedLink";
 import { ProjectArray } from "@/utils/Array";
 import { useState } from "react";
 import NavDialog from "./NavDialog";
@@ -50,7 +50,7 @@ export default function Nav({ lang }) {
           " max-w-7xl flex flex-row justify-between items-center w-full"
         }
       >
-        <Link className={styles.navbar_header} to='/'>
+        <Link className={styles.navbar_header} to="/">
           <p className={styles.company_name}>SEPOS OY</p>
         </Link>
         <div className={" -mr-5"}>{getNav()}</div>
